@@ -995,6 +995,7 @@
             this.tbRIT01.Size = new System.Drawing.Size(26, 20);
             this.tbRIT01.TabIndex = 7;
             this.tbRIT01.Text = "1";
+            this.tbRIT01.DoubleClick += new System.EventHandler(this.tbRIT01_DoubleClick);
             // 
             // textBoxRIT01
             // 
@@ -1052,6 +1053,7 @@
             this.tbRIT02.Size = new System.Drawing.Size(26, 20);
             this.tbRIT02.TabIndex = 12;
             this.tbRIT02.Text = "2";
+            this.tbRIT02.DoubleClick += new System.EventHandler(this.tbRIT02_DoubleClick);
             // 
             // cbRIT03
             // 
@@ -1085,6 +1087,7 @@
             this.tbRIT03.Size = new System.Drawing.Size(26, 20);
             this.tbRIT03.TabIndex = 15;
             this.tbRIT03.Text = "3";
+            this.tbRIT03.DoubleClick += new System.EventHandler(this.tbRIT03_DoubleClick);
             // 
             // cbRIT04
             // 
@@ -1118,6 +1121,7 @@
             this.tbRIT04.Size = new System.Drawing.Size(26, 20);
             this.tbRIT04.TabIndex = 18;
             this.tbRIT04.Text = "4";
+            this.tbRIT04.DoubleClick += new System.EventHandler(this.tbRIT04_DoubleClick);
             // 
             // FormPrincipal
             // 

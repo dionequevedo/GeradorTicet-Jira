@@ -382,5 +382,33 @@ namespace GeradorTicket_Jira
                 textBoxRIT04.Enabled = false;
             }
         }
+
+        private void tbRIT01_DoubleClick(object sender, EventArgs e)
+        {
+            int valor_atual = int.Parse(tbRIT01.Text);
+            valor_atual += 1;
+            tbRIT01.Text = valor_atual.ToString();
+        }
+
+        private void tbRIT02_DoubleClick(object sender, EventArgs e)
+        {
+            int valor_atual = int.Parse(tbRIT02.Text);
+            valor_atual += 1;
+            tbRIT02.Text = valor_atual.ToString();
+        }
+
+        private void tbRIT03_DoubleClick(object sender, EventArgs e)
+        {
+            int valor_atual = int.Parse(tbRIT03.Text);
+            valor_atual += 1;
+            tbRIT03.Text = valor_atual.ToString();
+        }
+
+        private void tbRIT04_DoubleClick(object sender, EventArgs e)
+        {
+            int valor_atual = int.Parse(tbRIT04.Text);
+            valor_atual += 1;
+            tbRIT04.Text = valor_atual.ToString();
+        }
     }
 }
