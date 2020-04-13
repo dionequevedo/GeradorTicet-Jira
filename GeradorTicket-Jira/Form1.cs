@@ -32,29 +32,36 @@ namespace GeradorTicket_Jira
 
         private void btCopiar_Click(object sender, EventArgs e)
         {
-            int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
+            if (tbEscolhas.SelectedTab.Equals(tbProblemas))
+            {
+                int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
 
-            string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
+                string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
 
-            Boolean ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
+                Boolean ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
 
-            string reproduzido = " {panel:title=*REPRODUZIDO EM:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#ADD8E6|bgColor=#F0FFFF|titleColor=BLACK}" +
-                "\n*HOSTNAME:* " 
-                                    + tbHostname.Text 
-                                    + "\n*PORTA:* "
-                                    + tbPorta.Text 
-                                    + "\n*DATABASE:* "
-                                    + tbDatabase.Text 
-                                    + "\n*USUÁRIO:* "
-                                    + tbUsuario.Text 
-                                    + "\n*SENHA:* "
-                                    + tbPassword.Text;
+                string reproduzido = " {panel:title=*REPRODUZIDO EM:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#ADD8E6|bgColor=#F0FFFF|titleColor=BLACK}" +
+                    "\n*HOSTNAME:* "
+                                        + tbHostname.Text
+                                        + "\n*PORTA:* "
+                                        + tbPorta.Text
+                                        + "\n*DATABASE:* "
+                                        + tbDatabase.Text
+                                        + "\n*USUÁRIO:* "
+                                        + tbUsuario.Text
+                                        + "\n*SENHA:* "
+                                        + tbPassword.Text;
 
-            TextosPadroes textos = new TextosPadroes(caminhos: tbCaminhos.Text, resumo: tbResumo.Text + anexos, funcionamento: tbFuncionamento.Text, reproduzido: reproduzido, passoAPasso: tbPassoAPasso.Text, parecer: tbParecer.Text);
+                TextosPadroes textos = new TextosPadroes(caminhos: tbCaminhos.Text, resumo: tbResumo.Text + anexos, funcionamento: tbFuncionamento.Text, reproduzido: reproduzido, passoAPasso: tbPassoAPasso.Text, parecer: tbParecer.Text);
 
-            ticket = new Ticket(cliente, cbArea.Text, tbVersao.Text, cbSO.Text, cbAplicacao.Text, ambienteProducao, tbProblemas.Focus() == true ? TipoTicket.Problema : TipoTicket.Qualidade) ;
-            
-            Clipboard.SetText(ticket.ToString()+textos);
+                ticket = new Ticket(cliente, cbArea.Text, tbVersao.Text, cbSO.Text, cbAplicacao.Text, ambienteProducao, tbProblemas.Focus() == true ? TipoTicket.Problema : TipoTicket.Qualidade);
+
+                Clipboard.SetText(ticket.ToString() + textos);
+            }
+            else
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!");
+            }
         }
 
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,6 +71,76 @@ namespace GeradorTicket_Jira
                 " DEFEITO ou BUG, ou menos no registro de tickets de Implementações" +
                 " Testes ou Orientação ao desenvolvedor." +
                 "\nCaso identifique problemas, tenha dúvidas ou deseje sugerir melhorias, favor contactar-me no e-mail dione.quevedo@mv.com.br", "Sobre!");
+        }
+
+        private void copiarF11ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (tbEscolhas.SelectedTab.Equals(tbProblemas))
+            {
+                int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
+
+                string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
+
+                Boolean ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
+
+                string reproduzido = " {panel:title=*REPRODUZIDO EM:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#ADD8E6|bgColor=#F0FFFF|titleColor=BLACK}" +
+                    "\n*HOSTNAME:* "
+                                        + tbHostname.Text
+                                        + "\n*PORTA:* "
+                                        + tbPorta.Text
+                                        + "\n*DATABASE:* "
+                                        + tbDatabase.Text
+                                        + "\n*USUÁRIO:* "
+                                        + tbUsuario.Text
+                                        + "\n*SENHA:* "
+                                        + tbPassword.Text;
+
+                TextosPadroes textos = new TextosPadroes(caminhos: tbCaminhos.Text, resumo: tbResumo.Text + anexos, funcionamento: tbFuncionamento.Text, reproduzido: reproduzido, passoAPasso: tbPassoAPasso.Text, parecer: tbParecer.Text);
+
+                ticket = new Ticket(cliente, cbArea.Text, tbVersao.Text, cbSO.Text, cbAplicacao.Text, ambienteProducao, tbProblemas.Focus() == true ? TipoTicket.Problema : TipoTicket.Qualidade);
+
+                Clipboard.SetText(ticket.ToString() + textos);
+            }
+            else
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!");
+            }
+        }
+
+        private void limparF10ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbOrientacao.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
+            rbAnexoSim.Checked = true;
+            rbProducao.Checked = true;
+            tbPassword.Text = "1";
+            tbPorta.Text = "5430";
+            tbHostname.Text = "192.168.0.0";
+            tbUsuario.Text = "QA.FUNCIONARIO";
+            cbAplicacao.Text = "SIGH";
+            cbArea.Text = "NÃO INFORMADO";
+            tbDatabase.Text = "bd0000";
+            tbVersao.Text = "5.74.00";
+            tbCliente.Text = "0000";
+            tbPassword.Text = "1";
+            tbCliente.Focus();
+        }
+
+        private void btNovo_Click(object sender, EventArgs e)
+        {
+            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbOrientacao.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
+            rbAnexoSim.Checked = true;
+            rbProducao.Checked = true;
+            tbPassword.Text = "1";
+            tbPorta.Text = "5430";
+            tbHostname.Text = "192.168.0.0";
+            tbUsuario.Text = "QA.FUNCIONARIO";
+            cbAplicacao.Text = "SIGH";
+            cbArea.Text = "NÃO INFORMADO";
+            tbDatabase.Text = "bd0000";
+            tbVersao.Text = "5.74.00";
+            tbCliente.Text = "0000";
+            tbPassword.Text = "1";
+            tbCliente.Focus();
         }
     }
 }

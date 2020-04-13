@@ -44,6 +44,7 @@
             this.orientaçãoDoDesenvolvedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbIdentificacao = new System.Windows.Forms.GroupBox();
             this.cbAplicacao = new System.Windows.Forms.ComboBox();
@@ -96,9 +97,9 @@
             this.tbSprint = new System.Windows.Forms.TabPage();
             this.tbOrientacao = new System.Windows.Forms.TabPage();
             this.btNovo = new System.Windows.Forms.Button();
-            this.btCancelar = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copiarF11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.limparF10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -111,6 +112,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tipoDeTextoToolStripMenuItem,
+            this.limparF10ToolStripMenuItem,
+            this.copiarF11ToolStripMenuItem,
             this.sairToolStripMenuItem,
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -220,6 +223,14 @@
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -421,11 +432,10 @@
             // 
             this.panel2.Controls.Add(this.tbEscolhas);
             this.panel2.Controls.Add(this.btNovo);
-            this.panel2.Controls.Add(this.btCancelar);
             this.panel2.Controls.Add(this.btCopiar);
             this.panel2.Location = new System.Drawing.Point(12, 118);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(860, 619);
+            this.panel2.Size = new System.Drawing.Size(860, 560);
             this.panel2.TabIndex = 2;
             // 
             // tbEscolhas
@@ -445,7 +455,7 @@
             this.tbEscolhas.Location = new System.Drawing.Point(4, 4);
             this.tbEscolhas.Name = "tbEscolhas";
             this.tbEscolhas.SelectedIndex = 0;
-            this.tbEscolhas.Size = new System.Drawing.Size(850, 573);
+            this.tbEscolhas.Size = new System.Drawing.Size(850, 519);
             this.tbEscolhas.TabIndex = 4;
             this.tbEscolhas.TabStop = false;
             // 
@@ -480,7 +490,7 @@
             this.tbProblemas.Location = new System.Drawing.Point(4, 25);
             this.tbProblemas.Name = "tbProblemas";
             this.tbProblemas.Padding = new System.Windows.Forms.Padding(3);
-            this.tbProblemas.Size = new System.Drawing.Size(842, 544);
+            this.tbProblemas.Size = new System.Drawing.Size(842, 490);
             this.tbProblemas.TabIndex = 0;
             this.tbProblemas.Text = "Descrição do problema";
             this.tbProblemas.UseVisualStyleBackColor = true;
@@ -522,16 +532,16 @@
             this.tbParecer.AcceptsReturn = true;
             this.tbParecer.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbParecer.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbParecer.Location = new System.Drawing.Point(9, 443);
+            this.tbParecer.Location = new System.Drawing.Point(9, 402);
             this.tbParecer.Multiline = true;
             this.tbParecer.Name = "tbParecer";
-            this.tbParecer.Size = new System.Drawing.Size(825, 93);
+            this.tbParecer.Size = new System.Drawing.Size(825, 78);
             this.tbParecer.TabIndex = 9;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 425);
+            this.label11.Location = new System.Drawing.Point(7, 384);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(208, 13);
             this.label11.TabIndex = 18;
@@ -631,7 +641,7 @@
             this.tbPassoAPasso.Location = new System.Drawing.Point(8, 305);
             this.tbPassoAPasso.Multiline = true;
             this.tbPassoAPasso.Name = "tbPassoAPasso";
-            this.tbPassoAPasso.Size = new System.Drawing.Size(825, 117);
+            this.tbPassoAPasso.Size = new System.Drawing.Size(825, 73);
             this.tbPassoAPasso.TabIndex = 8;
             // 
             // label6
@@ -816,25 +826,17 @@
             // 
             // btNovo
             // 
-            this.btNovo.Location = new System.Drawing.Point(648, 583);
+            this.btNovo.Location = new System.Drawing.Point(754, 528);
             this.btNovo.Name = "btNovo";
             this.btNovo.Size = new System.Drawing.Size(100, 30);
             this.btNovo.TabIndex = 1;
-            this.btNovo.Text = "Novo Registro";
+            this.btNovo.Text = "Limpar (F10)";
             this.btNovo.UseVisualStyleBackColor = true;
-            // 
-            // btCancelar
-            // 
-            this.btCancelar.Location = new System.Drawing.Point(754, 583);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(100, 30);
-            this.btCancelar.TabIndex = 2;
-            this.btCancelar.Text = "Cancelar";
-            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
             // 
             // btCopiar
             // 
-            this.btCopiar.Location = new System.Drawing.Point(542, 583);
+            this.btCopiar.Location = new System.Drawing.Point(648, 528);
             this.btCopiar.Name = "btCopiar";
             this.btCopiar.Size = new System.Drawing.Size(100, 30);
             this.btCopiar.TabIndex = 0;
@@ -842,20 +844,28 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
-            // sobreToolStripMenuItem
+            // copiarF11ToolStripMenuItem
             // 
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sobreToolStripMenuItem.Text = "Sobre";
-            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
+            this.copiarF11ToolStripMenuItem.Name = "copiarF11ToolStripMenuItem";
+            this.copiarF11ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11;
+            this.copiarF11ToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.copiarF11ToolStripMenuItem.Text = "Copiar (F11)";
+            this.copiarF11ToolStripMenuItem.Click += new System.EventHandler(this.copiarF11ToolStripMenuItem_Click);
+            // 
+            // limparF10ToolStripMenuItem
+            // 
+            this.limparF10ToolStripMenuItem.Name = "limparF10ToolStripMenuItem";
+            this.limparF10ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F10;
+            this.limparF10ToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.limparF10ToolStripMenuItem.Text = "Limpar (F10)";
+            this.limparF10ToolStripMenuItem.Click += new System.EventHandler(this.limparF10ToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(884, 749);
+            this.ClientSize = new System.Drawing.Size(884, 681);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -864,7 +874,6 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gerador de Textos Padrões para o Jira";
@@ -916,7 +925,6 @@
         private System.Windows.Forms.RadioButton rbHomologacao;
         private System.Windows.Forms.RadioButton rbProducao;
         private System.Windows.Forms.Button btNovo;
-        private System.Windows.Forms.Button btCancelar;
         private System.Windows.Forms.Button btCopiar;
         private System.Windows.Forms.TabControl tbEscolhas;
         private System.Windows.Forms.TabPage tbProblemas;
@@ -954,6 +962,8 @@
         private System.Windows.Forms.RadioButton rbAnexoSim;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copiarF11ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem limparF10ToolStripMenuItem;
     }
 }
 
