@@ -100,12 +100,31 @@
             this.btCopiar = new System.Windows.Forms.Button();
             this.copiarF11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.limparF10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dataVersao = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.horaCompilacao = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbBateriaTeste = new System.Windows.Forms.ComboBox();
+            this.tbRIT01 = new System.Windows.Forms.TextBox();
+            this.textBoxRIT01 = new System.Windows.Forms.TextBox();
+            this.cbRIT01 = new System.Windows.Forms.CheckBox();
+            this.cbRIT02 = new System.Windows.Forms.CheckBox();
+            this.textBoxRIT02 = new System.Windows.Forms.TextBox();
+            this.tbRIT02 = new System.Windows.Forms.TextBox();
+            this.cbRIT03 = new System.Windows.Forms.CheckBox();
+            this.textBoxRIT03 = new System.Windows.Forms.TextBox();
+            this.tbRIT03 = new System.Windows.Forms.TextBox();
+            this.cbRIT04 = new System.Windows.Forms.CheckBox();
+            this.textBoxRIT04 = new System.Windows.Forms.TextBox();
+            this.tbRIT04 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tbEscolhas.SuspendLayout();
             this.tbProblemas.SuspendLayout();
+            this.tbRITQualidade.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -767,12 +786,31 @@
             // tbRITQualidade
             // 
             this.tbRITQualidade.BackColor = System.Drawing.Color.Black;
+            this.tbRITQualidade.Controls.Add(this.cbRIT04);
+            this.tbRITQualidade.Controls.Add(this.textBoxRIT04);
+            this.tbRITQualidade.Controls.Add(this.tbRIT04);
+            this.tbRITQualidade.Controls.Add(this.cbRIT03);
+            this.tbRITQualidade.Controls.Add(this.textBoxRIT03);
+            this.tbRITQualidade.Controls.Add(this.tbRIT03);
+            this.tbRITQualidade.Controls.Add(this.cbRIT02);
+            this.tbRITQualidade.Controls.Add(this.textBoxRIT02);
+            this.tbRITQualidade.Controls.Add(this.tbRIT02);
+            this.tbRITQualidade.Controls.Add(this.cbRIT01);
+            this.tbRITQualidade.Controls.Add(this.textBoxRIT01);
+            this.tbRITQualidade.Controls.Add(this.tbRIT01);
+            this.tbRITQualidade.Controls.Add(this.cbBateriaTeste);
+            this.tbRITQualidade.Controls.Add(this.label15);
+            this.tbRITQualidade.Controls.Add(this.horaCompilacao);
+            this.tbRITQualidade.Controls.Add(this.label14);
+            this.tbRITQualidade.Controls.Add(this.dataVersao);
+            this.tbRITQualidade.Controls.Add(this.label13);
             this.tbRITQualidade.ForeColor = System.Drawing.SystemColors.Control;
             this.tbRITQualidade.Location = new System.Drawing.Point(4, 25);
             this.tbRITQualidade.Name = "tbRITQualidade";
-            this.tbRITQualidade.Size = new System.Drawing.Size(842, 544);
+            this.tbRITQualidade.Size = new System.Drawing.Size(842, 490);
             this.tbRITQualidade.TabIndex = 5;
             this.tbRITQualidade.Text = "RIT Qualidade";
+            this.tbRITQualidade.Enter += new System.EventHandler(this.tbRITQualidade_Enter);
             // 
             // tbRAResumido
             // 
@@ -860,6 +898,227 @@
             this.limparF10ToolStripMenuItem.Text = "Limpar (F10)";
             this.limparF10ToolStripMenuItem.Click += new System.EventHandler(this.limparF10ToolStripMenuItem_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(91, 13);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Data Compilação:";
+            // 
+            // dataVersao
+            // 
+            this.dataVersao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dataVersao.Location = new System.Drawing.Point(110, 16);
+            this.dataVersao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.dataVersao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dataVersao.Name = "dataVersao";
+            this.dataVersao.Size = new System.Drawing.Size(89, 20);
+            this.dataVersao.TabIndex = 4;
+            this.dataVersao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(219, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(91, 13);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Hora Compilação:";
+            // 
+            // horaCompilacao
+            // 
+            this.horaCompilacao.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.horaCompilacao.Location = new System.Drawing.Point(316, 16);
+            this.horaCompilacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.horaCompilacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.horaCompilacao.Name = "horaCompilacao";
+            this.horaCompilacao.Size = new System.Drawing.Size(89, 20);
+            this.horaCompilacao.TabIndex = 6;
+            this.horaCompilacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(432, 22);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 13);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Bateria de Teste:";
+            // 
+            // cbBateriaTeste
+            // 
+            this.cbBateriaTeste.FormattingEnabled = true;
+            this.cbBateriaTeste.Items.AddRange(new object[] {
+            "1ª",
+            "2ª",
+            "3ª",
+            "4ª",
+            "5ª",
+            "6ª",
+            "7ª",
+            "8ª",
+            "9ª",
+            "10ª",
+            "11ª",
+            "12ª",
+            "13ª",
+            "14ª",
+            "15ª",
+            "16ª",
+            "17ª",
+            "18ª",
+            "19ª",
+            "20ª",
+            "21ª",
+            "22ª",
+            "23ª",
+            "24ª",
+            "25ª",
+            "26ª",
+            "27ª",
+            "28ª",
+            "29ª",
+            "30ª"});
+            this.cbBateriaTeste.Location = new System.Drawing.Point(523, 14);
+            this.cbBateriaTeste.Name = "cbBateriaTeste";
+            this.cbBateriaTeste.Size = new System.Drawing.Size(36, 21);
+            this.cbBateriaTeste.TabIndex = 8;
+            this.cbBateriaTeste.Text = "1ª";
+            // 
+            // tbRIT01
+            // 
+            this.tbRIT01.Location = new System.Drawing.Point(72, 48);
+            this.tbRIT01.MaxLength = 250;
+            this.tbRIT01.Name = "tbRIT01";
+            this.tbRIT01.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT01.TabIndex = 7;
+            this.tbRIT01.Text = "1";
+            // 
+            // textBoxRIT01
+            // 
+            this.textBoxRIT01.AcceptsReturn = true;
+            this.textBoxRIT01.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxRIT01.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxRIT01.Location = new System.Drawing.Point(9, 75);
+            this.textBoxRIT01.Multiline = true;
+            this.textBoxRIT01.Name = "textBoxRIT01";
+            this.textBoxRIT01.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT01.TabIndex = 10;
+            // 
+            // cbRIT01
+            // 
+            this.cbRIT01.AutoSize = true;
+            this.cbRIT01.Checked = true;
+            this.cbRIT01.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbRIT01.Location = new System.Drawing.Point(9, 51);
+            this.cbRIT01.Name = "cbRIT01";
+            this.cbRIT01.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT01.TabIndex = 11;
+            this.cbRIT01.Text = "RIT nº";
+            this.cbRIT01.UseVisualStyleBackColor = true;
+            this.cbRIT01.CheckedChanged += new System.EventHandler(this.cbRIT01_CheckedChanged);
+            // 
+            // cbRIT02
+            // 
+            this.cbRIT02.AutoSize = true;
+            this.cbRIT02.Location = new System.Drawing.Point(9, 152);
+            this.cbRIT02.Name = "cbRIT02";
+            this.cbRIT02.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT02.TabIndex = 14;
+            this.cbRIT02.Text = "RIT nº";
+            this.cbRIT02.UseVisualStyleBackColor = true;
+            this.cbRIT02.CheckedChanged += new System.EventHandler(this.cbRIT02_CheckedChanged);
+            // 
+            // textBoxRIT02
+            // 
+            this.textBoxRIT02.AcceptsReturn = true;
+            this.textBoxRIT02.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxRIT02.Enabled = false;
+            this.textBoxRIT02.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxRIT02.Location = new System.Drawing.Point(9, 176);
+            this.textBoxRIT02.Multiline = true;
+            this.textBoxRIT02.Name = "textBoxRIT02";
+            this.textBoxRIT02.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT02.TabIndex = 13;
+            // 
+            // tbRIT02
+            // 
+            this.tbRIT02.Enabled = false;
+            this.tbRIT02.Location = new System.Drawing.Point(72, 149);
+            this.tbRIT02.MaxLength = 250;
+            this.tbRIT02.Name = "tbRIT02";
+            this.tbRIT02.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT02.TabIndex = 12;
+            this.tbRIT02.Text = "2";
+            // 
+            // cbRIT03
+            // 
+            this.cbRIT03.AutoSize = true;
+            this.cbRIT03.Location = new System.Drawing.Point(9, 253);
+            this.cbRIT03.Name = "cbRIT03";
+            this.cbRIT03.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT03.TabIndex = 17;
+            this.cbRIT03.Text = "RIT nº";
+            this.cbRIT03.UseVisualStyleBackColor = true;
+            this.cbRIT03.CheckedChanged += new System.EventHandler(this.cbRIT03_CheckedChanged);
+            // 
+            // textBoxRIT03
+            // 
+            this.textBoxRIT03.AcceptsReturn = true;
+            this.textBoxRIT03.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxRIT03.Enabled = false;
+            this.textBoxRIT03.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxRIT03.Location = new System.Drawing.Point(9, 277);
+            this.textBoxRIT03.Multiline = true;
+            this.textBoxRIT03.Name = "textBoxRIT03";
+            this.textBoxRIT03.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT03.TabIndex = 16;
+            // 
+            // tbRIT03
+            // 
+            this.tbRIT03.Enabled = false;
+            this.tbRIT03.Location = new System.Drawing.Point(72, 250);
+            this.tbRIT03.MaxLength = 250;
+            this.tbRIT03.Name = "tbRIT03";
+            this.tbRIT03.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT03.TabIndex = 15;
+            this.tbRIT03.Text = "3";
+            // 
+            // cbRIT04
+            // 
+            this.cbRIT04.AutoSize = true;
+            this.cbRIT04.Location = new System.Drawing.Point(9, 353);
+            this.cbRIT04.Name = "cbRIT04";
+            this.cbRIT04.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT04.TabIndex = 20;
+            this.cbRIT04.Text = "RIT nº";
+            this.cbRIT04.UseVisualStyleBackColor = true;
+            this.cbRIT04.CheckedChanged += new System.EventHandler(this.cbRIT04_CheckedChanged);
+            // 
+            // textBoxRIT04
+            // 
+            this.textBoxRIT04.AcceptsReturn = true;
+            this.textBoxRIT04.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBoxRIT04.Enabled = false;
+            this.textBoxRIT04.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxRIT04.Location = new System.Drawing.Point(9, 377);
+            this.textBoxRIT04.Multiline = true;
+            this.textBoxRIT04.Name = "textBoxRIT04";
+            this.textBoxRIT04.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT04.TabIndex = 19;
+            // 
+            // tbRIT04
+            // 
+            this.tbRIT04.Enabled = false;
+            this.tbRIT04.Location = new System.Drawing.Point(72, 350);
+            this.tbRIT04.MaxLength = 250;
+            this.tbRIT04.Name = "tbRIT04";
+            this.tbRIT04.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT04.TabIndex = 18;
+            this.tbRIT04.Text = "4";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,6 +1146,8 @@
             this.tbEscolhas.ResumeLayout(false);
             this.tbProblemas.ResumeLayout(false);
             this.tbProblemas.PerformLayout();
+            this.tbRITQualidade.ResumeLayout(false);
+            this.tbRITQualidade.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -965,6 +1226,24 @@
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copiarF11ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem limparF10ToolStripMenuItem;
+        private System.Windows.Forms.DateTimePicker dataVersao;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker horaCompilacao;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox cbRIT04;
+        private System.Windows.Forms.TextBox textBoxRIT04;
+        private System.Windows.Forms.TextBox tbRIT04;
+        private System.Windows.Forms.CheckBox cbRIT03;
+        private System.Windows.Forms.TextBox textBoxRIT03;
+        private System.Windows.Forms.TextBox tbRIT03;
+        private System.Windows.Forms.CheckBox cbRIT02;
+        private System.Windows.Forms.TextBox textBoxRIT02;
+        private System.Windows.Forms.TextBox tbRIT02;
+        private System.Windows.Forms.CheckBox cbRIT01;
+        private System.Windows.Forms.TextBox textBoxRIT01;
+        private System.Windows.Forms.TextBox tbRIT01;
+        private System.Windows.Forms.ComboBox cbBateriaTeste;
+        private System.Windows.Forms.Label label15;
     }
 }
 

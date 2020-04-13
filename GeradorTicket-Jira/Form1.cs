@@ -116,7 +116,24 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                string reproduzido = "{panel:title=*Registro de Análise de Qualidade - 1º BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
+                                        + "{ panel: title = *TESTES REALIZADOS EM*| borderStyle = solid | borderColor =#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "*Testes Realizados na Versão: **{color:#d04437}"
+                                        + tbVersao.Text
+                                        + "{color}* *Local Testado:* *{color:#0000FF}"
+                                        + tbHostname.Text
+                                        + " - "
+                                        + tbDatabase.Text
+                                        + " - "
+                                        + tbPorta.Text
+                                        + "{color}* - *Usuário:* *{color:#0000FF}"
+                                        + tbUsuario.Text
+                                        + "{color}* - *Senha:* *{color:#0000FF}"
+                                        + tbPassword.Text
+                                        + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO HOMOLOGAÇÃO!{color}*"
+                                        + "{panel}";
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRAResumido))
             {
@@ -293,6 +310,77 @@ namespace GeradorTicket_Jira
             tbCliente.Text = "0000";
             tbPassword.Text = "1";
             tbCliente.Focus();
+        }
+
+        private void tbRITQualidade_Enter(object sender, EventArgs e)
+        {
+            dataVersao.Text = DateTime.Now.ToString();
+            horaCompilacao.Text = DateTime.Now.ToLocalTime().ToString();
+            cbRIT01.Checked = true;
+            tbRIT01.Enabled = true;
+            textBoxRIT01.Enabled = true;
+        }
+
+        private void cbRIT01_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbRIT01.Checked) {
+                cbRIT01.Checked = true;
+                tbRIT01.Enabled = true;
+                textBoxRIT01.Enabled = true;
+            }else
+            {
+                cbRIT01.Checked = false;
+                tbRIT01.Enabled = false;
+                textBoxRIT01.Enabled = false;
+            }
+        }
+
+        private void cbRIT02_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbRIT02.Checked)
+            {
+                cbRIT02.Checked = true;
+                tbRIT02.Enabled = true;
+                textBoxRIT02.Enabled = true;
+            }
+            else
+            {
+                cbRIT02.Checked = false;
+                tbRIT02.Enabled = false;
+                textBoxRIT02.Enabled = false;
+            }
+        }
+
+        private void cbRIT03_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbRIT03.Checked)
+            {
+                cbRIT03.Checked = true;
+                tbRIT03.Enabled = true;
+                textBoxRIT03.Enabled = true;
+            }
+            else
+            {
+                cbRIT03.Checked = false;
+                tbRIT03.Enabled = false;
+                textBoxRIT03.Enabled = false;
+            }
+        }
+
+        private void cbRIT04_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbRIT04.Checked)
+            {
+                cbRIT04.Checked = true;
+                tbRIT04.Enabled = true;
+                textBoxRIT04.Enabled = true;
+            }
+            else
+            {
+                cbRIT04.Checked = false;
+                tbRIT04.Enabled = false;
+                textBoxRIT04.Enabled = false;
+            }
         }
     }
 }
