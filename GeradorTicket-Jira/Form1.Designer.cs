@@ -730,7 +730,7 @@
             this.tbRITPreteste.Location = new System.Drawing.Point(4, 25);
             this.tbRITPreteste.Name = "tbRITPreteste";
             this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3);
-            this.tbRITPreteste.Size = new System.Drawing.Size(842, 544);
+            this.tbRITPreteste.Size = new System.Drawing.Size(842, 490);
             this.tbRITPreteste.TabIndex = 1;
             this.tbRITPreteste.Text = "RIT Pré Teste";
             // 
@@ -740,7 +740,7 @@
             this.rbTesteUnit.ForeColor = System.Drawing.SystemColors.Control;
             this.rbTesteUnit.Location = new System.Drawing.Point(4, 25);
             this.rbTesteUnit.Name = "rbTesteUnit";
-            this.rbTesteUnit.Size = new System.Drawing.Size(842, 544);
+            this.rbTesteUnit.Size = new System.Drawing.Size(842, 490);
             this.rbTesteUnit.TabIndex = 2;
             this.rbTesteUnit.Text = "Teste Unitário";
             // 
@@ -760,7 +760,7 @@
             this.tbLiberacaoTeste.ForeColor = System.Drawing.SystemColors.Control;
             this.tbLiberacaoTeste.Location = new System.Drawing.Point(4, 25);
             this.tbLiberacaoTeste.Name = "tbLiberacaoTeste";
-            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 544);
+            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 490);
             this.tbLiberacaoTeste.TabIndex = 4;
             this.tbLiberacaoTeste.Text = "Liberação";
             // 
@@ -790,7 +790,7 @@
             this.tbReview.ForeColor = System.Drawing.SystemColors.Control;
             this.tbReview.Location = new System.Drawing.Point(4, 25);
             this.tbReview.Name = "tbReview";
-            this.tbReview.Size = new System.Drawing.Size(842, 544);
+            this.tbReview.Size = new System.Drawing.Size(842, 490);
             this.tbReview.TabIndex = 7;
             this.tbReview.Text = "Review";
             // 
@@ -810,7 +810,7 @@
             this.tbSprint.ForeColor = System.Drawing.SystemColors.Control;
             this.tbSprint.Location = new System.Drawing.Point(4, 25);
             this.tbSprint.Name = "tbSprint";
-            this.tbSprint.Size = new System.Drawing.Size(842, 544);
+            this.tbSprint.Size = new System.Drawing.Size(842, 490);
             this.tbSprint.TabIndex = 9;
             this.tbSprint.Text = "Sprint Dev";
             // 
@@ -874,8 +874,9 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(900, 720);
+            this.MinimumSize = new System.Drawing.Size(900, 720);
             this.Name = "FormPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gerador de Textos Padrões para o Jira";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

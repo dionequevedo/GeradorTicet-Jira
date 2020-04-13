@@ -58,9 +58,45 @@ namespace GeradorTicket_Jira
 
                 Clipboard.SetText(ticket.ToString() + textos);
             }
-            else
+            else if (tbEscolhas.SelectedTab.Equals(tbRITPreteste))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!");
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(rbTesteUnit))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbTesteIntegrado))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbLiberacaoTeste))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbRAResumido))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbReview))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbWorkshop))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbSprint))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbOrientacao))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -68,9 +104,9 @@ namespace GeradorTicket_Jira
         {
             MessageBox.Show("Esta ferramenta foi desenvolvida com o intuíto de auxíliar na" +
                 " rotina de registrar tickets no Jira, seja na abertura de tickets de" +
-                " DEFEITO ou BUG, ou menos no registro de tickets de Implementações" +
+                " DEFEITO ou BUG, ou mesmo no registro de tickets de Implementações, " +
                 " Testes ou Orientação ao desenvolvedor." +
-                "\nCaso identifique problemas, tenha dúvidas ou deseje sugerir melhorias, favor contactar-me no e-mail dione.quevedo@mv.com.br", "Sobre!");
+                "\nCaso identifique problemas, tenha dúvidas ou deseje sugerir melhorias, favor contactar-me no e-mail dione.quevedo@mv.com.br", "Sobre!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void copiarF11ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,9 +137,45 @@ namespace GeradorTicket_Jira
 
                 Clipboard.SetText(ticket.ToString() + textos);
             }
-            else
+            else if (tbEscolhas.SelectedTab.Equals(tbRITPreteste))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!");
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(rbTesteUnit))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbTesteIntegrado))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbLiberacaoTeste))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbRAResumido))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbReview))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbWorkshop))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbSprint))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (tbEscolhas.SelectedTab.Equals(tbOrientacao))
+            {
+                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
