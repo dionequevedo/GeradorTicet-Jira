@@ -64,7 +64,28 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(rbTesteUnit))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
+                
+
+                string reproduzido = "{panel:title=*TESTE UNITÁRIO REALIZADO PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#0000FF|titleBGColor=#EE7600|bgColor=#ee7600}"
+                                        + "\n*Testes Realizados na Versão:* *{color:#0000FF}"
+                                        + tbVersao.Text
+                                        + "{color}* *Local Testado:* *{color:#0000FF}"
+                                        + tbHostname.Text
+                                        + " - "
+                                        + tbDatabase.Text
+                                        + " - "
+                                        + tbPorta.Text
+                                        + "{color}* - *Usuário:* *{color:#0000FF}"
+                                        + tbUsuario.Text
+                                        + "{color}* - *Senha:* *{color:#0000FF}"
+                                        + tbPassword.Text
+                                        + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO TESTE DE INTEGRAÇÃO!{color}*"
+                                        + "{panel}";
+  
+
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbTesteIntegrado))
             {
