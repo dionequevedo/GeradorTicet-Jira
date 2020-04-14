@@ -73,15 +73,15 @@ namespace GeradorTicket_Jira
                                         + "\n*Testes Realizados na Versão:* *{color:#0000FF}"
                                         + tbVersao.Text
                                         + "{color}* *Local Testado:* *{color:#0000FF}"
-                                        + tbHostname.Text
+                                        + tbHostnameUnitario.Text
                                         + " - "
-                                        + tbDatabase.Text
+                                        + tbDatabaseUnitario.Text
                                         + " - "
-                                        + tbPorta.Text
+                                        + tbPortaUnitario.Text
                                         + "{color}* - *Usuário:* *{color:#0000FF}"
-                                        + tbUsuario.Text
+                                        + tbUsuarioUnitario.Text
                                         + "{color}* - *Senha:* *{color:#0000FF}"
-                                        + tbPassword.Text
+                                        + tbSenhaUnitario.Text
                                         + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO TESTE DE INTEGRAÇÃO!{color}*"
                                         + "{panel}";
   
@@ -98,15 +98,15 @@ namespace GeradorTicket_Jira
                                         + "\n*Testes Realizados na Versão:* *{color:#0000FF}"
                                         + tbVersao.Text
                                         + "{color}* *Local Testado:* *{color:#0000FF}"
-                                        + tbHostname.Text
+                                        + tbHostnameIntegrado.Text
                                         + " - "
-                                        + tbDatabase.Text
+                                        + tbDatabaseIntegrado.Text
                                         + " - "
-                                        + tbPorta.Text
+                                        + tbPortaIntegrado.Text
                                         + "{color}* - *Usuário:* *{color:#0000FF}"
-                                        + tbUsuario.Text
+                                        + tbUsuarioIntegrado.Text
                                         + "{color}* - *Senha:* *{color:#0000FF}"
-                                        + tbPassword.Text
+                                        + tbSenhaIntegrado.Text
                                         + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO HOMOLOGAÇÃO!{color}*"
                                         + "{panel}";
 
@@ -114,7 +114,38 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbLiberacaoTeste))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                tbCliente.ReadOnly = true;
+
+
+                string reproduzido = "{panel:title=*TESTES REALIZADOS PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#43cd80|titleBGColor=#9AFF9A|bgColor=#43cd80}"
+                                        + "\n*SOLICITAÇÃO ATENDIDA*"
+                                        + "\n *Testes Realizados na Versão:* *{color:#d04437}"
+                                        + tbVersao.Text
+                                        + "{color}* de *{color:#d04437}"
+                                        + dtDataLiberacao.Text
+                                        + "{color}* as *{color:#d04437}"
+                                        + dtHoraLiberacao.Text
+                                        + "{color}*"
+                                        + " *Local Testado:* *{color: blue}"
+                                        + tbHostnameLiberacao.Text
+                                        + " - "
+                                        + tbDatabaseLiberacao.Text
+                                        + " - "
+                                        + tbPortaLiberacao.Text
+                                        + "{color}* - *Usuário:* *{color:blue}"
+                                        + tbUsuarioLiberacao.Text
+                                        + "{color}* - *Senha:* *{color:blue}"
+                                        + tbSenhaLiberacao.Text
+                                        + "{color}* - *Ambiente:* *{color:blue}"
+                                        + cbSO.Text
+                                        + "{color}* - *Resolução:* {color:blue} *1366 x 768*"
+                                        + "\n*Registro de Testes em:*"
+                                        + "\n*Observações:* {color: red}*"
+                                        + tbObsLiberacao.Text
+                                        + "*{color}"
+                                        + "\n{panel}";
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
@@ -211,15 +242,15 @@ namespace GeradorTicket_Jira
                                         + "\n*Testes Realizados na Versão:* *{color:#0000FF}"
                                         + tbVersao.Text
                                         + "{color}* *Local Testado:* *{color:#0000FF}"
-                                        + tbHostname.Text
+                                        + tbHostnameUnitario.Text
                                         + " - "
-                                        + tbDatabase.Text
+                                        + tbDatabaseUnitario.Text
                                         + " - "
-                                        + tbPorta.Text
+                                        + tbPortaUnitario.Text
                                         + "{color}* - *Usuário:* *{color:#0000FF}"
-                                        + tbUsuario.Text
+                                        + tbUsuarioUnitario.Text
                                         + "{color}* - *Senha:* *{color:#0000FF}"
-                                        + tbPassword.Text
+                                        + tbSenhaUnitario.Text
                                         + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO TESTE DE INTEGRAÇÃO!{color}*"
                                         + "{panel}";
 
@@ -236,15 +267,15 @@ namespace GeradorTicket_Jira
                                         + "\n*Testes Realizados na Versão:* *{color:#0000FF}"
                                         + tbVersao.Text
                                         + "{color}* *Local Testado:* *{color:#0000FF}"
-                                        + tbHostname.Text
+                                        + tbHostnameIntegrado.Text
                                         + " - "
-                                        + tbDatabase.Text
+                                        + tbDatabaseIntegrado.Text
                                         + " - "
-                                        + tbPorta.Text
+                                        + tbPortaIntegrado.Text
                                         + "{color}* - *Usuário:* *{color:#0000FF}"
-                                        + tbUsuario.Text
+                                        + tbUsuarioIntegrado.Text
                                         + "{color}* - *Senha:* *{color:#0000FF}"
-                                        + tbPassword.Text
+                                        + tbSenhaIntegrado.Text
                                         + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO HOMOLOGAÇÃO!{color}*"
                                         + "{panel}";
 
@@ -252,7 +283,38 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbLiberacaoTeste))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                tbCliente.ReadOnly = true;
+
+
+                string reproduzido = "{panel:title=*TESTES REALIZADOS PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#43cd80|titleBGColor=#9AFF9A|bgColor=#43cd80}"
+                                        + "\n*SOLICITAÇÃO ATENDIDA*"
+                                        + "\n *Testes Realizados na Versão:* *{color:#d04437}"
+                                        + tbVersao.Text
+                                        + "{color}* de *{color:#d04437}"
+                                        + dtDataLiberacao.Text
+                                        + "{color}* as *{color:#d04437}"
+                                        + dtHoraLiberacao.Text
+                                        + "{color}*"
+                                        + " *Local Testado:* *{color: blue}"
+                                        + tbHostnameLiberacao.Text
+                                        + " - "
+                                        + tbDatabaseLiberacao.Text
+                                        + " - "
+                                        + tbPortaLiberacao.Text
+                                        + "{color}* - *Usuário:* *{color:blue}"
+                                        + tbUsuarioLiberacao.Text
+                                        + "{color}* - *Senha:* *{color:blue}"
+                                        + tbSenhaLiberacao.Text
+                                        + "{color}* - *Ambiente:* *{color:blue}"
+                                        + cbSO.Text
+                                        + "{color}* - *Resolução:* {color:blue} *1366 x 768*"
+                                        + "\n*Registro de Testes em:*"
+                                        + "\n*Observações:* {color: red}*"
+                                        + tbObsLiberacao.Text
+                                        + "*{color}"
+                                        + "\n{panel}";
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
