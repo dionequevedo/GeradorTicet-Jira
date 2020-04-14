@@ -34,6 +34,8 @@ namespace GeradorTicket_Jira
         {
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
             {
+                tbCliente.ReadOnly = false;
+
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
 
                 string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
@@ -64,8 +66,8 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(rbTesteUnit))
             {
-                int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
-                
+                tbCliente.ReadOnly = true;
+
 
                 string reproduzido = "{panel:title=*TESTE UNITÁRIO REALIZADO PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#0000FF|titleBGColor=#EE7600|bgColor=#ee7600}"
                                         + "\n*Testes Realizados na Versão:* *{color:#0000FF}"
@@ -89,7 +91,7 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbTesteIntegrado))
             {
-                int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
+                tbCliente.ReadOnly = true;
 
 
                 string reproduzido = "{panel:title=*TESTE INTEGRADO REALIZADO PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#0000FF|titleBGColor=#eec900|bgColor=#eec900}"
@@ -170,6 +172,8 @@ namespace GeradorTicket_Jira
         {
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
             {
+                tbCliente.ReadOnly = false;
+
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
 
                 string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
@@ -200,7 +204,7 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(rbTesteUnit))
             {
-                int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
+                tbCliente.ReadOnly = true;
 
 
                 string reproduzido = "{panel:title=*TESTE UNITÁRIO REALIZADO PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#0000FF|titleBGColor=#EE7600|bgColor=#ee7600}"
@@ -291,7 +295,15 @@ namespace GeradorTicket_Jira
             tbVersao.Text = "5.74.00";
             tbCliente.Text = "0000";
             tbPassword.Text = "1";
-            tbCliente.Focus();
+            if (tbCliente.ReadOnly == false)
+            {
+                tbCliente.Focus();
+            }
+            else
+            {
+                tbVersao.Focus();
+            }
+            
         }
 
         private void btNovo_Click(object sender, EventArgs e)
@@ -309,7 +321,14 @@ namespace GeradorTicket_Jira
             tbVersao.Text = "5.74.00";
             tbCliente.Text = "0000";
             tbPassword.Text = "1";
-            tbCliente.Focus();
+            if (tbCliente.ReadOnly == false)
+            {
+                tbCliente.Focus();
+            }
+            else
+            {
+                tbVersao.Focus();
+            }
         }
 
         private void tbRITQualidade_Enter(object sender, EventArgs e)
@@ -319,6 +338,8 @@ namespace GeradorTicket_Jira
             cbRIT01.Checked = true;
             tbRIT01.Enabled = true;
             textBoxRIT01.Enabled = true;
+            tbCliente.Enabled = false;
+            tbCliente.ReadOnly = true;
         }
 
         private void cbRIT01_CheckedChanged(object sender, EventArgs e)
@@ -409,6 +430,25 @@ namespace GeradorTicket_Jira
             int valor_atual = int.Parse(tbRIT04.Text);
             valor_atual += 1;
             tbRIT04.Text = valor_atual.ToString();
+        }
+
+        private void tbRIT01_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '-')
+            {
+                int valor_atual = int.Parse(tbRIT01.Text);
+                valor_atual = Math.Abs(valor_atual);
+                if (valor_atual >= 2)
+                {
+                    valor_atual -= 1;
+                    tbRIT01.Text = valor_atual.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Não é possível reduzir o valor deste campo para menos de 1!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                
+            }    
         }
     }
 }
