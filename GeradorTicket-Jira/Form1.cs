@@ -167,7 +167,7 @@ namespace GeradorTicket_Jira
                                         + tbDatabaseRIT.Text
                                         + " - "
                                         + tbPortaRIT.Text
-                                        + "{color}* - *Usuário:* *{color:blue}"
+                                        + "{color}* \n*Usuário:* *{color:blue}"
                                         + tbUsuarioRIT.Text
                                         + "{color}* - *Senha:* *{color:blue}"
                                         + tbSenhaRIT.Text
@@ -392,7 +392,7 @@ namespace GeradorTicket_Jira
                                         + tbDatabaseRIT.Text
                                         + " - "
                                         + tbPortaRIT.Text
-                                        + "{color}* - *Usuário:* *{color:blue}"
+                                        + "{color}* \n*Usuário:* *{color:blue}"
                                         + tbUsuarioRIT.Text
                                         + "{color}* - *Senha:* *{color:blue}"
                                         + tbSenhaRIT.Text
