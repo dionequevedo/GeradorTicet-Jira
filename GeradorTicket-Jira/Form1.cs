@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Windows.Forms;
 using GeradorTicket_Jira.Entities;
 using GeradorTicket_Jira.Entities.Enums;
@@ -226,7 +227,22 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRAResumido))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                string solicitacao = tbSolicitacaoCliente.Text;
+                string justificativa = tbJustificativaCliente.Text;
+                string requisitos = tbRequisitosImplementacao.Text;
+                string resultado = tbResultadosEsperados.Text;
+                string reproduzido = "{panel:title=*REGISTRO DE ANÁLISE - RA RESUMIDO*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#8b3a62|bgColor=#fff0f5|titleColor=white}"
+                + "\n*RESUMO DA SOLICITAÇÃO DO CLIENTE:*\n"
+                + solicitacao
+                + "\n\n*JUSTIFICATIVA DA SOLICITAÇÃO DO CLIENTE:*\n"
+                + justificativa
+                + "\n\n*REQUISITOS PARA IMPLEMENTAÇÃO:*\n"
+                + requisitos
+                + "\n\n*RESULTADO:*\n"
+                + resultado
+                + "\n{panel}";
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbReview))
             {
@@ -451,7 +467,22 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRAResumido))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                string solicitacao = tbSolicitacaoCliente.Text;
+                string justificativa = tbJustificativaCliente.Text;
+                string requisitos = tbRequisitosImplementacao.Text;
+                string resultado = tbResultadosEsperados.Text;
+                string reproduzido = "{panel:title=*REGISTRO DE ANÁLISE - RA RESUMIDO*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#8b3a62|bgColor=#fff0f5|titleColor=white}"
+                + "\n*RESUMO DA SOLICITAÇÃO DO CLIENTE:*\n"
+                + solicitacao
+                + "\n\n*JUSTIFICATIVA DA SOLICITAÇÃO DO CLIENTE:*\n"
+                + justificativa
+                + "\n\n*REQUISITOS PARA IMPLEMENTAÇÃO:*\n"
+                + requisitos
+                + "\n\n*RESULTADO:*\n"
+                + resultado
+                + "\n{panel}";
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbReview))
             {
