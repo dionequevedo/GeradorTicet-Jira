@@ -170,20 +170,22 @@
             this.dataVersaoRIT = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.tbRAResumido = new System.Windows.Forms.TabPage();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lblSolicitacaoCliente = new System.Windows.Forms.TextBox();
+            this.tbResultadosEsperados = new System.Windows.Forms.TextBox();
+            this.tbRequisitosImplementacao = new System.Windows.Forms.TextBox();
+            this.tbJustificativaCliente = new System.Windows.Forms.TextBox();
+            this.tbSolicitacaoCliente = new System.Windows.Forms.TextBox();
             this.tbReview = new System.Windows.Forms.TabPage();
             this.tbWorkshop = new System.Windows.Forms.TabPage();
             this.tbSprint = new System.Windows.Forms.TabPage();
             this.tbOrientacao = new System.Windows.Forms.TabPage();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
-            this.tbResultadosEsperados = new System.Windows.Forms.TextBox();
-            this.tbRequisitosImplementacao = new System.Windows.Forms.TextBox();
-            this.tbJustificativaCliente = new System.Windows.Forms.TextBox();
-            this.tbSolicitacaoCliente = new System.Windows.Forms.TextBox();
-            this.lblSolicitacaoCliente = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbOrientacoes = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -196,6 +198,7 @@
             this.tbLiberacaoTeste.SuspendLayout();
             this.tbRITQualidade.SuspendLayout();
             this.tbRAResumido.SuspendLayout();
+            this.tbOrientacao.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1787,65 +1790,45 @@
             this.tbRAResumido.TabIndex = 6;
             this.tbRAResumido.Text = "RA Resumido";
             // 
-            // tbReview
+            // textBox7
             // 
-            this.tbReview.BackColor = System.Drawing.Color.Black;
-            this.tbReview.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbReview.Location = new System.Drawing.Point(4, 25);
-            this.tbReview.Name = "tbReview";
-            this.tbReview.Size = new System.Drawing.Size(842, 490);
-            this.tbReview.TabIndex = 7;
-            this.tbReview.Text = "Review";
+            this.textBox7.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox7.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox7.Location = new System.Drawing.Point(9, 359);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(167, 20);
+            this.textBox7.TabIndex = 27;
+            this.textBox7.Text = "Resultados Esperados:";
             // 
-            // tbWorkshop
+            // textBox6
             // 
-            this.tbWorkshop.BackColor = System.Drawing.Color.Black;
-            this.tbWorkshop.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbWorkshop.Location = new System.Drawing.Point(4, 25);
-            this.tbWorkshop.Name = "tbWorkshop";
-            this.tbWorkshop.Size = new System.Drawing.Size(842, 490);
-            this.tbWorkshop.TabIndex = 8;
-            this.tbWorkshop.Text = "WorkShop";
+            this.textBox6.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox6.Location = new System.Drawing.Point(10, 241);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(167, 20);
+            this.textBox6.TabIndex = 26;
+            this.textBox6.Text = "Requisitos para Implementação:";
             // 
-            // tbSprint
+            // textBox5
             // 
-            this.tbSprint.BackColor = System.Drawing.Color.Black;
-            this.tbSprint.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbSprint.Location = new System.Drawing.Point(4, 25);
-            this.tbSprint.Name = "tbSprint";
-            this.tbSprint.Size = new System.Drawing.Size(842, 490);
-            this.tbSprint.TabIndex = 9;
-            this.tbSprint.Text = "Sprint Dev";
+            this.textBox5.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox5.Location = new System.Drawing.Point(9, 120);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(167, 20);
+            this.textBox5.TabIndex = 25;
+            this.textBox5.Text = "Justificativa da Solicitação:";
             // 
-            // tbOrientacao
+            // lblSolicitacaoCliente
             // 
-            this.tbOrientacao.BackColor = System.Drawing.Color.Black;
-            this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbOrientacao.Location = new System.Drawing.Point(4, 25);
-            this.tbOrientacao.Name = "tbOrientacao";
-            this.tbOrientacao.Size = new System.Drawing.Size(842, 490);
-            this.tbOrientacao.TabIndex = 10;
-            this.tbOrientacao.Text = "Orientação";
-            // 
-            // btNovo
-            // 
-            this.btNovo.Location = new System.Drawing.Point(754, 528);
-            this.btNovo.Name = "btNovo";
-            this.btNovo.Size = new System.Drawing.Size(100, 30);
-            this.btNovo.TabIndex = 1;
-            this.btNovo.Text = "Limpar (F10)";
-            this.btNovo.UseVisualStyleBackColor = true;
-            this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
-            // 
-            // btCopiar
-            // 
-            this.btCopiar.Location = new System.Drawing.Point(648, 528);
-            this.btCopiar.Name = "btCopiar";
-            this.btCopiar.Size = new System.Drawing.Size(100, 30);
-            this.btCopiar.TabIndex = 0;
-            this.btCopiar.Text = "Copiar Memo";
-            this.btCopiar.UseVisualStyleBackColor = true;
-            this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
+            this.lblSolicitacaoCliente.BackColor = System.Drawing.SystemColors.MenuText;
+            this.lblSolicitacaoCliente.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblSolicitacaoCliente.Location = new System.Drawing.Point(9, 5);
+            this.lblSolicitacaoCliente.Name = "lblSolicitacaoCliente";
+            this.lblSolicitacaoCliente.Size = new System.Drawing.Size(167, 20);
+            this.lblSolicitacaoCliente.TabIndex = 24;
+            this.lblSolicitacaoCliente.Text = "Solicitação do Cliente:";
             // 
             // tbResultadosEsperados
             // 
@@ -1891,45 +1874,87 @@
             this.tbSolicitacaoCliente.Size = new System.Drawing.Size(825, 87);
             this.tbSolicitacaoCliente.TabIndex = 20;
             // 
-            // lblSolicitacaoCliente
+            // tbReview
             // 
-            this.lblSolicitacaoCliente.BackColor = System.Drawing.SystemColors.MenuText;
-            this.lblSolicitacaoCliente.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblSolicitacaoCliente.Location = new System.Drawing.Point(9, 5);
-            this.lblSolicitacaoCliente.Name = "lblSolicitacaoCliente";
-            this.lblSolicitacaoCliente.Size = new System.Drawing.Size(167, 20);
-            this.lblSolicitacaoCliente.TabIndex = 24;
-            this.lblSolicitacaoCliente.Text = "Solicitação do Cliente:";
+            this.tbReview.BackColor = System.Drawing.Color.Black;
+            this.tbReview.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbReview.Location = new System.Drawing.Point(4, 25);
+            this.tbReview.Name = "tbReview";
+            this.tbReview.Size = new System.Drawing.Size(842, 490);
+            this.tbReview.TabIndex = 7;
+            this.tbReview.Text = "Review";
             // 
-            // textBox5
+            // tbWorkshop
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(9, 120);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 20);
-            this.textBox5.TabIndex = 25;
-            this.textBox5.Text = "Justificativa da Solicitação:";
+            this.tbWorkshop.BackColor = System.Drawing.Color.Black;
+            this.tbWorkshop.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbWorkshop.Location = new System.Drawing.Point(4, 25);
+            this.tbWorkshop.Name = "tbWorkshop";
+            this.tbWorkshop.Size = new System.Drawing.Size(842, 490);
+            this.tbWorkshop.TabIndex = 8;
+            this.tbWorkshop.Text = "WorkShop";
             // 
-            // textBox6
+            // tbSprint
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(10, 241);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 20);
-            this.textBox6.TabIndex = 26;
-            this.textBox6.Text = "Requisitos para Implementação:";
+            this.tbSprint.BackColor = System.Drawing.Color.Black;
+            this.tbSprint.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbSprint.Location = new System.Drawing.Point(4, 25);
+            this.tbSprint.Name = "tbSprint";
+            this.tbSprint.Size = new System.Drawing.Size(842, 490);
+            this.tbSprint.TabIndex = 9;
+            this.tbSprint.Text = "Sprint Dev";
             // 
-            // textBox7
+            // tbOrientacao
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox7.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox7.Location = new System.Drawing.Point(9, 359);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 20);
-            this.textBox7.TabIndex = 27;
-            this.textBox7.Text = "Resultados Esperados:";
+            this.tbOrientacao.BackColor = System.Drawing.Color.Black;
+            this.tbOrientacao.Controls.Add(this.tbOrientacoes);
+            this.tbOrientacao.Controls.Add(this.label44);
+            this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbOrientacao.Location = new System.Drawing.Point(4, 25);
+            this.tbOrientacao.Name = "tbOrientacao";
+            this.tbOrientacao.Size = new System.Drawing.Size(842, 490);
+            this.tbOrientacao.TabIndex = 10;
+            this.tbOrientacao.Text = "Orientação";
+            // 
+            // btNovo
+            // 
+            this.btNovo.Location = new System.Drawing.Point(754, 528);
+            this.btNovo.Name = "btNovo";
+            this.btNovo.Size = new System.Drawing.Size(100, 30);
+            this.btNovo.TabIndex = 1;
+            this.btNovo.Text = "Limpar (F10)";
+            this.btNovo.UseVisualStyleBackColor = true;
+            this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
+            // 
+            // btCopiar
+            // 
+            this.btCopiar.Location = new System.Drawing.Point(648, 528);
+            this.btCopiar.Name = "btCopiar";
+            this.btCopiar.Size = new System.Drawing.Size(100, 30);
+            this.btCopiar.TabIndex = 0;
+            this.btCopiar.Text = "Copiar Memo";
+            this.btCopiar.UseVisualStyleBackColor = true;
+            this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
+            // 
+            // tbOrientacoes
+            // 
+            this.tbOrientacoes.AcceptsReturn = true;
+            this.tbOrientacoes.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbOrientacoes.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbOrientacoes.Location = new System.Drawing.Point(9, 21);
+            this.tbOrientacoes.Multiline = true;
+            this.tbOrientacoes.Name = "tbOrientacoes";
+            this.tbOrientacoes.Size = new System.Drawing.Size(825, 65);
+            this.tbOrientacoes.TabIndex = 50;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(6, 5);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(109, 13);
+            this.label44.TabIndex = 51;
+            this.label44.Text = "Orientações diversas:";
             // 
             // FormPrincipal
             // 
@@ -1970,6 +1995,8 @@
             this.tbRITQualidade.PerformLayout();
             this.tbRAResumido.ResumeLayout(false);
             this.tbRAResumido.PerformLayout();
+            this.tbOrientacao.ResumeLayout(false);
+            this.tbOrientacao.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2132,6 +2159,8 @@
         private System.Windows.Forms.TextBox tbRequisitosImplementacao;
         private System.Windows.Forms.TextBox tbJustificativaCliente;
         private System.Windows.Forms.TextBox tbSolicitacaoCliente;
+        private System.Windows.Forms.TextBox tbOrientacoes;
+        private System.Windows.Forms.Label label44;
     }
 }
 
