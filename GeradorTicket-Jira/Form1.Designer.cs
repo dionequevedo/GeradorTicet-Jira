@@ -49,6 +49,8 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbIdentificacao = new System.Windows.Forms.GroupBox();
+            this.cbResolucao = new System.Windows.Forms.ComboBox();
+            this.lblResolucao = new System.Windows.Forms.Label();
             this.cbAplicacao = new System.Windows.Forms.ComboBox();
             this.cbSO = new System.Windows.Forms.ComboBox();
             this.cbArea = new System.Windows.Forms.ComboBox();
@@ -122,6 +124,10 @@
             this.tbHostnameIntegrado = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tbLiberacaoTeste = new System.Windows.Forms.TabPage();
+            this.dtHoraLiberacao = new System.Windows.Forms.DateTimePicker();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dtDataLiberacao = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
             this.tbObsLiberacao = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -135,6 +141,16 @@
             this.tbHostnameLiberacao = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.tbRITQualidade = new System.Windows.Forms.TabPage();
+            this.label39 = new System.Windows.Forms.Label();
+            this.tbSenhaRIT = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.tbUsuarioRIT = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.tbDatabaseRIT = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.tbPortaRIT = new System.Windows.Forms.TextBox();
+            this.tbHostnameRIT = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
             this.cbRIT04 = new System.Windows.Forms.CheckBox();
             this.textBoxRIT04 = new System.Windows.Forms.TextBox();
             this.tbRIT04 = new System.Windows.Forms.TextBox();
@@ -147,11 +163,11 @@
             this.cbRIT01 = new System.Windows.Forms.CheckBox();
             this.textBoxRIT01 = new System.Windows.Forms.TextBox();
             this.tbRIT01 = new System.Windows.Forms.TextBox();
-            this.cbBateriaTeste = new System.Windows.Forms.ComboBox();
+            this.cbBateriaTesteRIT = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.horaCompilacao = new System.Windows.Forms.DateTimePicker();
+            this.horaCompilacaoRIT = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.dataVersao = new System.Windows.Forms.DateTimePicker();
+            this.dataVersaoRIT = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.tbRAResumido = new System.Windows.Forms.TabPage();
             this.tbReview = new System.Windows.Forms.TabPage();
@@ -160,10 +176,6 @@
             this.tbOrientacao = new System.Windows.Forms.TabPage();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
-            this.dtHoraLiberacao = new System.Windows.Forms.DateTimePicker();
-            this.label37 = new System.Windows.Forms.Label();
-            this.dtDataLiberacao = new System.Windows.Forms.DateTimePicker();
-            this.label38 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -327,6 +339,8 @@
             // 
             // gbIdentificacao
             // 
+            this.gbIdentificacao.Controls.Add(this.cbResolucao);
+            this.gbIdentificacao.Controls.Add(this.lblResolucao);
             this.gbIdentificacao.Controls.Add(this.cbAplicacao);
             this.gbIdentificacao.Controls.Add(this.cbSO);
             this.gbIdentificacao.Controls.Add(this.cbArea);
@@ -348,8 +362,42 @@
             this.gbIdentificacao.TabStop = false;
             this.gbIdentificacao.Text = "Identificação";
             // 
+            // cbResolucao
+            // 
+            this.cbResolucao.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbResolucao.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbResolucao.FormattingEnabled = true;
+            this.cbResolucao.Items.AddRange(new object[] {
+            "640 x 480",
+            "720 x 480",
+            "800 x 600",
+            "1024 x 768",
+            "1280 x 720",
+            "1366 x 768",
+            "1440 x 900",
+            "1600 x 900",
+            "1920 x 1080",
+            "2560 x 1080",
+            "2560 x 1440"});
+            this.cbResolucao.Location = new System.Drawing.Point(724, 20);
+            this.cbResolucao.Name = "cbResolucao";
+            this.cbResolucao.Size = new System.Drawing.Size(109, 21);
+            this.cbResolucao.TabIndex = 7;
+            this.cbResolucao.Text = "1366 x 768";
+            // 
+            // lblResolucao
+            // 
+            this.lblResolucao.AutoSize = true;
+            this.lblResolucao.Location = new System.Drawing.Point(656, 25);
+            this.lblResolucao.Name = "lblResolucao";
+            this.lblResolucao.Size = new System.Drawing.Size(58, 13);
+            this.lblResolucao.TabIndex = 8;
+            this.lblResolucao.Text = "Resolução";
+            // 
             // cbAplicacao
             // 
+            this.cbAplicacao.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbAplicacao.ForeColor = System.Drawing.SystemColors.Window;
             this.cbAplicacao.FormattingEnabled = true;
             this.cbAplicacao.Items.AddRange(new object[] {
             "AIHU",
@@ -369,14 +417,16 @@
             "SIGH",
             "SIGHPLUS",
             "UTIL"});
-            this.cbAplicacao.Location = new System.Drawing.Point(533, 19);
+            this.cbAplicacao.Location = new System.Drawing.Point(461, 21);
             this.cbAplicacao.Name = "cbAplicacao";
-            this.cbAplicacao.Size = new System.Drawing.Size(121, 21);
+            this.cbAplicacao.Size = new System.Drawing.Size(109, 21);
             this.cbAplicacao.TabIndex = 4;
             this.cbAplicacao.Text = "SIGH";
             // 
             // cbSO
             // 
+            this.cbSO.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbSO.ForeColor = System.Drawing.SystemColors.Window;
             this.cbSO.FormattingEnabled = true;
             this.cbSO.Items.AddRange(new object[] {
             "WINDOWS XP",
@@ -388,7 +438,7 @@
             "MAC OS X",
             "LINUX",
             "SOLARIS"});
-            this.cbSO.Location = new System.Drawing.Point(264, 48);
+            this.cbSO.Location = new System.Drawing.Point(247, 48);
             this.cbSO.Name = "cbSO";
             this.cbSO.Size = new System.Drawing.Size(121, 21);
             this.cbSO.TabIndex = 3;
@@ -396,6 +446,8 @@
             // 
             // cbArea
             // 
+            this.cbArea.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbArea.ForeColor = System.Drawing.SystemColors.Window;
             this.cbArea.FormattingEnabled = true;
             this.cbArea.Items.AddRange(new object[] {
             "NÃO INFORMADO",
@@ -422,24 +474,28 @@
             // 
             // tbVersao
             // 
-            this.tbVersao.Location = new System.Drawing.Point(264, 21);
+            this.tbVersao.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbVersao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbVersao.Location = new System.Drawing.Point(247, 21);
             this.tbVersao.Name = "tbVersao";
-            this.tbVersao.Size = new System.Drawing.Size(100, 20);
+            this.tbVersao.Size = new System.Drawing.Size(52, 20);
             this.tbVersao.TabIndex = 2;
             this.tbVersao.Text = "5.74.00";
             // 
             // tbCliente
             // 
+            this.tbCliente.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbCliente.ForeColor = System.Drawing.SystemColors.Window;
             this.tbCliente.Location = new System.Drawing.Point(55, 21);
             this.tbCliente.Name = "tbCliente";
-            this.tbCliente.Size = new System.Drawing.Size(100, 20);
+            this.tbCliente.Size = new System.Drawing.Size(46, 20);
             this.tbCliente.TabIndex = 0;
             this.tbCliente.Text = "0000";
             // 
             // rbHomologacao
             // 
             this.rbHomologacao.AutoSize = true;
-            this.rbHomologacao.Location = new System.Drawing.Point(610, 47);
+            this.rbHomologacao.Location = new System.Drawing.Point(538, 51);
             this.rbHomologacao.Name = "rbHomologacao";
             this.rbHomologacao.Size = new System.Drawing.Size(91, 17);
             this.rbHomologacao.TabIndex = 6;
@@ -451,7 +507,7 @@
             // 
             this.rbProducao.AutoSize = true;
             this.rbProducao.Checked = true;
-            this.rbProducao.Location = new System.Drawing.Point(533, 46);
+            this.rbProducao.Location = new System.Drawing.Point(461, 50);
             this.rbProducao.Name = "rbProducao";
             this.rbProducao.Size = new System.Drawing.Size(71, 17);
             this.rbProducao.TabIndex = 5;
@@ -462,7 +518,7 @@
             // lblAmbiente
             // 
             this.lblAmbiente.AutoSize = true;
-            this.lblAmbiente.Location = new System.Drawing.Point(465, 47);
+            this.lblAmbiente.Location = new System.Drawing.Point(393, 51);
             this.lblAmbiente.Name = "lblAmbiente";
             this.lblAmbiente.Size = new System.Drawing.Size(54, 13);
             this.lblAmbiente.TabIndex = 5;
@@ -471,7 +527,7 @@
             // lblAplicacao
             // 
             this.lblAplicacao.AutoSize = true;
-            this.lblAplicacao.Location = new System.Drawing.Point(465, 22);
+            this.lblAplicacao.Location = new System.Drawing.Point(393, 26);
             this.lblAplicacao.Name = "lblAplicacao";
             this.lblAplicacao.Size = new System.Drawing.Size(54, 13);
             this.lblAplicacao.TabIndex = 4;
@@ -480,7 +536,7 @@
             // lblSO
             // 
             this.lblSO.AutoSize = true;
-            this.lblSO.Location = new System.Drawing.Point(218, 51);
+            this.lblSO.Location = new System.Drawing.Point(201, 51);
             this.lblSO.Name = "lblSO";
             this.lblSO.Size = new System.Drawing.Size(31, 13);
             this.lblSO.TabIndex = 3;
@@ -489,7 +545,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(218, 22);
+            this.label2.Location = new System.Drawing.Point(192, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 2;
@@ -1180,6 +1236,50 @@
             this.tbLiberacaoTeste.TabIndex = 4;
             this.tbLiberacaoTeste.Text = "Liberação";
             // 
+            // dtHoraLiberacao
+            // 
+            this.dtHoraLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
+            this.dtHoraLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
+            this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtHoraLiberacao.Location = new System.Drawing.Point(309, 34);
+            this.dtHoraLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.dtHoraLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dtHoraLiberacao.Name = "dtHoraLiberacao";
+            this.dtHoraLiberacao.Size = new System.Drawing.Size(89, 20);
+            this.dtHoraLiberacao.TabIndex = 53;
+            this.dtHoraLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(212, 40);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(91, 13);
+            this.label37.TabIndex = 52;
+            this.label37.Text = "Hora Compilação:";
+            // 
+            // dtDataLiberacao
+            // 
+            this.dtDataLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
+            this.dtDataLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
+            this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtDataLiberacao.Location = new System.Drawing.Point(103, 34);
+            this.dtDataLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.dtDataLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dtDataLiberacao.Name = "dtDataLiberacao";
+            this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
+            this.dtDataLiberacao.TabIndex = 51;
+            this.dtDataLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(6, 40);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(91, 13);
+            this.label38.TabIndex = 50;
+            this.label38.Text = "Data Compilação:";
+            // 
             // tbObsLiberacao
             // 
             this.tbObsLiberacao.AcceptsReturn = true;
@@ -1298,6 +1398,16 @@
             // tbRITQualidade
             // 
             this.tbRITQualidade.BackColor = System.Drawing.Color.Black;
+            this.tbRITQualidade.Controls.Add(this.label39);
+            this.tbRITQualidade.Controls.Add(this.tbSenhaRIT);
+            this.tbRITQualidade.Controls.Add(this.label40);
+            this.tbRITQualidade.Controls.Add(this.tbUsuarioRIT);
+            this.tbRITQualidade.Controls.Add(this.label41);
+            this.tbRITQualidade.Controls.Add(this.tbDatabaseRIT);
+            this.tbRITQualidade.Controls.Add(this.label42);
+            this.tbRITQualidade.Controls.Add(this.tbPortaRIT);
+            this.tbRITQualidade.Controls.Add(this.tbHostnameRIT);
+            this.tbRITQualidade.Controls.Add(this.label43);
             this.tbRITQualidade.Controls.Add(this.cbRIT04);
             this.tbRITQualidade.Controls.Add(this.textBoxRIT04);
             this.tbRITQualidade.Controls.Add(this.tbRIT04);
@@ -1310,11 +1420,11 @@
             this.tbRITQualidade.Controls.Add(this.cbRIT01);
             this.tbRITQualidade.Controls.Add(this.textBoxRIT01);
             this.tbRITQualidade.Controls.Add(this.tbRIT01);
-            this.tbRITQualidade.Controls.Add(this.cbBateriaTeste);
+            this.tbRITQualidade.Controls.Add(this.cbBateriaTesteRIT);
             this.tbRITQualidade.Controls.Add(this.label15);
-            this.tbRITQualidade.Controls.Add(this.horaCompilacao);
+            this.tbRITQualidade.Controls.Add(this.horaCompilacaoRIT);
             this.tbRITQualidade.Controls.Add(this.label14);
-            this.tbRITQualidade.Controls.Add(this.dataVersao);
+            this.tbRITQualidade.Controls.Add(this.dataVersaoRIT);
             this.tbRITQualidade.Controls.Add(this.label13);
             this.tbRITQualidade.ForeColor = System.Drawing.SystemColors.Control;
             this.tbRITQualidade.Location = new System.Drawing.Point(4, 25);
@@ -1324,10 +1434,105 @@
             this.tbRITQualidade.Text = "RIT Qualidade";
             this.tbRITQualidade.Enter += new System.EventHandler(this.tbRITQualidade_Enter);
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(599, 10);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(44, 13);
+            this.label39.TabIndex = 57;
+            this.label39.Text = "SENHA";
+            // 
+            // tbSenhaRIT
+            // 
+            this.tbSenhaRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbSenhaRIT.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbSenhaRIT.Location = new System.Drawing.Point(649, 9);
+            this.tbSenhaRIT.Name = "tbSenhaRIT";
+            this.tbSenhaRIT.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaRIT.TabIndex = 53;
+            this.tbSenhaRIT.Text = "1";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(431, 11);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(56, 13);
+            this.label40.TabIndex = 56;
+            this.label40.Text = "USUÁRIO";
+            // 
+            // tbUsuarioRIT
+            // 
+            this.tbUsuarioRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbUsuarioRIT.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbUsuarioRIT.Location = new System.Drawing.Point(493, 9);
+            this.tbUsuarioRIT.Name = "tbUsuarioRIT";
+            this.tbUsuarioRIT.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioRIT.TabIndex = 52;
+            this.tbUsuarioRIT.Text = "QA.FUNCIONARIO";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(282, 10);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(64, 13);
+            this.label41.TabIndex = 55;
+            this.label41.Text = "DATABASE";
+            // 
+            // tbDatabaseRIT
+            // 
+            this.tbDatabaseRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbDatabaseRIT.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbDatabaseRIT.Location = new System.Drawing.Point(352, 8);
+            this.tbDatabaseRIT.Name = "tbDatabaseRIT";
+            this.tbDatabaseRIT.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseRIT.TabIndex = 51;
+            this.tbDatabaseRIT.Text = "bd0000";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(188, 11);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(44, 13);
+            this.label42.TabIndex = 54;
+            this.label42.Text = "PORTA";
+            // 
+            // tbPortaRIT
+            // 
+            this.tbPortaRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbPortaRIT.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbPortaRIT.Location = new System.Drawing.Point(238, 9);
+            this.tbPortaRIT.Name = "tbPortaRIT";
+            this.tbPortaRIT.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaRIT.TabIndex = 50;
+            this.tbPortaRIT.Text = "5430";
+            // 
+            // tbHostnameRIT
+            // 
+            this.tbHostnameRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbHostnameRIT.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbHostnameRIT.Location = new System.Drawing.Point(82, 8);
+            this.tbHostnameRIT.Name = "tbHostnameRIT";
+            this.tbHostnameRIT.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameRIT.TabIndex = 48;
+            this.tbHostnameRIT.Text = "192.168.0.0";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(7, 11);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(68, 13);
+            this.label43.TabIndex = 49;
+            this.label43.Text = "HOSTNAME";
+            // 
             // cbRIT04
             // 
             this.cbRIT04.AutoSize = true;
-            this.cbRIT04.Location = new System.Drawing.Point(9, 353);
+            this.cbRIT04.Location = new System.Drawing.Point(9, 381);
             this.cbRIT04.Name = "cbRIT04";
             this.cbRIT04.Size = new System.Drawing.Size(57, 17);
             this.cbRIT04.TabIndex = 20;
@@ -1341,7 +1546,7 @@
             this.textBoxRIT04.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT04.Enabled = false;
             this.textBoxRIT04.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT04.Location = new System.Drawing.Point(9, 377);
+            this.textBoxRIT04.Location = new System.Drawing.Point(9, 405);
             this.textBoxRIT04.Multiline = true;
             this.textBoxRIT04.Name = "textBoxRIT04";
             this.textBoxRIT04.Size = new System.Drawing.Size(825, 65);
@@ -1350,7 +1555,7 @@
             // tbRIT04
             // 
             this.tbRIT04.Enabled = false;
-            this.tbRIT04.Location = new System.Drawing.Point(72, 350);
+            this.tbRIT04.Location = new System.Drawing.Point(72, 378);
             this.tbRIT04.MaxLength = 250;
             this.tbRIT04.Name = "tbRIT04";
             this.tbRIT04.Size = new System.Drawing.Size(26, 20);
@@ -1361,7 +1566,7 @@
             // cbRIT03
             // 
             this.cbRIT03.AutoSize = true;
-            this.cbRIT03.Location = new System.Drawing.Point(9, 253);
+            this.cbRIT03.Location = new System.Drawing.Point(9, 281);
             this.cbRIT03.Name = "cbRIT03";
             this.cbRIT03.Size = new System.Drawing.Size(57, 17);
             this.cbRIT03.TabIndex = 17;
@@ -1375,7 +1580,7 @@
             this.textBoxRIT03.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT03.Enabled = false;
             this.textBoxRIT03.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT03.Location = new System.Drawing.Point(9, 277);
+            this.textBoxRIT03.Location = new System.Drawing.Point(9, 305);
             this.textBoxRIT03.Multiline = true;
             this.textBoxRIT03.Name = "textBoxRIT03";
             this.textBoxRIT03.Size = new System.Drawing.Size(825, 65);
@@ -1384,7 +1589,7 @@
             // tbRIT03
             // 
             this.tbRIT03.Enabled = false;
-            this.tbRIT03.Location = new System.Drawing.Point(72, 250);
+            this.tbRIT03.Location = new System.Drawing.Point(72, 278);
             this.tbRIT03.MaxLength = 250;
             this.tbRIT03.Name = "tbRIT03";
             this.tbRIT03.Size = new System.Drawing.Size(26, 20);
@@ -1395,7 +1600,7 @@
             // cbRIT02
             // 
             this.cbRIT02.AutoSize = true;
-            this.cbRIT02.Location = new System.Drawing.Point(9, 152);
+            this.cbRIT02.Location = new System.Drawing.Point(9, 180);
             this.cbRIT02.Name = "cbRIT02";
             this.cbRIT02.Size = new System.Drawing.Size(57, 17);
             this.cbRIT02.TabIndex = 14;
@@ -1409,7 +1614,7 @@
             this.textBoxRIT02.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT02.Enabled = false;
             this.textBoxRIT02.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT02.Location = new System.Drawing.Point(9, 176);
+            this.textBoxRIT02.Location = new System.Drawing.Point(9, 204);
             this.textBoxRIT02.Multiline = true;
             this.textBoxRIT02.Name = "textBoxRIT02";
             this.textBoxRIT02.Size = new System.Drawing.Size(825, 65);
@@ -1418,7 +1623,7 @@
             // tbRIT02
             // 
             this.tbRIT02.Enabled = false;
-            this.tbRIT02.Location = new System.Drawing.Point(72, 149);
+            this.tbRIT02.Location = new System.Drawing.Point(72, 177);
             this.tbRIT02.MaxLength = 250;
             this.tbRIT02.Name = "tbRIT02";
             this.tbRIT02.Size = new System.Drawing.Size(26, 20);
@@ -1431,7 +1636,7 @@
             this.cbRIT01.AutoSize = true;
             this.cbRIT01.Checked = true;
             this.cbRIT01.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRIT01.Location = new System.Drawing.Point(9, 51);
+            this.cbRIT01.Location = new System.Drawing.Point(9, 79);
             this.cbRIT01.Name = "cbRIT01";
             this.cbRIT01.Size = new System.Drawing.Size(57, 17);
             this.cbRIT01.TabIndex = 11;
@@ -1444,7 +1649,7 @@
             this.textBoxRIT01.AcceptsReturn = true;
             this.textBoxRIT01.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT01.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT01.Location = new System.Drawing.Point(9, 75);
+            this.textBoxRIT01.Location = new System.Drawing.Point(9, 103);
             this.textBoxRIT01.Multiline = true;
             this.textBoxRIT01.Name = "textBoxRIT01";
             this.textBoxRIT01.Size = new System.Drawing.Size(825, 65);
@@ -1453,7 +1658,7 @@
             // tbRIT01
             // 
             this.tbRIT01.AcceptsReturn = true;
-            this.tbRIT01.Location = new System.Drawing.Point(72, 48);
+            this.tbRIT01.Location = new System.Drawing.Point(72, 76);
             this.tbRIT01.MaxLength = 250;
             this.tbRIT01.Name = "tbRIT01";
             this.tbRIT01.Size = new System.Drawing.Size(26, 20);
@@ -1464,10 +1669,12 @@
             this.tbRIT01.DoubleClick += new System.EventHandler(this.tbRIT01_DoubleClick);
             this.tbRIT01.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRIT01_KeyPress);
             // 
-            // cbBateriaTeste
+            // cbBateriaTesteRIT
             // 
-            this.cbBateriaTeste.FormattingEnabled = true;
-            this.cbBateriaTeste.Items.AddRange(new object[] {
+            this.cbBateriaTesteRIT.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbBateriaTesteRIT.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbBateriaTesteRIT.FormattingEnabled = true;
+            this.cbBateriaTesteRIT.Items.AddRange(new object[] {
             "1ª",
             "2ª",
             "3ª",
@@ -1498,56 +1705,56 @@
             "28ª",
             "29ª",
             "30ª"});
-            this.cbBateriaTeste.Location = new System.Drawing.Point(523, 14);
-            this.cbBateriaTeste.Name = "cbBateriaTeste";
-            this.cbBateriaTeste.Size = new System.Drawing.Size(36, 21);
-            this.cbBateriaTeste.TabIndex = 8;
-            this.cbBateriaTeste.Text = "1ª";
+            this.cbBateriaTesteRIT.Location = new System.Drawing.Point(523, 42);
+            this.cbBateriaTesteRIT.Name = "cbBateriaTesteRIT";
+            this.cbBateriaTesteRIT.Size = new System.Drawing.Size(48, 21);
+            this.cbBateriaTesteRIT.TabIndex = 8;
+            this.cbBateriaTesteRIT.Text = "1ª";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(432, 22);
+            this.label15.Location = new System.Drawing.Point(432, 50);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(88, 13);
             this.label15.TabIndex = 7;
             this.label15.Text = "Bateria de Teste:";
             // 
-            // horaCompilacao
+            // horaCompilacaoRIT
             // 
-            this.horaCompilacao.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.horaCompilacao.Location = new System.Drawing.Point(316, 16);
-            this.horaCompilacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
-            this.horaCompilacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
-            this.horaCompilacao.Name = "horaCompilacao";
-            this.horaCompilacao.Size = new System.Drawing.Size(89, 20);
-            this.horaCompilacao.TabIndex = 6;
-            this.horaCompilacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            this.horaCompilacaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.horaCompilacaoRIT.Location = new System.Drawing.Point(316, 44);
+            this.horaCompilacaoRIT.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.horaCompilacaoRIT.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.horaCompilacaoRIT.Name = "horaCompilacaoRIT";
+            this.horaCompilacaoRIT.Size = new System.Drawing.Size(89, 20);
+            this.horaCompilacaoRIT.TabIndex = 6;
+            this.horaCompilacaoRIT.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(219, 22);
+            this.label14.Location = new System.Drawing.Point(219, 50);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(91, 13);
             this.label14.TabIndex = 5;
             this.label14.Text = "Hora Compilação:";
             // 
-            // dataVersao
+            // dataVersaoRIT
             // 
-            this.dataVersao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dataVersao.Location = new System.Drawing.Point(110, 16);
-            this.dataVersao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
-            this.dataVersao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
-            this.dataVersao.Name = "dataVersao";
-            this.dataVersao.Size = new System.Drawing.Size(89, 20);
-            this.dataVersao.TabIndex = 4;
-            this.dataVersao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            this.dataVersaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dataVersaoRIT.Location = new System.Drawing.Point(110, 44);
+            this.dataVersaoRIT.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.dataVersaoRIT.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dataVersaoRIT.Name = "dataVersaoRIT";
+            this.dataVersaoRIT.Size = new System.Drawing.Size(89, 20);
+            this.dataVersaoRIT.TabIndex = 4;
+            this.dataVersaoRIT.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 22);
+            this.label13.Location = new System.Drawing.Point(13, 50);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(91, 13);
             this.label13.TabIndex = 3;
@@ -1622,46 +1829,6 @@
             this.btCopiar.Text = "Copiar Memo";
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
-            // 
-            // dtHoraLiberacao
-            // 
-            this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtHoraLiberacao.Location = new System.Drawing.Point(309, 34);
-            this.dtHoraLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
-            this.dtHoraLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
-            this.dtHoraLiberacao.Name = "dtHoraLiberacao";
-            this.dtHoraLiberacao.Size = new System.Drawing.Size(89, 20);
-            this.dtHoraLiberacao.TabIndex = 53;
-            this.dtHoraLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(212, 40);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(91, 13);
-            this.label37.TabIndex = 52;
-            this.label37.Text = "Hora Compilação:";
-            // 
-            // dtDataLiberacao
-            // 
-            this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtDataLiberacao.Location = new System.Drawing.Point(103, 34);
-            this.dtDataLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
-            this.dtDataLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
-            this.dtDataLiberacao.Name = "dtDataLiberacao";
-            this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
-            this.dtDataLiberacao.TabIndex = 51;
-            this.dtDataLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 40);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(91, 13);
-            this.label38.TabIndex = 50;
-            this.label38.Text = "Data Compilação:";
             // 
             // FormPrincipal
             // 
@@ -1778,9 +1945,9 @@
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copiarF11ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem limparF10ToolStripMenuItem;
-        private System.Windows.Forms.DateTimePicker dataVersao;
+        private System.Windows.Forms.DateTimePicker dataVersaoRIT;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker horaCompilacao;
+        private System.Windows.Forms.DateTimePicker horaCompilacaoRIT;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox cbRIT04;
         private System.Windows.Forms.TextBox textBoxRIT04;
@@ -1794,7 +1961,7 @@
         private System.Windows.Forms.CheckBox cbRIT01;
         private System.Windows.Forms.TextBox textBoxRIT01;
         private System.Windows.Forms.TextBox tbRIT01;
-        private System.Windows.Forms.ComboBox cbBateriaTeste;
+        private System.Windows.Forms.ComboBox cbBateriaTesteRIT;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox11;
@@ -1842,6 +2009,18 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.DateTimePicker dtDataLiberacao;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.ComboBox cbResolucao;
+        private System.Windows.Forms.Label lblResolucao;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox tbSenhaRIT;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox tbUsuarioRIT;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox tbDatabaseRIT;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox tbPortaRIT;
+        private System.Windows.Forms.TextBox tbHostnameRIT;
+        private System.Windows.Forms.Label label43;
     }
 }
 

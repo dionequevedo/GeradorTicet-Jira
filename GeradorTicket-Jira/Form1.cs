@@ -138,7 +138,9 @@ namespace GeradorTicket_Jira
                                         + tbSenhaLiberacao.Text
                                         + "{color}* - *Ambiente:* *{color:blue}"
                                         + cbSO.Text
-                                        + "{color}* - *Resolução:* {color:blue} *1366 x 768*"
+                                        + "{color}* - *Resolução:* {color:blue} *"
+                                        + cbResolucao.Text
+                                        + "*"
                                         + "\n*Registro de Testes em:*"
                                         + "\n*Observações:* {color: red}*"
                                         + tbObsLiberacao.Text
@@ -149,22 +151,76 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
-                string reproduzido = "{panel:title=*Registro de Análise de Qualidade - 1º BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
-                                        + "{ panel: title = *TESTES REALIZADOS EM*| borderStyle = solid | borderColor =#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "*Testes Realizados na Versão: **{color:#d04437}"
+                string reproduzido = "{panel:title=*Registro de Análise de Qualidade - "
+                                        + cbBateriaTesteRIT.Text
+                                        + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
+                                        + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "*Testes Realizados na Versão:* *{color:#d04437}"
                                         + tbVersao.Text
-                                        + "{color}* *Local Testado:* *{color:#0000FF}"
-                                        + tbHostname.Text
+                                        + "{color}* de *{color:#d04437}"
+                                        + dataVersaoRIT.Text
+                                        + "{color}* as *{color:#d04437}"
+                                        + horaCompilacaoRIT.Text
+                                        + "{color}* *Local Testado:* *{color:blue}"
+                                        + tbHostnameRIT.Text
                                         + " - "
-                                        + tbDatabase.Text
+                                        + tbDatabaseRIT.Text
                                         + " - "
-                                        + tbPorta.Text
-                                        + "{color}* - *Usuário:* *{color:#0000FF}"
-                                        + tbUsuario.Text
-                                        + "{color}* - *Senha:* *{color:#0000FF}"
-                                        + tbPassword.Text
-                                        + "{color}* \n*Registro de Testes em:*\n*Observações:**{color:#0000FF} TICKET BLOQUEADO, AGUARDANDO HOMOLOGAÇÃO!{color}*"
+                                        + tbPortaRIT.Text
+                                        + "{color}* - *Usuário:* *{color:blue}"
+                                        + tbUsuarioRIT.Text
+                                        + "{color}* - *Senha:* *{color:blue}"
+                                        + tbSenhaRIT.Text
+                                        + "{color}*"
+                                        + "\n*Ambiente:* *{color:blue}"
+                                        + cbSO.Text
+                                        + "{color}* - *Resolução:* *{color:blue}"
+                                        + cbResolucao.Text
+                                        + "{color}*"
                                         + "{panel}";
+                if (cbRIT01.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT01.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT01.Text
+                        + "\n{panel}";
+                }
+
+                if (cbRIT02.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT02.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT02.Text
+                        + "\n{panel}";
+                }
+
+                if (cbRIT03.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT03.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT03.Text
+                        + "\n{panel}";
+                }
+
+                if (cbRIT04.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT04.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT04.Text
+                        + "\n{panel}";
+                }
 
                 Clipboard.SetText(reproduzido);
             }
@@ -307,7 +363,9 @@ namespace GeradorTicket_Jira
                                         + tbSenhaLiberacao.Text
                                         + "{color}* - *Ambiente:* *{color:blue}"
                                         + cbSO.Text
-                                        + "{color}* - *Resolução:* {color:blue} *1366 x 768*"
+                                        + "{color}* - *Resolução:* {color:blue} *"
+                                        + cbResolucao.Text
+                                        + "*"
                                         + "\n*Registro de Testes em:*"
                                         + "\n*Observações:* {color: red}*"
                                         + tbObsLiberacao.Text
@@ -318,7 +376,78 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                string reproduzido = "{panel:title=*Registro de Análise de Qualidade - "
+                                        + cbBateriaTesteRIT.Text
+                                        + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
+                                        + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "*Testes Realizados na Versão:* *{color:#d04437}"
+                                        + tbVersao.Text
+                                        + "{color}* de *{color:#d04437}"
+                                        + dataVersaoRIT.Text
+                                        + "{color}* as *{color:#d04437}"
+                                        + horaCompilacaoRIT.Text
+                                        + "{color}* *Local Testado:* *{color:blue}"
+                                        + tbHostnameRIT.Text
+                                        + " - "
+                                        + tbDatabaseRIT.Text
+                                        + " - "
+                                        + tbPortaRIT.Text
+                                        + "{color}* - *Usuário:* *{color:blue}"
+                                        + tbUsuarioRIT.Text
+                                        + "{color}* - *Senha:* *{color:blue}"
+                                        + tbSenhaRIT.Text
+                                        + "{color}*"
+                                        + "\n*Ambiente:* *{color:blue}"
+                                        + cbSO.Text
+                                        + "{color}* - *Resolução:* *{color:blue}"
+                                        + cbResolucao.Text
+                                        + "{color}*"
+                                        + "{panel}";
+                if(cbRIT01.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT01.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT01.Text
+                        + "\n{panel}";
+                }
+
+                if (cbRIT02.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT02.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT02.Text
+                        + "\n{panel}";
+                }
+
+                if (cbRIT03.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT03.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT03.Text
+                        + "\n{panel}";
+                }
+
+                if (cbRIT04.Checked)
+                {
+                    reproduzido = reproduzido
+                        + "\n{panel:title=*RIT - "
+                        + tbRIT04.Text
+                        + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                        + "*DESCRIÇÃO:* "
+                        + textBoxRIT04.Text
+                        + "\n{panel}";
+                }
+
+                Clipboard.SetText(reproduzido);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRAResumido))
             {
@@ -395,8 +524,8 @@ namespace GeradorTicket_Jira
 
         private void tbRITQualidade_Enter(object sender, EventArgs e)
         {
-            dataVersao.Text = DateTime.Now.ToString();
-            horaCompilacao.Text = DateTime.Now.ToLocalTime().ToString();
+            dataVersaoRIT.Text = DateTime.Now.ToString();
+            horaCompilacaoRIT.Text = DateTime.Now.ToLocalTime().ToString();
             cbRIT01.Checked = true;
             tbRIT01.Enabled = true;
             textBoxRIT01.Enabled = true;
