@@ -348,7 +348,7 @@
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
@@ -642,6 +642,7 @@
             this.tbEscolhas.Size = new System.Drawing.Size(1133, 639);
             this.tbEscolhas.TabIndex = 4;
             this.tbEscolhas.TabStop = false;
+            this.tbEscolhas.Enter += new System.EventHandler(this.tbEscolhas_Enter);
             // 
             // tbProblemas
             // 
@@ -1341,8 +1342,10 @@
             // 
             this.dtHoraLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
             this.dtHoraLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
-            this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtHoraLiberacao.Location = new System.Drawing.Point(412, 42);
+            this.dtHoraLiberacao.CustomFormat = "hh:MM:ss";
+            this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtHoraLiberacao.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.dtHoraLiberacao.Location = new System.Drawing.Point(412, 54);
             this.dtHoraLiberacao.Margin = new System.Windows.Forms.Padding(4);
             this.dtHoraLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.dtHoraLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
@@ -1354,7 +1357,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(283, 49);
+            this.label37.Location = new System.Drawing.Point(283, 61);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(120, 17);
@@ -1365,8 +1368,9 @@
             // 
             this.dtDataLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
             this.dtDataLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
-            this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtDataLiberacao.Location = new System.Drawing.Point(137, 42);
+            this.dtDataLiberacao.CustomFormat = "dd/MM/yyyy";
+            this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtDataLiberacao.Location = new System.Drawing.Point(137, 54);
             this.dtDataLiberacao.Margin = new System.Windows.Forms.Padding(4);
             this.dtDataLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.dtDataLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
@@ -1378,7 +1382,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(8, 49);
+            this.label38.Location = new System.Drawing.Point(8, 61);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(119, 17);
@@ -1390,7 +1394,7 @@
             this.tbObsLiberacao.AcceptsReturn = true;
             this.tbObsLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbObsLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbObsLiberacao.Location = new System.Drawing.Point(12, 100);
+            this.tbObsLiberacao.Location = new System.Drawing.Point(12, 112);
             this.tbObsLiberacao.Margin = new System.Windows.Forms.Padding(4);
             this.tbObsLiberacao.Multiline = true;
             this.tbObsLiberacao.Name = "tbObsLiberacao";
@@ -1400,7 +1404,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(8, 80);
+            this.label36.Location = new System.Drawing.Point(8, 92);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(107, 17);
@@ -1555,7 +1559,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(799, 12);
+            this.label39.Location = new System.Drawing.Point(801, 12);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(55, 17);
@@ -1566,7 +1570,7 @@
             // 
             this.tbSenhaRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbSenhaRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaRIT.Location = new System.Drawing.Point(865, 11);
+            this.tbSenhaRIT.Location = new System.Drawing.Point(867, 11);
             this.tbSenhaRIT.Margin = new System.Windows.Forms.Padding(4);
             this.tbSenhaRIT.Name = "tbSenhaRIT";
             this.tbSenhaRIT.Size = new System.Drawing.Size(99, 22);
@@ -1576,7 +1580,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(575, 14);
+            this.label40.Location = new System.Drawing.Point(577, 14);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(70, 17);
@@ -1587,7 +1591,7 @@
             // 
             this.tbUsuarioRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbUsuarioRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioRIT.Location = new System.Drawing.Point(657, 11);
+            this.tbUsuarioRIT.Location = new System.Drawing.Point(659, 11);
             this.tbUsuarioRIT.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsuarioRIT.Name = "tbUsuarioRIT";
             this.tbUsuarioRIT.Size = new System.Drawing.Size(132, 22);
@@ -1597,7 +1601,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(376, 12);
+            this.label41.Location = new System.Drawing.Point(378, 12);
             this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(81, 17);
@@ -1608,7 +1612,7 @@
             // 
             this.tbDatabaseRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbDatabaseRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseRIT.Location = new System.Drawing.Point(469, 10);
+            this.tbDatabaseRIT.Location = new System.Drawing.Point(471, 10);
             this.tbDatabaseRIT.Margin = new System.Windows.Forms.Padding(4);
             this.tbDatabaseRIT.Name = "tbDatabaseRIT";
             this.tbDatabaseRIT.Size = new System.Drawing.Size(99, 22);
@@ -1618,7 +1622,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(251, 14);
+            this.label42.Location = new System.Drawing.Point(253, 14);
             this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(56, 17);
@@ -1629,7 +1633,7 @@
             // 
             this.tbPortaRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPortaRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaRIT.Location = new System.Drawing.Point(317, 11);
+            this.tbPortaRIT.Location = new System.Drawing.Point(319, 11);
             this.tbPortaRIT.Margin = new System.Windows.Forms.Padding(4);
             this.tbPortaRIT.Name = "tbPortaRIT";
             this.tbPortaRIT.Size = new System.Drawing.Size(49, 22);
@@ -1640,7 +1644,7 @@
             // 
             this.tbHostnameRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbHostnameRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameRIT.Location = new System.Drawing.Point(109, 10);
+            this.tbHostnameRIT.Location = new System.Drawing.Point(111, 10);
             this.tbHostnameRIT.Margin = new System.Windows.Forms.Padding(4);
             this.tbHostnameRIT.Name = "tbHostnameRIT";
             this.tbHostnameRIT.Size = new System.Drawing.Size(132, 22);
@@ -1650,7 +1654,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(9, 14);
+            this.label43.Location = new System.Drawing.Point(11, 14);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(86, 17);
@@ -1864,7 +1868,8 @@
             // 
             // horaCompilacaoRIT
             // 
-            this.horaCompilacaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.horaCompilacaoRIT.CustomFormat = "hh:MM:ss";
+            this.horaCompilacaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.horaCompilacaoRIT.Location = new System.Drawing.Point(421, 54);
             this.horaCompilacaoRIT.Margin = new System.Windows.Forms.Padding(4);
             this.horaCompilacaoRIT.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
@@ -1886,8 +1891,9 @@
             // 
             // dataVersaoRIT
             // 
-            this.dataVersaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dataVersaoRIT.Location = new System.Drawing.Point(147, 54);
+            this.dataVersaoRIT.CustomFormat = "dd/MM/yyyy";
+            this.dataVersaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dataVersaoRIT.Location = new System.Drawing.Point(147, 55);
             this.dataVersaoRIT.Margin = new System.Windows.Forms.Padding(4);
             this.dataVersaoRIT.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.dataVersaoRIT.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);

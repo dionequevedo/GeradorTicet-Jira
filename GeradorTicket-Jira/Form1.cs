@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
 using GeradorTicket_Jira.Entities;
 using GeradorTicket_Jira.Entities.Enums;
 
@@ -519,7 +519,7 @@ namespace GeradorTicket_Jira
             rbProducao.Checked = true;
             tbPassword.Text = "1";
             tbPorta.Text = "5430";
-            tbHostname.Text = "192.168.0.0";
+            tbHostname.Text = "192.168.232.0";
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
@@ -535,7 +535,6 @@ namespace GeradorTicket_Jira
             {
                 tbVersao.Focus();
             }
-            
         }
 
         private void btNovo_Click(object sender, EventArgs e)
@@ -741,6 +740,13 @@ namespace GeradorTicket_Jira
         {
             tbEscolhas.SelectedTab = tbOrientacao;
             tbOrientacao.Focus();
+        }
+
+        private void tbEscolhas_Enter(object sender, EventArgs e)
+        {
+            dtDataLiberacao.CustomFormat = "dd/MM/yyyy";
+            dtDataLiberacao.Text = DateTime.Now.ToString();
+            dtHoraLiberacao.Text = DateTime.Now.ToLocalTime().ToString();
         }
     }
 }
