@@ -186,6 +186,10 @@
             this.label44 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
+            this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blackToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -209,7 +213,8 @@
             this.limparF10ToolStripMenuItem,
             this.copiarF11ToolStripMenuItem,
             this.sairToolStripMenuItem,
-            this.ajudaToolStripMenuItem});
+            this.ajudaToolStripMenuItem,
+            this.opçõesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1176, 28);
@@ -2113,6 +2118,35 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
+            // opçõesToolStripMenuItem
+            // 
+            this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alterarLayoutToolStripMenuItem});
+            this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
+            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.opçõesToolStripMenuItem.Text = "Opções";
+            // 
+            // alterarLayoutToolStripMenuItem
+            // 
+            this.alterarLayoutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.blackToolStripMenuItem,
+            this.blackToolStripMenuItem1});
+            this.alterarLayoutToolStripMenuItem.Name = "alterarLayoutToolStripMenuItem";
+            this.alterarLayoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.alterarLayoutToolStripMenuItem.Text = "Alterar Layout";
+            // 
+            // blackToolStripMenuItem
+            // 
+            this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
+            this.blackToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.blackToolStripMenuItem.Text = "Padrão";
+            // 
+            // blackToolStripMenuItem1
+            // 
+            this.blackToolStripMenuItem1.Name = "blackToolStripMenuItem1";
+            this.blackToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.blackToolStripMenuItem1.Text = "Black";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2319,6 +2353,10 @@
         private System.Windows.Forms.TextBox tbSolicitacaoCliente;
         private System.Windows.Forms.TextBox tbOrientacoes;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarLayoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem1;
     }
 }
 

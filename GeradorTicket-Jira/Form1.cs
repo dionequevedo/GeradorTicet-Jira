@@ -14,7 +14,7 @@ namespace GeradorTicket_Jira
         }
 
         Ticket ticket;
-        
+
         private void SairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
