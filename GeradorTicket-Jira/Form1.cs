@@ -15,14 +15,14 @@ namespace GeradorTicket_Jira
 
         Ticket ticket;
         
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void descriçãoDeProblemasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tbProblemas.Visible = true;
+            tbEscolhas.SelectedTab = tbProblemas;
             tbProblemas.Focus();
         }
 
@@ -681,6 +681,66 @@ namespace GeradorTicket_Jira
                 }
                 
             }    
+        }
+
+        private void préTesteSemRITToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbRITPreteste;
+            tbRITPreteste.Focus();
+        }
+
+        private void liberaçãoTesteUnitárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = rbTesteUnit;
+            rbTesteUnit.Focus();
+        }
+
+        private void liberaçãoTesteIngradoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbTesteIntegrado;
+            tbTesteIntegrado.Focus();
+        }
+
+        private void liberaçãoDeTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                tbEscolhas.SelectedTab = tbLiberacaoTeste;
+                tbLiberacaoTeste.Focus();
+        }
+
+        private void rITDeQualidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbRITQualidade;
+            tbRITQualidade.Focus();
+        }
+
+        private void modeloRAResumidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbRAResumido;
+            tbRAResumido.Focus();
+        }
+
+        private void reviewRealizadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbReview;
+            tbReview.Focus();
+        }
+
+        private void workShopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbWorkshop;
+            tbWorkshop.Focus();
+        }
+
+        private void sprintDevToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbSprint;
+            tbSprint.Focus();
+        }
+
+        private void orientaçãoDoDesenvolvedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tbEscolhas.SelectedTab = tbOrientacao;
+            tbOrientacao.Focus();
         }
     }
 }
