@@ -654,7 +654,7 @@
             this.tbEscolhas.Location = new System.Drawing.Point(4, 18);
             this.tbEscolhas.Name = "tbEscolhas";
             this.tbEscolhas.SelectedIndex = 0;
-            this.tbEscolhas.Size = new System.Drawing.Size(850, 519);
+            this.tbEscolhas.Size = new System.Drawing.Size(850, 504);
             this.tbEscolhas.TabIndex = 4;
             this.tbEscolhas.TabStop = false;
             this.tbEscolhas.Enter += new System.EventHandler(this.tbEscolhas_Enter);
@@ -689,8 +689,8 @@
             this.tbProblemas.ForeColor = System.Drawing.SystemColors.Control;
             this.tbProblemas.Location = new System.Drawing.Point(4, 25);
             this.tbProblemas.Name = "tbProblemas";
-            this.tbProblemas.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tbProblemas.Size = new System.Drawing.Size(842, 490);
+            this.tbProblemas.Padding = new System.Windows.Forms.Padding(3);
+            this.tbProblemas.Size = new System.Drawing.Size(842, 475);
             this.tbProblemas.TabIndex = 0;
             this.tbProblemas.Text = "Descrição do problema";
             this.tbProblemas.UseVisualStyleBackColor = true;
@@ -733,16 +733,16 @@
             this.tbParecer.AcceptsReturn = true;
             this.tbParecer.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbParecer.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbParecer.Location = new System.Drawing.Point(9, 402);
+            this.tbParecer.Location = new System.Drawing.Point(9, 394);
             this.tbParecer.Multiline = true;
             this.tbParecer.Name = "tbParecer";
-            this.tbParecer.Size = new System.Drawing.Size(825, 78);
+            this.tbParecer.Size = new System.Drawing.Size(825, 72);
             this.tbParecer.TabIndex = 9;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 384);
+            this.label11.Location = new System.Drawing.Point(7, 376);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(208, 13);
             this.label11.TabIndex = 18;
@@ -842,7 +842,7 @@
             this.tbPassoAPasso.Location = new System.Drawing.Point(8, 305);
             this.tbPassoAPasso.Multiline = true;
             this.tbPassoAPasso.Name = "tbPassoAPasso";
-            this.tbPassoAPasso.Size = new System.Drawing.Size(825, 73);
+            this.tbPassoAPasso.Size = new System.Drawing.Size(825, 62);
             this.tbPassoAPasso.TabIndex = 8;
             // 
             // label6
@@ -940,7 +940,7 @@
             this.tbRITPreteste.ForeColor = System.Drawing.SystemColors.Control;
             this.tbRITPreteste.Location = new System.Drawing.Point(4, 25);
             this.tbRITPreteste.Name = "tbRITPreteste";
-            this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3);
             this.tbRITPreteste.Size = new System.Drawing.Size(842, 490);
             this.tbRITPreteste.TabIndex = 1;
             this.tbRITPreteste.Text = "RIT Pré Teste";
@@ -2014,7 +2014,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(884, 609);
+            this.ClientSize = new System.Drawing.Size(884, 679);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
