@@ -281,6 +281,7 @@ namespace GeradorTicket_Jira
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
             {
                 tbCliente.ReadOnly = false;
+                tbCliente.Focus();
 
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
 
@@ -746,7 +747,14 @@ namespace GeradorTicket_Jira
         {
             dtDataLiberacao.CustomFormat = "dd/MM/yyyy";
             dtDataLiberacao.Text = DateTime.Now.ToString();
+            dtHoraLiberacao.CustomFormat = "HH:mm:ss";
             dtHoraLiberacao.Text = DateTime.Now.ToLocalTime().ToString();
+        }
+
+        private void tbProblemas_Enter(object sender, EventArgs e)
+        {
+            tbCliente.ReadOnly = false;
+            tbCliente.Focus();
         }
     }
 }
