@@ -75,7 +75,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Enums\TipoDocumento.cs" />
     <Compile Include="Entities\Enums\TipoTicket.cs" />
+    <Compile Include="Entities\GeradorCPF.cs" />
     <Compile Include="Entities\TextosPadroes.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

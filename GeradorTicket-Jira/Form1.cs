@@ -252,7 +252,7 @@ namespace GeradorTicket_Jira
             {
                 MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            else if (tbEscolhas.SelectedTab.Equals(tbSprint))
+            else if (tbEscolhas.SelectedTab.Equals(tbGeraDoc))
             {
                 MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -498,7 +498,7 @@ namespace GeradorTicket_Jira
             {
                 MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            else if (tbEscolhas.SelectedTab.Equals(tbSprint))
+            else if (tbEscolhas.SelectedTab.Equals(tbGeraDoc))
             {
                 MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -733,8 +733,8 @@ namespace GeradorTicket_Jira
 
         private void sprintDevToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tbEscolhas.SelectedTab = tbSprint;
-            tbSprint.Focus();
+            tbEscolhas.SelectedTab = tbGeraDoc;
+            tbGeraDoc.Focus();
         }
 
         private void orientaçãoDoDesenvolvedorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -755,6 +755,12 @@ namespace GeradorTicket_Jira
         {
             tbCliente.ReadOnly = false;
             tbCliente.Focus();
+        }
+
+        private void btnGeraCPF_Click(object sender, EventArgs e)
+        {
+            GeradorCPF CPF = new GeradorCPF();
+            tbGeraCPF.Text = CPF.GeraCPF();
         }
     }
 }

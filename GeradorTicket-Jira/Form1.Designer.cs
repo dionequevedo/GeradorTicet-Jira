@@ -184,12 +184,33 @@
             this.tbSolicitacaoCliente = new System.Windows.Forms.TextBox();
             this.tbReview = new System.Windows.Forms.TabPage();
             this.tbWorkshop = new System.Windows.Forms.TabPage();
-            this.tbSprint = new System.Windows.Forms.TabPage();
+            this.tbGeraDoc = new System.Windows.Forms.TabPage();
             this.tbOrientacao = new System.Windows.Forms.TabPage();
             this.tbOrientacoes = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
+            this.btnGeraCPF = new System.Windows.Forms.Button();
+            this.tbGeraCPF = new System.Windows.Forms.TextBox();
+            this.btnCopiaCPF = new System.Windows.Forms.Button();
+            this.btnCopiarCNS = new System.Windows.Forms.Button();
+            this.tbGeraCNS = new System.Windows.Forms.TextBox();
+            this.btnGeraCNS = new System.Windows.Forms.Button();
+            this.btnCopiaCNPJ = new System.Windows.Forms.Button();
+            this.tbGeraCNPJ = new System.Windows.Forms.TextBox();
+            this.btnGeraCNPJ = new System.Windows.Forms.Button();
+            this.btnCopiarTelefone = new System.Windows.Forms.Button();
+            this.tbGeraTelefone = new System.Windows.Forms.TextBox();
+            this.btnGeraTelefone = new System.Windows.Forms.Button();
+            this.btnCopiaCelular = new System.Windows.Forms.Button();
+            this.tbGeraCelular = new System.Windows.Forms.TextBox();
+            this.btnGeraCelular = new System.Windows.Forms.Button();
+            this.btnCopiaEmail = new System.Windows.Forms.Button();
+            this.tbGeraEmail = new System.Windows.Forms.TextBox();
+            this.btnGeraEmail = new System.Windows.Forms.Button();
+            this.btnCopiaNome = new System.Windows.Forms.Button();
+            this.tbGeraNome = new System.Windows.Forms.TextBox();
+            this.btnGeraNome = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -202,6 +223,7 @@
             this.tbLiberacaoTeste.SuspendLayout();
             this.tbRITQualidade.SuspendLayout();
             this.tbRAResumido.SuspendLayout();
+            this.tbGeraDoc.SuspendLayout();
             this.tbOrientacao.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -641,16 +663,16 @@
             // 
             this.tbEscolhas.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tbEscolhas.Controls.Add(this.tbProblemas);
-            this.tbEscolhas.Controls.Add(this.tbRITPreteste);
             this.tbEscolhas.Controls.Add(this.rbTesteUnit);
             this.tbEscolhas.Controls.Add(this.tbTesteIntegrado);
             this.tbEscolhas.Controls.Add(this.tbLiberacaoTeste);
             this.tbEscolhas.Controls.Add(this.tbRITQualidade);
+            this.tbEscolhas.Controls.Add(this.tbOrientacao);
+            this.tbEscolhas.Controls.Add(this.tbGeraDoc);
             this.tbEscolhas.Controls.Add(this.tbRAResumido);
             this.tbEscolhas.Controls.Add(this.tbReview);
             this.tbEscolhas.Controls.Add(this.tbWorkshop);
-            this.tbEscolhas.Controls.Add(this.tbSprint);
-            this.tbEscolhas.Controls.Add(this.tbOrientacao);
+            this.tbEscolhas.Controls.Add(this.tbRITPreteste);
             this.tbEscolhas.Location = new System.Drawing.Point(4, 18);
             this.tbEscolhas.Name = "tbEscolhas";
             this.tbEscolhas.SelectedIndex = 0;
@@ -941,7 +963,7 @@
             this.tbRITPreteste.Location = new System.Drawing.Point(4, 25);
             this.tbRITPreteste.Name = "tbRITPreteste";
             this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3);
-            this.tbRITPreteste.Size = new System.Drawing.Size(842, 490);
+            this.tbRITPreteste.Size = new System.Drawing.Size(842, 475);
             this.tbRITPreteste.TabIndex = 1;
             this.tbRITPreteste.Text = "RIT Pré Teste";
             // 
@@ -1056,7 +1078,7 @@
             this.rbTesteUnit.ForeColor = System.Drawing.SystemColors.Control;
             this.rbTesteUnit.Location = new System.Drawing.Point(4, 25);
             this.rbTesteUnit.Name = "rbTesteUnit";
-            this.rbTesteUnit.Size = new System.Drawing.Size(842, 490);
+            this.rbTesteUnit.Size = new System.Drawing.Size(842, 475);
             this.rbTesteUnit.TabIndex = 2;
             this.rbTesteUnit.Text = "Teste Unitário";
             // 
@@ -1171,7 +1193,7 @@
             this.tbTesteIntegrado.ForeColor = System.Drawing.SystemColors.Control;
             this.tbTesteIntegrado.Location = new System.Drawing.Point(4, 25);
             this.tbTesteIntegrado.Name = "tbTesteIntegrado";
-            this.tbTesteIntegrado.Size = new System.Drawing.Size(842, 490);
+            this.tbTesteIntegrado.Size = new System.Drawing.Size(842, 475);
             this.tbTesteIntegrado.TabIndex = 3;
             this.tbTesteIntegrado.Text = "Teste Integrado";
             // 
@@ -1292,7 +1314,7 @@
             this.tbLiberacaoTeste.ForeColor = System.Drawing.SystemColors.Control;
             this.tbLiberacaoTeste.Location = new System.Drawing.Point(4, 25);
             this.tbLiberacaoTeste.Name = "tbLiberacaoTeste";
-            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 490);
+            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 475);
             this.tbLiberacaoTeste.TabIndex = 4;
             this.tbLiberacaoTeste.Text = "Liberação";
             // 
@@ -1492,7 +1514,7 @@
             this.tbRITQualidade.ForeColor = System.Drawing.SystemColors.Control;
             this.tbRITQualidade.Location = new System.Drawing.Point(4, 25);
             this.tbRITQualidade.Name = "tbRITQualidade";
-            this.tbRITQualidade.Size = new System.Drawing.Size(842, 490);
+            this.tbRITQualidade.Size = new System.Drawing.Size(842, 475);
             this.tbRITQualidade.TabIndex = 5;
             this.tbRITQualidade.Text = "RIT Qualidade";
             this.tbRITQualidade.Enter += new System.EventHandler(this.tbRITQualidade_Enter);
@@ -1839,7 +1861,7 @@
             this.tbRAResumido.ForeColor = System.Drawing.SystemColors.Control;
             this.tbRAResumido.Location = new System.Drawing.Point(4, 25);
             this.tbRAResumido.Name = "tbRAResumido";
-            this.tbRAResumido.Size = new System.Drawing.Size(842, 490);
+            this.tbRAResumido.Size = new System.Drawing.Size(842, 475);
             this.tbRAResumido.TabIndex = 6;
             this.tbRAResumido.Text = "RA Resumido";
             // 
@@ -1933,7 +1955,7 @@
             this.tbReview.ForeColor = System.Drawing.SystemColors.Control;
             this.tbReview.Location = new System.Drawing.Point(4, 25);
             this.tbReview.Name = "tbReview";
-            this.tbReview.Size = new System.Drawing.Size(842, 490);
+            this.tbReview.Size = new System.Drawing.Size(842, 475);
             this.tbReview.TabIndex = 7;
             this.tbReview.Text = "Review";
             // 
@@ -1943,19 +1965,40 @@
             this.tbWorkshop.ForeColor = System.Drawing.SystemColors.Control;
             this.tbWorkshop.Location = new System.Drawing.Point(4, 25);
             this.tbWorkshop.Name = "tbWorkshop";
-            this.tbWorkshop.Size = new System.Drawing.Size(842, 490);
+            this.tbWorkshop.Size = new System.Drawing.Size(842, 475);
             this.tbWorkshop.TabIndex = 8;
             this.tbWorkshop.Text = "WorkShop";
             // 
-            // tbSprint
+            // tbGeraDoc
             // 
-            this.tbSprint.BackColor = System.Drawing.Color.Black;
-            this.tbSprint.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbSprint.Location = new System.Drawing.Point(4, 25);
-            this.tbSprint.Name = "tbSprint";
-            this.tbSprint.Size = new System.Drawing.Size(842, 490);
-            this.tbSprint.TabIndex = 9;
-            this.tbSprint.Text = "Sprint Dev";
+            this.tbGeraDoc.BackColor = System.Drawing.Color.Black;
+            this.tbGeraDoc.Controls.Add(this.btnCopiaNome);
+            this.tbGeraDoc.Controls.Add(this.tbGeraNome);
+            this.tbGeraDoc.Controls.Add(this.btnGeraNome);
+            this.tbGeraDoc.Controls.Add(this.btnCopiaEmail);
+            this.tbGeraDoc.Controls.Add(this.tbGeraEmail);
+            this.tbGeraDoc.Controls.Add(this.btnGeraEmail);
+            this.tbGeraDoc.Controls.Add(this.btnCopiaCelular);
+            this.tbGeraDoc.Controls.Add(this.tbGeraCelular);
+            this.tbGeraDoc.Controls.Add(this.btnGeraCelular);
+            this.tbGeraDoc.Controls.Add(this.btnCopiarTelefone);
+            this.tbGeraDoc.Controls.Add(this.tbGeraTelefone);
+            this.tbGeraDoc.Controls.Add(this.btnGeraTelefone);
+            this.tbGeraDoc.Controls.Add(this.btnCopiaCNPJ);
+            this.tbGeraDoc.Controls.Add(this.tbGeraCNPJ);
+            this.tbGeraDoc.Controls.Add(this.btnGeraCNPJ);
+            this.tbGeraDoc.Controls.Add(this.btnCopiarCNS);
+            this.tbGeraDoc.Controls.Add(this.tbGeraCNS);
+            this.tbGeraDoc.Controls.Add(this.btnGeraCNS);
+            this.tbGeraDoc.Controls.Add(this.btnCopiaCPF);
+            this.tbGeraDoc.Controls.Add(this.tbGeraCPF);
+            this.tbGeraDoc.Controls.Add(this.btnGeraCPF);
+            this.tbGeraDoc.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbGeraDoc.Location = new System.Drawing.Point(4, 25);
+            this.tbGeraDoc.Name = "tbGeraDoc";
+            this.tbGeraDoc.Size = new System.Drawing.Size(842, 475);
+            this.tbGeraDoc.TabIndex = 9;
+            this.tbGeraDoc.Text = "Gerador DOC";
             // 
             // tbOrientacao
             // 
@@ -1965,7 +2008,7 @@
             this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
             this.tbOrientacao.Location = new System.Drawing.Point(4, 25);
             this.tbOrientacao.Name = "tbOrientacao";
-            this.tbOrientacao.Size = new System.Drawing.Size(842, 490);
+            this.tbOrientacao.Size = new System.Drawing.Size(842, 475);
             this.tbOrientacao.TabIndex = 10;
             this.tbOrientacao.Text = "Orientação";
             // 
@@ -2009,6 +2052,217 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
+            // btnGeraCPF
+            // 
+            this.btnGeraCPF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraCPF.Location = new System.Drawing.Point(10, 23);
+            this.btnGeraCPF.Name = "btnGeraCPF";
+            this.btnGeraCPF.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCPF.TabIndex = 0;
+            this.btnGeraCPF.Text = "Gera CPF";
+            this.btnGeraCPF.UseVisualStyleBackColor = true;
+            this.btnGeraCPF.Click += new System.EventHandler(this.btnGeraCPF_Click);
+            // 
+            // tbGeraCPF
+            // 
+            this.tbGeraCPF.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraCPF.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraCPF.Location = new System.Drawing.Point(180, 25);
+            this.tbGeraCPF.Name = "tbGeraCPF";
+            this.tbGeraCPF.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCPF.TabIndex = 1;
+            this.tbGeraCPF.Text = "000.000.000-00";
+            // 
+            // btnCopiaCPF
+            // 
+            this.btnCopiaCPF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiaCPF.Location = new System.Drawing.Point(323, 23);
+            this.btnCopiaCPF.Name = "btnCopiaCPF";
+            this.btnCopiaCPF.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCPF.TabIndex = 2;
+            this.btnCopiaCPF.Text = "Copiar CPF";
+            this.btnCopiaCPF.UseVisualStyleBackColor = true;
+            // 
+            // btnCopiarCNS
+            // 
+            this.btnCopiarCNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiarCNS.Location = new System.Drawing.Point(323, 61);
+            this.btnCopiarCNS.Name = "btnCopiarCNS";
+            this.btnCopiarCNS.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiarCNS.TabIndex = 5;
+            this.btnCopiarCNS.Text = "Copiar CNS";
+            this.btnCopiarCNS.UseVisualStyleBackColor = true;
+            // 
+            // tbGeraCNS
+            // 
+            this.tbGeraCNS.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraCNS.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraCNS.Location = new System.Drawing.Point(180, 63);
+            this.tbGeraCNS.Name = "tbGeraCNS";
+            this.tbGeraCNS.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCNS.TabIndex = 4;
+            this.tbGeraCNS.Text = "000 0000 0000 0000";
+            // 
+            // btnGeraCNS
+            // 
+            this.btnGeraCNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraCNS.Location = new System.Drawing.Point(10, 61);
+            this.btnGeraCNS.Name = "btnGeraCNS";
+            this.btnGeraCNS.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCNS.TabIndex = 3;
+            this.btnGeraCNS.Text = "Gera CNS";
+            this.btnGeraCNS.UseVisualStyleBackColor = true;
+            // 
+            // btnCopiaCNPJ
+            // 
+            this.btnCopiaCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiaCNPJ.Location = new System.Drawing.Point(323, 101);
+            this.btnCopiaCNPJ.Name = "btnCopiaCNPJ";
+            this.btnCopiaCNPJ.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCNPJ.TabIndex = 8;
+            this.btnCopiaCNPJ.Text = "Copiar CNPJ";
+            this.btnCopiaCNPJ.UseVisualStyleBackColor = true;
+            // 
+            // tbGeraCNPJ
+            // 
+            this.tbGeraCNPJ.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraCNPJ.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraCNPJ.Location = new System.Drawing.Point(180, 103);
+            this.tbGeraCNPJ.Name = "tbGeraCNPJ";
+            this.tbGeraCNPJ.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCNPJ.TabIndex = 7;
+            this.tbGeraCNPJ.Text = "00.000.000/0000-00";
+            // 
+            // btnGeraCNPJ
+            // 
+            this.btnGeraCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraCNPJ.Location = new System.Drawing.Point(10, 101);
+            this.btnGeraCNPJ.Name = "btnGeraCNPJ";
+            this.btnGeraCNPJ.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCNPJ.TabIndex = 6;
+            this.btnGeraCNPJ.Text = "Gera CNPJ";
+            this.btnGeraCNPJ.UseVisualStyleBackColor = true;
+            // 
+            // btnCopiarTelefone
+            // 
+            this.btnCopiarTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiarTelefone.Location = new System.Drawing.Point(323, 139);
+            this.btnCopiarTelefone.Name = "btnCopiarTelefone";
+            this.btnCopiarTelefone.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiarTelefone.TabIndex = 11;
+            this.btnCopiarTelefone.Text = "Copiar Tel.";
+            this.btnCopiarTelefone.UseVisualStyleBackColor = true;
+            // 
+            // tbGeraTelefone
+            // 
+            this.tbGeraTelefone.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraTelefone.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraTelefone.Location = new System.Drawing.Point(180, 141);
+            this.tbGeraTelefone.Name = "tbGeraTelefone";
+            this.tbGeraTelefone.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraTelefone.TabIndex = 10;
+            this.tbGeraTelefone.Text = "(00)0000-0000";
+            // 
+            // btnGeraTelefone
+            // 
+            this.btnGeraTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraTelefone.Location = new System.Drawing.Point(10, 139);
+            this.btnGeraTelefone.Name = "btnGeraTelefone";
+            this.btnGeraTelefone.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraTelefone.TabIndex = 9;
+            this.btnGeraTelefone.Text = "Gera Telefone Fixo";
+            this.btnGeraTelefone.UseVisualStyleBackColor = true;
+            // 
+            // btnCopiaCelular
+            // 
+            this.btnCopiaCelular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiaCelular.Location = new System.Drawing.Point(323, 179);
+            this.btnCopiaCelular.Name = "btnCopiaCelular";
+            this.btnCopiaCelular.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCelular.TabIndex = 14;
+            this.btnCopiaCelular.Text = "Copiar Cel.";
+            this.btnCopiaCelular.UseVisualStyleBackColor = true;
+            // 
+            // tbGeraCelular
+            // 
+            this.tbGeraCelular.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraCelular.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraCelular.Location = new System.Drawing.Point(180, 181);
+            this.tbGeraCelular.Name = "tbGeraCelular";
+            this.tbGeraCelular.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCelular.TabIndex = 13;
+            this.tbGeraCelular.Text = "(00)00000-0000";
+            // 
+            // btnGeraCelular
+            // 
+            this.btnGeraCelular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraCelular.Location = new System.Drawing.Point(10, 179);
+            this.btnGeraCelular.Name = "btnGeraCelular";
+            this.btnGeraCelular.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCelular.TabIndex = 12;
+            this.btnGeraCelular.Text = "Gera Celular";
+            this.btnGeraCelular.UseVisualStyleBackColor = true;
+            // 
+            // btnCopiaEmail
+            // 
+            this.btnCopiaEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiaEmail.Location = new System.Drawing.Point(323, 219);
+            this.btnCopiaEmail.Name = "btnCopiaEmail";
+            this.btnCopiaEmail.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaEmail.TabIndex = 17;
+            this.btnCopiaEmail.Text = "Copiar E-mail";
+            this.btnCopiaEmail.UseVisualStyleBackColor = true;
+            // 
+            // tbGeraEmail
+            // 
+            this.tbGeraEmail.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraEmail.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraEmail.Location = new System.Drawing.Point(180, 221);
+            this.tbGeraEmail.Name = "tbGeraEmail";
+            this.tbGeraEmail.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraEmail.TabIndex = 16;
+            this.tbGeraEmail.Text = "xxxx@xxx.com.br";
+            // 
+            // btnGeraEmail
+            // 
+            this.btnGeraEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraEmail.Location = new System.Drawing.Point(10, 219);
+            this.btnGeraEmail.Name = "btnGeraEmail";
+            this.btnGeraEmail.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraEmail.TabIndex = 15;
+            this.btnGeraEmail.Text = "Gera E-mail";
+            this.btnGeraEmail.UseVisualStyleBackColor = true;
+            // 
+            // btnCopiaNome
+            // 
+            this.btnCopiaNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCopiaNome.Location = new System.Drawing.Point(323, 258);
+            this.btnCopiaNome.Name = "btnCopiaNome";
+            this.btnCopiaNome.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaNome.TabIndex = 20;
+            this.btnCopiaNome.Text = "Copiar Nome";
+            this.btnCopiaNome.UseVisualStyleBackColor = true;
+            // 
+            // tbGeraNome
+            // 
+            this.tbGeraNome.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraNome.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraNome.Location = new System.Drawing.Point(180, 260);
+            this.tbGeraNome.Name = "tbGeraNome";
+            this.tbGeraNome.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraNome.TabIndex = 19;
+            this.tbGeraNome.Text = "ANA MARIA DA SILVA";
+            // 
+            // btnGeraNome
+            // 
+            this.btnGeraNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraNome.Location = new System.Drawing.Point(10, 258);
+            this.btnGeraNome.Name = "btnGeraNome";
+            this.btnGeraNome.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraNome.TabIndex = 18;
+            this.btnGeraNome.Text = "Gera Nome";
+            this.btnGeraNome.UseVisualStyleBackColor = true;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2048,6 +2302,8 @@
             this.tbRITQualidade.PerformLayout();
             this.tbRAResumido.ResumeLayout(false);
             this.tbRAResumido.PerformLayout();
+            this.tbGeraDoc.ResumeLayout(false);
+            this.tbGeraDoc.PerformLayout();
             this.tbOrientacao.ResumeLayout(false);
             this.tbOrientacao.PerformLayout();
             this.ResumeLayout(false);
@@ -2100,7 +2356,7 @@
         private System.Windows.Forms.TabPage tbRAResumido;
         private System.Windows.Forms.TabPage tbReview;
         private System.Windows.Forms.TabPage tbWorkshop;
-        private System.Windows.Forms.TabPage tbSprint;
+        private System.Windows.Forms.TabPage tbGeraDoc;
         private System.Windows.Forms.TabPage tbOrientacao;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbFuncionamento;
@@ -2218,6 +2474,27 @@
         private System.Windows.Forms.ToolStripMenuItem alterarLayoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem1;
+        private System.Windows.Forms.Button btnCopiaNome;
+        private System.Windows.Forms.TextBox tbGeraNome;
+        private System.Windows.Forms.Button btnGeraNome;
+        private System.Windows.Forms.Button btnCopiaEmail;
+        private System.Windows.Forms.TextBox tbGeraEmail;
+        private System.Windows.Forms.Button btnGeraEmail;
+        private System.Windows.Forms.Button btnCopiaCelular;
+        private System.Windows.Forms.TextBox tbGeraCelular;
+        private System.Windows.Forms.Button btnGeraCelular;
+        private System.Windows.Forms.Button btnCopiarTelefone;
+        private System.Windows.Forms.TextBox tbGeraTelefone;
+        private System.Windows.Forms.Button btnGeraTelefone;
+        private System.Windows.Forms.Button btnCopiaCNPJ;
+        private System.Windows.Forms.TextBox tbGeraCNPJ;
+        private System.Windows.Forms.Button btnGeraCNPJ;
+        private System.Windows.Forms.Button btnCopiarCNS;
+        private System.Windows.Forms.TextBox tbGeraCNS;
+        private System.Windows.Forms.Button btnGeraCNS;
+        private System.Windows.Forms.Button btnCopiaCPF;
+        private System.Windows.Forms.TextBox tbGeraCPF;
+        private System.Windows.Forms.Button btnGeraCPF;
     }
 }
 
