@@ -762,5 +762,21 @@ namespace GeradorTicket_Jira
             GeradorCPF CPF = new GeradorCPF();
             tbGeraCPF.Text = CPF.GeraCPF();
         }
+
+        private void btnCopiaCPF_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(tbGeraCPF.Text);
+        }
+
+        private void btnGeraCNPJ_Click(object sender, EventArgs e)
+        {
+            GeradorCNPJ CNPJ = new GeradorCNPJ();
+            tbGeraCNPJ.Text = CNPJ.GeraCNPJ();
+        }
+
+        private void btnCopiaCNPJ_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(tbGeraCNPJ.Text);
+        }
     }
 }
