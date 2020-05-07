@@ -1,42 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GeradorTicket_Jira.Entities
 {
-    class GeradorCPF
+    class GeradorCNPJ
     {
 
         public int Numero { get; private set; }
 
-        public GeradorCPF()
+        public GeradorCNPJ()
         {
         }
 
-        public string GeraCPF()
+        public string GeraCNPJ()
         {
-            Random cpf = new Random();
-            List<int> digCpf = new List<int>();
-            List<int> multCpf = new List<int> { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
-            List<int> primeiroResultCpf = new List<int>();
-            List<int> segundoResultCpf = new List<int>();
+            Random CNPJ = new Random();
+            List<int> digCNPJ = new List<int>();
+            List<int> multCNPJ = new List<int> {6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            List<int> primeiroResultCNPJ = new List<int>();
+            List<int> segundoResultCNPJ = new List<int>();
             int segundoDigito = 0;
-            string numCPF = "";
-            for(int i = 0; i < 9; i++)
+            string numCNPJ = "";
+            for(int i = 0; i < 12; i++)
             {
                 int primeiroDigito = 0;
                 int primeiraSoma = 0;
 
-                if(i < 9)
-                    digCpf.Add(cpf.Next(0, 9));     /* Adiciona os primeiros 9 dígitos aleatórios */
+                if(i < 12)
+                    digCNPJ.Add(CNPJ.Next(0, 9));     /* Adiciona os primeiros 9 dígitos aleatórios */
 
-                if (i == 8)          /* Valida se já possui os 9 primeiros dígitos */
+                if (i == 11)          /* Valida se já possui os 9 primeiros dígitos */
                 {
-                    for(int y = 0; y < 9; y++)
+                    for(int y = 0; y < 12; y++)
                     {
-                        primeiroResultCpf.Add(digCpf[y] * multCpf[y+1]);
-                        if(y == 8)
+                        primeiroResultCNPJ.Add(digCNPJ[y] * multCNPJ[y+1]);
+                        if(y == 11)
                         {
-                            foreach (int valor in primeiroResultCpf)
+                            foreach (int valor in primeiroResultCNPJ)
                             {
                                 primeiraSoma += valor;
                             };
@@ -55,18 +56,18 @@ namespace GeradorTicket_Jira.Entities
                         }
                     }
 
-                    digCpf.Add(primeiroDigito);
+                    digCNPJ.Add(primeiroDigito);
                 }
                 
-                if (digCpf.Count == 10)  /* Valida se já possui os 10 primeiros dígitos */
+                if (digCNPJ.Count == 12)  /* Valida se já possui os 10 primeiros dígitos */
                 {
-                    for (int t = 0; t < 10; t++)
+                    for (int t = 0; t < 13; t++)
                     {
                         int segundaSoma = 0;
-                        segundoResultCpf.Add(digCpf[t] * multCpf[t]);
-                        if (t == 9) 
+                        segundoResultCNPJ.Add(digCNPJ[t] * multCNPJ[t]);
+                        if (t == 12) 
                         {
-                            foreach (int valor in segundoResultCpf)
+                            foreach (int valor in segundoResultCNPJ)
                             {
                                 segundaSoma += valor;
                             };
@@ -87,15 +88,15 @@ namespace GeradorTicket_Jira.Entities
                 }
             }
 
-            digCpf.Add(segundoDigito);
+            digCNPJ.Add(segundoDigito);
 
-            foreach(int num in digCpf)
+            foreach(int num in digCNPJ)
             {
-                numCPF += num.ToString();
+                numCNPJ += num.ToString();
             }
             
             
-            return numCPF;
+            return numCNPJ;
         }
     }
 }
