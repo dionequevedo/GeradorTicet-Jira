@@ -57,12 +57,12 @@ namespace GeradorTicket_Jira.Entities
 
                     digCNPJ.Add(primeiroDigito);
                 }
-                
-                if (digCNPJ.Count == 12)  /* Valida se já possui os 10 primeiros dígitos */
-                {
+
+                int segundaSoma = 0;
+                if (digCNPJ.Count == 13)  /* Valida se já possui os 10 primeiros dígitos */
+                {                    
                     for (int t = 0; t < 13; t++)
-                    {
-                        int segundaSoma = 0;
+                    {                        
                         segundoResultCNPJ.Add(digCNPJ[t] * multCNPJ[t]);
                         if (t == 12) 
                         {
