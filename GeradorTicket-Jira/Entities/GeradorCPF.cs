@@ -21,12 +21,12 @@ namespace GeradorTicket_Jira.Entities
             string numCPF = "";
             for(int i = 0; i < 9; i++)
             {
-                digCpf.Add(cpf.Next(0, 9));
+                digCpf.Add(cpf.Next(0, 9));     /* Adiciona os primeiros 9 dígitos */
                 if (digCpf.Count == 9) {
                     int count = 0;
                     foreach(int pos in digCpf)
                     {
-                        resultCpf.Add(pos * multCpf[count+1]);
+                        resultCpf.Add(pos * multCpf[count+1]);  /*Multiplica os primeiros 9 dígitos e armazena os resultados*/
                         count++;
                     }
                 }
