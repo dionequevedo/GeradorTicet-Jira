@@ -778,5 +778,12 @@ namespace GeradorTicket_Jira
         {
             Clipboard.SetText(tbGeraCNPJ.Text);
         }
+
+        private void btnGeraCNS_Click(object sender, EventArgs e)
+        {
+            GeradorCNS CNS = new GeradorCNS();
+            tbGeraCNS.Text = CNS.GeraCNS();
+            Clipboard.SetText(tbGeraCNS.Text);
+        }
     }
 }

@@ -78,6 +78,7 @@
     <Compile Include="Entities\Enums\TipoDocumento.cs" />
     <Compile Include="Entities\Enums\TipoTicket.cs" />
     <Compile Include="Entities\GeradorCNPJ.cs" />
+    <Compile Include="Entities\GeradorCNS.cs" />
     <Compile Include="Entities\GeradorCPF.cs" />
     <Compile Include="Entities\TextosPadroes.cs" />
     <Compile Include="Form1.cs">
