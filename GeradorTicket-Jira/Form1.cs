@@ -35,6 +35,7 @@ namespace GeradorTicket_Jira
         {
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
             {
+                tbCliente.Enabled = true;
                 tbCliente.ReadOnly = false;
 
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
@@ -279,9 +280,11 @@ namespace GeradorTicket_Jira
         private void copiarF11ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
-            {
+            {                
+                tbCliente.Enabled = true;
                 tbCliente.ReadOnly = false;
                 tbCliente.Focus();
+                tbCliente.Text = "0000";
 
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
 
@@ -754,6 +757,9 @@ namespace GeradorTicket_Jira
         private void tbProblemas_Enter(object sender, EventArgs e)
         {
             tbCliente.ReadOnly = false;
+            tbCliente.Text = "0000";
+            tbCliente.ReadOnly = false;
+            tbCliente.Enabled = true;
             tbCliente.Focus();
         }
 
