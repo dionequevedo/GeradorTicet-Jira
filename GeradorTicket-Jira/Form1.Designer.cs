@@ -1736,6 +1736,7 @@
             // tbOrientacao
             // 
             this.tbOrientacao.BackColor = System.Drawing.Color.Black;
+            this.tbOrientacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbOrientacao.Controls.Add(this.tbOrientacoes);
             this.tbOrientacao.Controls.Add(this.label44);
             this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
@@ -1744,6 +1745,7 @@
             this.tbOrientacao.Size = new System.Drawing.Size(842, 475);
             this.tbOrientacao.TabIndex = 10;
             this.tbOrientacao.Text = "Orientação";
+            this.tbOrientacao.UseVisualStyleBackColor = true;
             // 
             // tbOrientacoes
             // 

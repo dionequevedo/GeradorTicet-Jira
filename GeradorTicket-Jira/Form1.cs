@@ -284,7 +284,6 @@ namespace GeradorTicket_Jira
                 tbCliente.Enabled = true;
                 tbCliente.ReadOnly = false;
                 tbCliente.Focus();
-                tbCliente.Text = "0000";
 
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
 
@@ -547,13 +546,13 @@ namespace GeradorTicket_Jira
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
-            tbPorta.Text = "5430";
-            tbHostname.Text = "192.168.0.0";
+            tbPorta.Text = "5432";
+            tbHostname.Text = "192.168.232.0";
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
             tbDatabase.Text = "bd0000";
-            tbVersao.Text = "5.74.00";
+            tbVersao.Text = "5.77.00";
             tbCliente.Text = "0000";
             tbPassword.Text = "1";
             if (tbCliente.ReadOnly == false)
@@ -758,9 +757,7 @@ namespace GeradorTicket_Jira
         {
             tbCliente.ReadOnly = false;
             tbCliente.Text = "0000";
-            tbCliente.ReadOnly = false;
             tbCliente.Enabled = true;
-            tbCliente.Focus();
         }
 
         private void btnGeraCPF_Click(object sender, EventArgs e)
