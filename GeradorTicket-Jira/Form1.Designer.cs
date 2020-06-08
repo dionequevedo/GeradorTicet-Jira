@@ -846,7 +846,7 @@
             this.tbPorta.Name = "tbPorta";
             this.tbPorta.Size = new System.Drawing.Size(38, 20);
             this.tbPorta.TabIndex = 4;
-            this.tbPorta.Text = "5430";
+            this.tbPorta.Text = "5432";
             // 
             // tbHostname
             // 
@@ -856,7 +856,7 @@
             this.tbHostname.Name = "tbHostname";
             this.tbHostname.Size = new System.Drawing.Size(100, 20);
             this.tbHostname.TabIndex = 3;
-            this.tbHostname.Text = "192.168.0.0";
+            this.tbHostname.Text = "192.168.232.0";
             // 
             // tbPassoAPasso
             // 
@@ -1042,7 +1042,7 @@
             this.tbPortaUnitario.Name = "tbPortaUnitario";
             this.tbPortaUnitario.Size = new System.Drawing.Size(38, 20);
             this.tbPortaUnitario.TabIndex = 20;
-            this.tbPortaUnitario.Text = "5430";
+            this.tbPortaUnitario.Text = "5432";
             // 
             // tbHostnameUnitario
             // 
@@ -1052,7 +1052,7 @@
             this.tbHostnameUnitario.Name = "tbHostnameUnitario";
             this.tbHostnameUnitario.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameUnitario.TabIndex = 18;
-            this.tbHostnameUnitario.Text = "192.168.0.0";
+            this.tbHostnameUnitario.Text = "192.168.232.0";
             // 
             // label20
             // 
@@ -1157,7 +1157,7 @@
             this.tbPortaIntegrado.Name = "tbPortaIntegrado";
             this.tbPortaIntegrado.Size = new System.Drawing.Size(38, 20);
             this.tbPortaIntegrado.TabIndex = 30;
-            this.tbPortaIntegrado.Text = "5430";
+            this.tbPortaIntegrado.Text = "5432";
             // 
             // tbHostnameIntegrado
             // 
@@ -1167,7 +1167,7 @@
             this.tbHostnameIntegrado.Name = "tbHostnameIntegrado";
             this.tbHostnameIntegrado.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameIntegrado.TabIndex = 28;
-            this.tbHostnameIntegrado.Text = "192.168.0.0";
+            this.tbHostnameIntegrado.Text = "192.168.232.0";
             // 
             // label25
             // 
@@ -1240,7 +1240,7 @@
             this.dtDataLiberacao.Name = "dtDataLiberacao";
             this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
             this.dtDataLiberacao.TabIndex = 51;
-            this.dtDataLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            this.dtDataLiberacao.Value = new System.DateTime(2020, 6, 8, 0, 0, 0, 0);
             // 
             // label38
             // 
@@ -1345,7 +1345,7 @@
             this.tbPortaLiberacao.Name = "tbPortaLiberacao";
             this.tbPortaLiberacao.Size = new System.Drawing.Size(38, 20);
             this.tbPortaLiberacao.TabIndex = 40;
-            this.tbPortaLiberacao.Text = "5430";
+            this.tbPortaLiberacao.Text = "5432";
             // 
             // tbHostnameLiberacao
             // 
@@ -1355,7 +1355,7 @@
             this.tbHostnameLiberacao.Name = "tbHostnameLiberacao";
             this.tbHostnameLiberacao.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameLiberacao.TabIndex = 38;
-            this.tbHostnameLiberacao.Text = "192.168.0.0";
+            this.tbHostnameLiberacao.Text = "192.168.232.0";
             // 
             // label35
             // 
@@ -1479,7 +1479,7 @@
             this.tbPortaRIT.Name = "tbPortaRIT";
             this.tbPortaRIT.Size = new System.Drawing.Size(38, 20);
             this.tbPortaRIT.TabIndex = 50;
-            this.tbPortaRIT.Text = "5430";
+            this.tbPortaRIT.Text = "5432";
             // 
             // tbHostnameRIT
             // 
@@ -1489,7 +1489,7 @@
             this.tbHostnameRIT.Name = "tbHostnameRIT";
             this.tbHostnameRIT.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameRIT.TabIndex = 48;
-            this.tbHostnameRIT.Text = "192.168.0.0";
+            this.tbHostnameRIT.Text = "192.168.232.0";
             // 
             // label43
             // 
@@ -1722,7 +1722,7 @@
             this.dataVersaoRIT.Name = "dataVersaoRIT";
             this.dataVersaoRIT.Size = new System.Drawing.Size(89, 20);
             this.dataVersaoRIT.TabIndex = 4;
-            this.dataVersaoRIT.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            this.dataVersaoRIT.Value = new System.DateTime(2020, 6, 8, 0, 0, 0, 0);
             // 
             // label13
             // 
@@ -2228,7 +2228,7 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(38, 20);
             this.textBox14.TabIndex = 40;
-            this.textBox14.Text = "5430";
+            this.textBox14.Text = "5432";
             // 
             // textBox15
             // 
@@ -2238,7 +2238,7 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 20);
             this.textBox15.TabIndex = 38;
-            this.textBox15.Text = "192.168.0.0";
+            this.textBox15.Text = "192.168.232.0";
             // 
             // label30
             // 
