@@ -518,17 +518,17 @@ namespace GeradorTicket_Jira
 
         private void limparF10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbOrientacao.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
+            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text =  tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
-            tbPorta.Text = "5430";
+            tbPorta.Text = "5432";
             tbHostname.Text = "192.168.232.0";
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
             tbDatabase.Text = "bd0000";
-            tbVersao.Text = "5.74.00";
+            tbVersao.Text = "5.77.00";
             tbCliente.Text = "0000";
             tbPassword.Text = "1";
             if (tbCliente.ReadOnly == false)
@@ -543,7 +543,7 @@ namespace GeradorTicket_Jira
 
         private void btNovo_Click(object sender, EventArgs e)
         {
-            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbOrientacao.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
+            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
