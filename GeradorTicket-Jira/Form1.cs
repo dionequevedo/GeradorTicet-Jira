@@ -398,7 +398,7 @@ namespace GeradorTicket_Jira
                                         + tbUsuarioLiberacao.Text
                                         + "{color}* - *Senha:* *{color:blue}"
                                         + tbSenhaLiberacao.Text
-                                        + "{color}* \n*Ambiente:* *{color:blue}"
+                                        + "{color}*\n*Ambiente:* *{color:blue}"
                                         + cbSO.Text
                                         + " - "
                                         + cbArquitetura.Text
