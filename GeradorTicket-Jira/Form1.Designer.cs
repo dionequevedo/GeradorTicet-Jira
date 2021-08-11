@@ -213,6 +213,12 @@
             this.label30 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
+            this.label46 = new System.Windows.Forms.Label();
+            this.cbOcorreSN = new System.Windows.Forms.ComboBox();
+            this.cbTipoUser = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.cbAdmSistema = new System.Windows.Forms.ComboBox();
+            this.label48 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -1395,6 +1401,12 @@
             // tbRITQualidade
             // 
             this.tbRITQualidade.BackColor = System.Drawing.Color.Black;
+            this.tbRITQualidade.Controls.Add(this.cbAdmSistema);
+            this.tbRITQualidade.Controls.Add(this.label48);
+            this.tbRITQualidade.Controls.Add(this.cbTipoUser);
+            this.tbRITQualidade.Controls.Add(this.label47);
+            this.tbRITQualidade.Controls.Add(this.cbOcorreSN);
+            this.tbRITQualidade.Controls.Add(this.label46);
             this.tbRITQualidade.Controls.Add(this.label39);
             this.tbRITQualidade.Controls.Add(this.tbSenhaRIT);
             this.tbRITQualidade.Controls.Add(this.label40);
@@ -2297,12 +2309,81 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(123, 80);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(117, 13);
+            this.label46.TabIndex = 58;
+            this.label46.Text = "Ocorre Todos usuários:";
+            // 
+            // cbOcorreSN
+            // 
+            this.cbOcorreSN.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbOcorreSN.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbOcorreSN.FormattingEnabled = true;
+            this.cbOcorreSN.Items.AddRange(new object[] {
+            "SIM",
+            "NÃO"});
+            this.cbOcorreSN.Location = new System.Drawing.Point(246, 77);
+            this.cbOcorreSN.Name = "cbOcorreSN";
+            this.cbOcorreSN.Size = new System.Drawing.Size(48, 21);
+            this.cbOcorreSN.TabIndex = 59;
+            this.cbOcorreSN.Text = "SIM";
+            // 
+            // cbTipoUser
+            // 
+            this.cbTipoUser.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbTipoUser.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbTipoUser.FormattingEnabled = true;
+            this.cbTipoUser.Items.AddRange(new object[] {
+            "FUNCIONÁRIO",
+            "PRESTADOR"});
+            this.cbTipoUser.Location = new System.Drawing.Point(427, 78);
+            this.cbTipoUser.Name = "cbTipoUser";
+            this.cbTipoUser.Size = new System.Drawing.Size(106, 21);
+            this.cbTipoUser.TabIndex = 61;
+            this.cbTipoUser.Text = "FUNCIONÁRIO";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(331, 81);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(83, 13);
+            this.label47.TabIndex = 60;
+            this.label47.Text = "Tipo de usuário:";
+            // 
+            // cbAdmSistema
+            // 
+            this.cbAdmSistema.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbAdmSistema.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbAdmSistema.FormattingEnabled = true;
+            this.cbAdmSistema.Items.AddRange(new object[] {
+            "SIM",
+            "NÃO"});
+            this.cbAdmSistema.Location = new System.Drawing.Point(705, 76);
+            this.cbAdmSistema.Name = "cbAdmSistema";
+            this.cbAdmSistema.Size = new System.Drawing.Size(48, 21);
+            this.cbAdmSistema.TabIndex = 63;
+            this.cbAdmSistema.Text = "SIM";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(569, 79);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(128, 13);
+            this.label48.TabIndex = 62;
+            this.label48.Text = "Administrador do Sistema:";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(884, 677);
+            this.ClientSize = new System.Drawing.Size(884, 679);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -2531,6 +2612,12 @@
         private System.Windows.Forms.Button btnGeraCPF;
         private System.Windows.Forms.ComboBox cbArquitetura;
         private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.ComboBox cbAdmSistema;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.ComboBox cbTipoUser;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.ComboBox cbOcorreSN;
+        private System.Windows.Forms.Label label46;
     }
 }
 

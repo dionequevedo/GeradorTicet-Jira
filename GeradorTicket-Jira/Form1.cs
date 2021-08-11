@@ -155,34 +155,44 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
+                //  Topo do Comentário
                 string reproduzido = "{panel:title=*REGISTRO DE ANÁLISE DE QUALIDADE - "
                                         + cbBateriaTesteRIT.Text
-                                        + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
-                                        + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "*Testes Realizados na Versão:* *{color:#d04437}[VERSÃO: "
+                                        + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}\n"
+                                        //  Identificação da versão e Ambiente
+                                        + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}\n"
+                                        + "h2.*Testes Realizados na Versão:* \n*{color:#d04437}["
                                         + tbVersao.Text
-                                        + "]{color}* de *{color:#d04437}[DATA COMPILAÇÃO: "
+                                        + "]{color}* *de* *{color:#d04437} ["
                                         + dataVersaoRIT.Text
-                                        + "]{color}* as *{color:#d04437}[HORA COMPILAÇÃO: "
+                                        + "]{color}* *às* *{color:#d04437} ["
                                         + horaCompilacaoRIT.Text
                                         + "]{color}*"
-                                        + "*Ambiente:* *{color:blue}[SISTEMA OPERACIONAL:"
+                                        + "\nh2.*Ambiente:* \n*{color:blue}["
                                         + cbSO.Text
                                         + " - "
                                         + cbArquitetura.Text
-                                        + "]{color}* - *Resolução:* *{color:blue}[Resolucao: "
+                                        + "]{color}* - *Resolução:* *{color:blue}["
                                         + cbResolucao.Text
                                         + "]{color}* {panel}"
+                                        //  Identificação da base
                                         + "{panel:title=*BASE ONDE O PROBLEMA FOI REPRODUZIDO - DBCONF:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "h2.USUÁRIO: *{color:#0747A6}[USUÁRIO:{"
+                                        + "h2.USUÁRIO: *{color:#0747A6}"
                                         + tbUsuarioRIT.Text
-                                        + "}]{color}* - Senha: *{color:#0747A6}[SENHA:{"
+                                        + "{color}* - Senha: *{color:#0747A6}"
                                         + tbSenhaRIT.Text
-                                        + "}]{color}* [COLAR O DBCONF] {panel}"
+                                        + "{color}* \n{code:java}\n*** COLAR O DBCONF ***\n{code}\n{panel}"
+                                        //  Informações do usuário
                                         + "{panel:title=*CARACTERÍSTICAS DO USUÁRIO SE PRECISAR:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "Ocorre para todos os usuário ? *{"
-                                        + "color:#0747A6}[OCORRE PARA TODOS OS USUÁRIOS]{color}*  -  Tipo de Usuário? *{color:#0747A6}[TIPO DO USUÁRIO É PRESTADOR OU FUNCIONARIO]{color}*  -  ADM no sistema?: *{color:#0747A6}[ADM NO SISTEMA]{color}*"
-                                        + "{panel}";
+                                        + "\nOcorre para todos os usuários ? *{"
+                                        + "color:#0747A6}"
+                                        + cbOcorreSN.Text
+                                        + "{color}*\nTipo de Usuário? *{color:#0747A6}"
+                                        + cbTipoUser.Text
+                                        + "{color}*\nADM no sistema?: *{color:#0747A6}" 
+                                        + cbAdmSistema.Text
+                                        + "{color}*"
+                                        + "{panel}{panel}";
                 if (cbRIT01.Checked)
                 {
                     reproduzido = reproduzido
