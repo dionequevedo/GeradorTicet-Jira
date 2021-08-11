@@ -161,20 +161,20 @@ namespace GeradorTicket_Jira
                                         + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}\n"
                                         //  Identificação da versão e Ambiente
                                         + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}\n"
-                                        + "h2.*Testes Realizados na Versão:* \n*{color:#d04437}["
+                                        + "h2.*Testes Realizados na Versão:* \nh3.*{color:#d04437}["
                                         + tbVersao.Text
                                         + "]{color}* *de* *{color:#d04437} ["
                                         + dataVersaoRIT.Text
-                                        + "]{color}* *às* *{color:#d04437} ["
+                                        + "]{color}* *compilada às* *{color:#d04437} ["
                                         + horaCompilacaoRIT.Text
                                         + "]{color}*"
-                                        + "\nh2.*Ambiente:* \n*{color:blue}["
+                                        + "\nh2.*Ambiente:* \nh3.*{color:blue}["
                                         + cbSO.Text
                                         + " - "
                                         + cbArquitetura.Text
                                         + "]{color}* - *Resolução:* *{color:blue}["
                                         + cbResolucao.Text
-                                        + "]{color}* {panel}"
+                                        + "]{color}*\n {panel}"
                                         //  Identificação da base
                                         + "{panel:title=*BASE ONDE O PROBLEMA FOI REPRODUZIDO - DBCONF:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
                                         + "h2.USUÁRIO: *{color:#0747A6}"
@@ -192,7 +192,7 @@ namespace GeradorTicket_Jira
                                         + "{color}*\nADM no sistema?: *{color:#0747A6}" 
                                         + cbAdmSistema.Text
                                         + "{color}*"
-                                        + "{panel}{panel}";
+                                        + "{panel}";
                 if (cbRIT01.Checked)
                 {
                     reproduzido = reproduzido
