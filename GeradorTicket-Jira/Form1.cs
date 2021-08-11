@@ -35,6 +35,7 @@ namespace GeradorTicket_Jira
         {
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
             {
+                tbCliente.Enabled = true;
                 tbCliente.ReadOnly = false;
 
                 int cliente = int.Parse(tbCliente.Text);        //Armazena o código do cliente
@@ -282,7 +283,8 @@ namespace GeradorTicket_Jira
         private void copiarF11ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (tbEscolhas.SelectedTab.Equals(tbProblemas))
-            {
+            {                
+                tbCliente.Enabled = true;
                 tbCliente.ReadOnly = false;
                 tbCliente.Focus();
 
@@ -520,7 +522,7 @@ namespace GeradorTicket_Jira
 
         private void limparF10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbOrientacao.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
+            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text =  tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
@@ -545,7 +547,7 @@ namespace GeradorTicket_Jira
 
         private void btNovo_Click(object sender, EventArgs e)
         {
-            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbOrientacao.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
+            tbCaminhos.Text = tbCliente.Text = tbFuncionamento.Text = tbParecer.Text = tbPassoAPasso.Text = tbResumo.Text = "";
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";

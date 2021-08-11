@@ -539,6 +539,7 @@
             "AGENDAMENTO",
             "ALMOXARIFADO",
             "AMBULATÓRIO",
+            "COMPRAS",
             "CENTRO CIRÚRGICO",
             "CONTABILIDADE",
             "DIAGNOSE TERAPIA",
@@ -546,6 +547,7 @@
             "FARMÁCIA",
             "FATURAMENTO",
             "FINANCEIRO",
+            "GESTÃO DE PENDÊNCIAS",
             "HOTELARIA",
             "INTERNAÇÃO",
             "NUTRIÇÃO",
@@ -564,11 +566,7 @@
             this.tbVersao.Name = "tbVersao";
             this.tbVersao.Size = new System.Drawing.Size(52, 20);
             this.tbVersao.TabIndex = 2;
-<<<<<<< Updated upstream
-            this.tbVersao.Text = "5.74.00";
-=======
             this.tbVersao.Text = "5.79.36";
->>>>>>> Stashed changes
             // 
             // tbCliente
             // 
@@ -718,7 +716,7 @@
             this.tbProblemas.ForeColor = System.Drawing.SystemColors.Control;
             this.tbProblemas.Location = new System.Drawing.Point(4, 25);
             this.tbProblemas.Name = "tbProblemas";
-            this.tbProblemas.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbProblemas.Padding = new System.Windows.Forms.Padding(3);
             this.tbProblemas.Size = new System.Drawing.Size(842, 475);
             this.tbProblemas.TabIndex = 0;
             this.tbProblemas.Text = "Descrição do problema";
@@ -851,7 +849,7 @@
             this.tbPorta.Name = "tbPorta";
             this.tbPorta.Size = new System.Drawing.Size(38, 20);
             this.tbPorta.TabIndex = 4;
-            this.tbPorta.Text = "5430";
+            this.tbPorta.Text = "5432";
             // 
             // tbHostname
             // 
@@ -861,7 +859,7 @@
             this.tbHostname.Name = "tbHostname";
             this.tbHostname.Size = new System.Drawing.Size(100, 20);
             this.tbHostname.TabIndex = 3;
-            this.tbHostname.Text = "192.168.0.0";
+            this.tbHostname.Text = "192.168.232.0";
             // 
             // tbPassoAPasso
             // 
@@ -1047,11 +1045,7 @@
             this.tbPortaUnitario.Name = "tbPortaUnitario";
             this.tbPortaUnitario.Size = new System.Drawing.Size(38, 20);
             this.tbPortaUnitario.TabIndex = 20;
-<<<<<<< Updated upstream
-            this.tbPortaUnitario.Text = "5430";
-=======
             this.tbPortaUnitario.Text = "6000";
->>>>>>> Stashed changes
             // 
             // tbHostnameUnitario
             // 
@@ -1061,11 +1055,7 @@
             this.tbHostnameUnitario.Name = "tbHostnameUnitario";
             this.tbHostnameUnitario.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameUnitario.TabIndex = 18;
-<<<<<<< Updated upstream
-            this.tbHostnameUnitario.Text = "192.168.0.0";
-=======
             this.tbHostnameUnitario.Text = "192.168.232.252";
->>>>>>> Stashed changes
             // 
             // label20
             // 
@@ -1170,11 +1160,7 @@
             this.tbPortaIntegrado.Name = "tbPortaIntegrado";
             this.tbPortaIntegrado.Size = new System.Drawing.Size(38, 20);
             this.tbPortaIntegrado.TabIndex = 30;
-<<<<<<< Updated upstream
-            this.tbPortaIntegrado.Text = "5430";
-=======
             this.tbPortaIntegrado.Text = "6000";
->>>>>>> Stashed changes
             // 
             // tbHostnameIntegrado
             // 
@@ -1184,11 +1170,7 @@
             this.tbHostnameIntegrado.Name = "tbHostnameIntegrado";
             this.tbHostnameIntegrado.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameIntegrado.TabIndex = 28;
-<<<<<<< Updated upstream
-            this.tbHostnameIntegrado.Text = "192.168.0.0";
-=======
             this.tbHostnameIntegrado.Text = "192.168.232.252";
->>>>>>> Stashed changes
             // 
             // label25
             // 
@@ -1261,11 +1243,7 @@
             this.dtDataLiberacao.Name = "dtDataLiberacao";
             this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
             this.dtDataLiberacao.TabIndex = 51;
-<<<<<<< Updated upstream
-            this.dtDataLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-=======
             this.dtDataLiberacao.Value = new System.DateTime(2021, 8, 11, 0, 0, 0, 0);
->>>>>>> Stashed changes
             // 
             // label38
             // 
@@ -1370,11 +1348,7 @@
             this.tbPortaLiberacao.Name = "tbPortaLiberacao";
             this.tbPortaLiberacao.Size = new System.Drawing.Size(38, 20);
             this.tbPortaLiberacao.TabIndex = 40;
-<<<<<<< Updated upstream
-            this.tbPortaLiberacao.Text = "5430";
-=======
             this.tbPortaLiberacao.Text = "6000";
->>>>>>> Stashed changes
             // 
             // tbHostnameLiberacao
             // 
@@ -1384,11 +1358,7 @@
             this.tbHostnameLiberacao.Name = "tbHostnameLiberacao";
             this.tbHostnameLiberacao.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameLiberacao.TabIndex = 38;
-<<<<<<< Updated upstream
-            this.tbHostnameLiberacao.Text = "192.168.0.0";
-=======
             this.tbHostnameLiberacao.Text = "192.168.232.252";
->>>>>>> Stashed changes
             // 
             // label35
             // 
@@ -1512,11 +1482,7 @@
             this.tbPortaRIT.Name = "tbPortaRIT";
             this.tbPortaRIT.Size = new System.Drawing.Size(38, 20);
             this.tbPortaRIT.TabIndex = 50;
-<<<<<<< Updated upstream
-            this.tbPortaRIT.Text = "5430";
-=======
             this.tbPortaRIT.Text = "6000";
->>>>>>> Stashed changes
             // 
             // tbHostnameRIT
             // 
@@ -1526,11 +1492,7 @@
             this.tbHostnameRIT.Name = "tbHostnameRIT";
             this.tbHostnameRIT.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameRIT.TabIndex = 48;
-<<<<<<< Updated upstream
-            this.tbHostnameRIT.Text = "192.168.0.0";
-=======
             this.tbHostnameRIT.Text = "192.168.232.252";
->>>>>>> Stashed changes
             // 
             // label43
             // 
@@ -1763,11 +1725,7 @@
             this.dataVersaoRIT.Name = "dataVersaoRIT";
             this.dataVersaoRIT.Size = new System.Drawing.Size(89, 20);
             this.dataVersaoRIT.TabIndex = 4;
-<<<<<<< Updated upstream
-            this.dataVersaoRIT.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-=======
             this.dataVersaoRIT.Value = new System.DateTime(2021, 8, 11, 0, 0, 0, 0);
->>>>>>> Stashed changes
             // 
             // label13
             // 
@@ -1781,6 +1739,7 @@
             // tbOrientacao
             // 
             this.tbOrientacao.BackColor = System.Drawing.Color.Black;
+            this.tbOrientacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbOrientacao.Controls.Add(this.tbOrientacoes);
             this.tbOrientacao.Controls.Add(this.label44);
             this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
@@ -1789,6 +1748,7 @@
             this.tbOrientacao.Size = new System.Drawing.Size(842, 475);
             this.tbOrientacao.TabIndex = 10;
             this.tbOrientacao.Text = "Orientação";
+            this.tbOrientacao.UseVisualStyleBackColor = true;
             // 
             // tbOrientacoes
             // 
@@ -2194,7 +2154,7 @@
             this.tbRITPreteste.ForeColor = System.Drawing.SystemColors.Control;
             this.tbRITPreteste.Location = new System.Drawing.Point(4, 25);
             this.tbRITPreteste.Name = "tbRITPreteste";
-            this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3);
             this.tbRITPreteste.Size = new System.Drawing.Size(842, 475);
             this.tbRITPreteste.TabIndex = 1;
             this.tbRITPreteste.Text = "RIT Pré Teste";
@@ -2273,7 +2233,7 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(38, 20);
             this.textBox14.TabIndex = 40;
-            this.textBox14.Text = "5430";
+            this.textBox14.Text = "5432";
             // 
             // textBox15
             // 
@@ -2283,7 +2243,7 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(100, 20);
             this.textBox15.TabIndex = 38;
-            this.textBox15.Text = "192.168.0.0";
+            this.textBox15.Text = "192.168.232.0";
             // 
             // label30
             // 
