@@ -383,12 +383,12 @@ namespace GeradorTicket_Jira
                                         + "\n*SOLICITAÇÃO ATENDIDA*"
                                         + "\n *Testes Realizados na Versão:* *{color:#d04437}"
                                         + tbVersao.Text
-                                        + "{color}* de *{color:#d04437}"
+                                        + "{color} de {color:#d04437}"
                                         + dtDataLiberacao.Text
-                                        + "{color}* as *{color:#d04437}"
+                                        + "{color} às {color:#d04437}"
                                         + dtHoraLiberacao.Text
                                         + "{color}*"
-                                        + " *Local Testado:* *{color: blue}"
+                                        + "\n*Local Testado:* *{color: blue}"
                                         + tbHostnameLiberacao.Text
                                         + " - "
                                         + tbDatabaseLiberacao.Text
@@ -398,7 +398,7 @@ namespace GeradorTicket_Jira
                                         + tbUsuarioLiberacao.Text
                                         + "{color}* - *Senha:* *{color:blue}"
                                         + tbSenhaLiberacao.Text
-                                        + "{color}* - *Ambiente:* *{color:blue}"
+                                        + "{color}* \n*Ambiente:* *{color:blue}"
                                         + cbSO.Text
                                         + " - "
                                         + cbArquitetura.Text
@@ -587,8 +587,8 @@ namespace GeradorTicket_Jira
             cbRIT01.Checked = true;
             tbRIT01.Enabled = true;
             textBoxRIT01.Enabled = true;
-            tbCliente.Enabled = false;
-            tbCliente.ReadOnly = true;
+            tbCliente.Enabled = true;
+            tbCliente.ReadOnly = false;
         }
 
         private void cbRIT01_CheckedChanged(object sender, EventArgs e)
