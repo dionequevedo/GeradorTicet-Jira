@@ -53,6 +53,8 @@
             this.blackToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbIdentificacao = new System.Windows.Forms.GroupBox();
+            this.cbArquitetura = new System.Windows.Forms.ComboBox();
+            this.label45 = new System.Windows.Forms.Label();
             this.cbResolucao = new System.Windows.Forms.ComboBox();
             this.lblResolucao = new System.Windows.Forms.Label();
             this.cbAplicacao = new System.Windows.Forms.ComboBox();
@@ -211,8 +213,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
-            this.label45 = new System.Windows.Forms.Label();
-            this.cbArquitetura = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -445,6 +445,29 @@
             this.gbIdentificacao.TabIndex = 0;
             this.gbIdentificacao.TabStop = false;
             this.gbIdentificacao.Text = "Identificação";
+            // 
+            // cbArquitetura
+            // 
+            this.cbArquitetura.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbArquitetura.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbArquitetura.FormattingEnabled = true;
+            this.cbArquitetura.Items.AddRange(new object[] {
+            "32 bits",
+            "64 bits"});
+            this.cbArquitetura.Location = new System.Drawing.Point(724, 48);
+            this.cbArquitetura.Name = "cbArquitetura";
+            this.cbArquitetura.Size = new System.Drawing.Size(109, 21);
+            this.cbArquitetura.TabIndex = 10;
+            this.cbArquitetura.Text = "64 bits";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(656, 50);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(58, 13);
+            this.label45.TabIndex = 9;
+            this.label45.Text = "Arquitetura";
             // 
             // cbResolucao
             // 
@@ -2273,29 +2296,6 @@
             this.btCopiar.Text = "Copiar Memo";
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(659, 50);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(64, 13);
-            this.label45.TabIndex = 9;
-            this.label45.Text = "Arquitetura: ";
-            // 
-            // cbArquitetura
-            // 
-            this.cbArquitetura.BackColor = System.Drawing.SystemColors.MenuText;
-            this.cbArquitetura.ForeColor = System.Drawing.SystemColors.Window;
-            this.cbArquitetura.FormattingEnabled = true;
-            this.cbArquitetura.Items.AddRange(new object[] {
-            "32 bits",
-            "64 bits"});
-            this.cbArquitetura.Location = new System.Drawing.Point(724, 48);
-            this.cbArquitetura.Name = "cbArquitetura";
-            this.cbArquitetura.Size = new System.Drawing.Size(121, 21);
-            this.cbArquitetura.TabIndex = 10;
-            this.cbArquitetura.Text = "64 bits";
             // 
             // FormPrincipal
             // 
