@@ -524,24 +524,14 @@ namespace GeradorTicket_Jira
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
-<<<<<<< Updated upstream
-            tbPorta.Text = "5430";
-            tbHostname.Text = "192.168.232.0";
-=======
             tbPorta.Text = "6000";
             tbHostname.Text = "192.168.232.252";
->>>>>>> Stashed changes
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
             tbDatabase.Text = "bd0000";
-<<<<<<< Updated upstream
-            tbVersao.Text = "5.74.00";
-            tbCliente.Text = "0000";
-=======
             tbVersao.Text = "5.79.36";
             tbCliente.Text = "2213";
->>>>>>> Stashed changes
             tbPassword.Text = "1";
             if (tbCliente.ReadOnly == false)
             {
@@ -559,24 +549,14 @@ namespace GeradorTicket_Jira
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
-<<<<<<< Updated upstream
-            tbPorta.Text = "5430";
-            tbHostname.Text = "192.168.0.0";
-=======
             tbPorta.Text = "6000";
             tbHostname.Text = "192.168.232.252";
->>>>>>> Stashed changes
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
             tbDatabase.Text = "bd0000";
-<<<<<<< Updated upstream
-            tbVersao.Text = "5.74.00";
-            tbCliente.Text = "0000";
-=======
             tbVersao.Text = "5.79.36";
             tbCliente.Text = "2213";
->>>>>>> Stashed changes
             tbPassword.Text = "1";
             if (tbCliente.ReadOnly == false)
             {
@@ -779,12 +759,8 @@ namespace GeradorTicket_Jira
         private void tbProblemas_Enter(object sender, EventArgs e)
         {
             tbCliente.ReadOnly = false;
-<<<<<<< Updated upstream
-            tbCliente.Focus();
-=======
             tbCliente.Text = "2213";
             tbCliente.Enabled = true;
->>>>>>> Stashed changes
         }
 
         private void btnGeraCPF_Click(object sender, EventArgs e)
