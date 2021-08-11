@@ -211,6 +211,8 @@
             this.label30 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
+            this.label45 = new System.Windows.Forms.Label();
+            this.cbArquitetura = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -419,6 +421,8 @@
             // 
             // gbIdentificacao
             // 
+            this.gbIdentificacao.Controls.Add(this.cbArquitetura);
+            this.gbIdentificacao.Controls.Add(this.label45);
             this.gbIdentificacao.Controls.Add(this.cbResolucao);
             this.gbIdentificacao.Controls.Add(this.lblResolucao);
             this.gbIdentificacao.Controls.Add(this.cbAplicacao);
@@ -522,7 +526,7 @@
             this.cbSO.Name = "cbSO";
             this.cbSO.Size = new System.Drawing.Size(121, 21);
             this.cbSO.TabIndex = 3;
-            this.cbSO.Text = "WINDOWS 7";
+            this.cbSO.Text = "WINDOWS 10";
             // 
             // cbArea
             // 
@@ -560,7 +564,11 @@
             this.tbVersao.Name = "tbVersao";
             this.tbVersao.Size = new System.Drawing.Size(52, 20);
             this.tbVersao.TabIndex = 2;
+<<<<<<< Updated upstream
             this.tbVersao.Text = "5.74.00";
+=======
+            this.tbVersao.Text = "5.79.36";
+>>>>>>> Stashed changes
             // 
             // tbCliente
             // 
@@ -570,11 +578,12 @@
             this.tbCliente.Name = "tbCliente";
             this.tbCliente.Size = new System.Drawing.Size(46, 20);
             this.tbCliente.TabIndex = 0;
-            this.tbCliente.Text = "0000";
+            this.tbCliente.Text = "2213";
             // 
             // rbHomologacao
             // 
             this.rbHomologacao.AutoSize = true;
+            this.rbHomologacao.Checked = true;
             this.rbHomologacao.Location = new System.Drawing.Point(538, 51);
             this.rbHomologacao.Name = "rbHomologacao";
             this.rbHomologacao.Size = new System.Drawing.Size(91, 17);
@@ -586,12 +595,10 @@
             // rbProducao
             // 
             this.rbProducao.AutoSize = true;
-            this.rbProducao.Checked = true;
             this.rbProducao.Location = new System.Drawing.Point(461, 50);
             this.rbProducao.Name = "rbProducao";
             this.rbProducao.Size = new System.Drawing.Size(71, 17);
             this.rbProducao.TabIndex = 5;
-            this.rbProducao.TabStop = true;
             this.rbProducao.Text = "Produção";
             this.rbProducao.UseVisualStyleBackColor = true;
             // 
@@ -1040,7 +1047,11 @@
             this.tbPortaUnitario.Name = "tbPortaUnitario";
             this.tbPortaUnitario.Size = new System.Drawing.Size(38, 20);
             this.tbPortaUnitario.TabIndex = 20;
+<<<<<<< Updated upstream
             this.tbPortaUnitario.Text = "5430";
+=======
+            this.tbPortaUnitario.Text = "6000";
+>>>>>>> Stashed changes
             // 
             // tbHostnameUnitario
             // 
@@ -1050,7 +1061,11 @@
             this.tbHostnameUnitario.Name = "tbHostnameUnitario";
             this.tbHostnameUnitario.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameUnitario.TabIndex = 18;
+<<<<<<< Updated upstream
             this.tbHostnameUnitario.Text = "192.168.0.0";
+=======
+            this.tbHostnameUnitario.Text = "192.168.232.252";
+>>>>>>> Stashed changes
             // 
             // label20
             // 
@@ -1155,7 +1170,11 @@
             this.tbPortaIntegrado.Name = "tbPortaIntegrado";
             this.tbPortaIntegrado.Size = new System.Drawing.Size(38, 20);
             this.tbPortaIntegrado.TabIndex = 30;
+<<<<<<< Updated upstream
             this.tbPortaIntegrado.Text = "5430";
+=======
+            this.tbPortaIntegrado.Text = "6000";
+>>>>>>> Stashed changes
             // 
             // tbHostnameIntegrado
             // 
@@ -1165,7 +1184,11 @@
             this.tbHostnameIntegrado.Name = "tbHostnameIntegrado";
             this.tbHostnameIntegrado.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameIntegrado.TabIndex = 28;
+<<<<<<< Updated upstream
             this.tbHostnameIntegrado.Text = "192.168.0.0";
+=======
+            this.tbHostnameIntegrado.Text = "192.168.232.252";
+>>>>>>> Stashed changes
             // 
             // label25
             // 
@@ -1238,7 +1261,11 @@
             this.dtDataLiberacao.Name = "dtDataLiberacao";
             this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
             this.dtDataLiberacao.TabIndex = 51;
+<<<<<<< Updated upstream
             this.dtDataLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+=======
+            this.dtDataLiberacao.Value = new System.DateTime(2021, 8, 11, 0, 0, 0, 0);
+>>>>>>> Stashed changes
             // 
             // label38
             // 
@@ -1343,7 +1370,11 @@
             this.tbPortaLiberacao.Name = "tbPortaLiberacao";
             this.tbPortaLiberacao.Size = new System.Drawing.Size(38, 20);
             this.tbPortaLiberacao.TabIndex = 40;
+<<<<<<< Updated upstream
             this.tbPortaLiberacao.Text = "5430";
+=======
+            this.tbPortaLiberacao.Text = "6000";
+>>>>>>> Stashed changes
             // 
             // tbHostnameLiberacao
             // 
@@ -1353,7 +1384,11 @@
             this.tbHostnameLiberacao.Name = "tbHostnameLiberacao";
             this.tbHostnameLiberacao.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameLiberacao.TabIndex = 38;
+<<<<<<< Updated upstream
             this.tbHostnameLiberacao.Text = "192.168.0.0";
+=======
+            this.tbHostnameLiberacao.Text = "192.168.232.252";
+>>>>>>> Stashed changes
             // 
             // label35
             // 
@@ -1477,7 +1512,11 @@
             this.tbPortaRIT.Name = "tbPortaRIT";
             this.tbPortaRIT.Size = new System.Drawing.Size(38, 20);
             this.tbPortaRIT.TabIndex = 50;
+<<<<<<< Updated upstream
             this.tbPortaRIT.Text = "5430";
+=======
+            this.tbPortaRIT.Text = "6000";
+>>>>>>> Stashed changes
             // 
             // tbHostnameRIT
             // 
@@ -1487,7 +1526,11 @@
             this.tbHostnameRIT.Name = "tbHostnameRIT";
             this.tbHostnameRIT.Size = new System.Drawing.Size(100, 20);
             this.tbHostnameRIT.TabIndex = 48;
+<<<<<<< Updated upstream
             this.tbHostnameRIT.Text = "192.168.0.0";
+=======
+            this.tbHostnameRIT.Text = "192.168.232.252";
+>>>>>>> Stashed changes
             // 
             // label43
             // 
@@ -1720,7 +1763,11 @@
             this.dataVersaoRIT.Name = "dataVersaoRIT";
             this.dataVersaoRIT.Size = new System.Drawing.Size(89, 20);
             this.dataVersaoRIT.TabIndex = 4;
+<<<<<<< Updated upstream
             this.dataVersaoRIT.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+=======
+            this.dataVersaoRIT.Value = new System.DateTime(2021, 8, 11, 0, 0, 0, 0);
+>>>>>>> Stashed changes
             // 
             // label13
             // 
@@ -2267,6 +2314,29 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(659, 50);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(64, 13);
+            this.label45.TabIndex = 9;
+            this.label45.Text = "Arquitetura: ";
+            // 
+            // cbArquitetura
+            // 
+            this.cbArquitetura.BackColor = System.Drawing.SystemColors.MenuText;
+            this.cbArquitetura.ForeColor = System.Drawing.SystemColors.Window;
+            this.cbArquitetura.FormattingEnabled = true;
+            this.cbArquitetura.Items.AddRange(new object[] {
+            "32 bits",
+            "64 bits"});
+            this.cbArquitetura.Location = new System.Drawing.Point(724, 48);
+            this.cbArquitetura.Name = "cbArquitetura";
+            this.cbArquitetura.Size = new System.Drawing.Size(121, 21);
+            this.cbArquitetura.TabIndex = 10;
+            this.cbArquitetura.Text = "64 bits";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2499,6 +2569,8 @@
         private System.Windows.Forms.Button btnCopiaCPF;
         private System.Windows.Forms.TextBox tbGeraCPF;
         private System.Windows.Forms.Button btnGeraCPF;
+        private System.Windows.Forms.ComboBox cbArquitetura;
+        private System.Windows.Forms.Label label45;
     }
 }
 

@@ -139,6 +139,8 @@ namespace GeradorTicket_Jira
                                         + tbSenhaLiberacao.Text
                                         + "{color}* - *Ambiente:* *{color:blue}"
                                         + cbSO.Text
+                                        + " - "
+                                        + cbArquitetura.Text
                                         + "{color}* - *Resolução:* {color:blue} *"
                                         + cbResolucao.Text
                                         + "*"
@@ -156,28 +158,29 @@ namespace GeradorTicket_Jira
                                         + cbBateriaTesteRIT.Text
                                         + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
                                         + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "*Testes Realizados na Versão:* *{color:#d04437}"
+                                        + "*Testes Realizados na Versão:* *{color:#d04437}[VERSÃO{"
                                         + tbVersao.Text
-                                        + "{color}* de *{color:#d04437}"
+                                        + "}]{color}* de *{color:#d04437}[DATA COMPILAÇÃO{"
                                         + dataVersaoRIT.Text
-                                        + "{color}* as *{color:#d04437}"
+                                        + "}]{color}* as *{color:#d04437}[HORA COMPILAÇÃO{"
                                         + horaCompilacaoRIT.Text
-                                        + "{color}* *Local Testado:* *{color:blue}"
-                                        + tbHostnameRIT.Text
-                                        + " - "
-                                        + tbDatabaseRIT.Text
-                                        + " - "
-                                        + tbPortaRIT.Text
-                                        + "{color}* \n*Usuário:* *{color:blue}"
-                                        + tbUsuarioRIT.Text
-                                        + "{color}* - *Senha:* *{color:blue}"
-                                        + tbSenhaRIT.Text
-                                        + "{color}*"
-                                        + "\n*Ambiente:* *{color:blue}"
+                                        + "}]{color}*"
+                                        + "*Ambiente:* *{color:blue}[SISTEMA OPERACIONAL{"
                                         + cbSO.Text
-                                        + "{color}* - *Resolução:* *{color:blue}"
+                                        + " - "
+                                        + cbArquitetura.Text
+                                        + "}]{color}* - *Resolução:* *{color:blue}[Resolucao{"
                                         + cbResolucao.Text
-                                        + "{color}*"
+                                        + "}]{color}* { panel}"
+                                        + "{panel:title=*BASE ONDE O PROBLEMA FOI REPRODUZIDO - DBCONF:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "h2.USUÁRIO: *{color:#0747A6}[USUÁRIO:{"
+                                        + tbUsuarioRIT.Text
+                                        + "}]{color}* - Senha: *{color:#0747A6}[SENHA:{"
+                                        + tbSenhaRIT.Text
+                                        + "}]{color}* [COLAR O DBCONF] {panel}"
+                                        + "{panel:title=*CARACTERÍSTICAS DO USUÁRIO SE PRECISAR:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "Ocorre para todos os usuário ? *{"
+                                        + "color:#0747A6}[OCORRE PARA TODOS OS USUÁRIOS]{color}*  -  Tipo de Usuário? *{color:#0747A6}[TIPO DO USUÁRIO É PRESTADOR OU FUNCIONARIO]{color}*  -  ADM no sistema?: *{color:#0747A6}[ADM NO SISTEMA]{color}*"
                                         + "{panel}";
                 if (cbRIT01.Checked)
                 {
@@ -309,7 +312,7 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITPreteste))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else if (tbEscolhas.SelectedTab.Equals(rbTesteUnit))
             {
@@ -385,6 +388,8 @@ namespace GeradorTicket_Jira
                                         + tbSenhaLiberacao.Text
                                         + "{color}* - *Ambiente:* *{color:blue}"
                                         + cbSO.Text
+                                        + " - "
+                                        + cbArquitetura.Text
                                         + "{color}* - *Resolução:* {color:blue} *"
                                         + cbResolucao.Text
                                         + "*"
@@ -505,7 +510,7 @@ namespace GeradorTicket_Jira
             else if (tbEscolhas.SelectedTab.Equals(tbOrientacao))
             {
                 string orientacao = "{panel:title=INFORMAÇÕES DIVERSAS|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#2E8B57|bgColor=WHITE|titleColor=#c1c7d0}"
-                + "\nDescrição: "
+                + "\nh2.*Descrição:* "
                 + tbOrientacoes.Text
                 + "{panel}";
 
@@ -519,14 +524,24 @@ namespace GeradorTicket_Jira
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
+<<<<<<< Updated upstream
             tbPorta.Text = "5430";
             tbHostname.Text = "192.168.232.0";
+=======
+            tbPorta.Text = "6000";
+            tbHostname.Text = "192.168.232.252";
+>>>>>>> Stashed changes
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
             tbDatabase.Text = "bd0000";
+<<<<<<< Updated upstream
             tbVersao.Text = "5.74.00";
             tbCliente.Text = "0000";
+=======
+            tbVersao.Text = "5.79.36";
+            tbCliente.Text = "2213";
+>>>>>>> Stashed changes
             tbPassword.Text = "1";
             if (tbCliente.ReadOnly == false)
             {
@@ -544,14 +559,24 @@ namespace GeradorTicket_Jira
             rbAnexoSim.Checked = true;
             rbProducao.Checked = true;
             tbPassword.Text = "1";
+<<<<<<< Updated upstream
             tbPorta.Text = "5430";
             tbHostname.Text = "192.168.0.0";
+=======
+            tbPorta.Text = "6000";
+            tbHostname.Text = "192.168.232.252";
+>>>>>>> Stashed changes
             tbUsuario.Text = "QA.FUNCIONARIO";
             cbAplicacao.Text = "SIGH";
             cbArea.Text = "NÃO INFORMADO";
             tbDatabase.Text = "bd0000";
+<<<<<<< Updated upstream
             tbVersao.Text = "5.74.00";
             tbCliente.Text = "0000";
+=======
+            tbVersao.Text = "5.79.36";
+            tbCliente.Text = "2213";
+>>>>>>> Stashed changes
             tbPassword.Text = "1";
             if (tbCliente.ReadOnly == false)
             {
@@ -754,7 +779,12 @@ namespace GeradorTicket_Jira
         private void tbProblemas_Enter(object sender, EventArgs e)
         {
             tbCliente.ReadOnly = false;
+<<<<<<< Updated upstream
             tbCliente.Focus();
+=======
+            tbCliente.Text = "2213";
+            tbCliente.Enabled = true;
+>>>>>>> Stashed changes
         }
 
         private void btnGeraCPF_Click(object sender, EventArgs e)
