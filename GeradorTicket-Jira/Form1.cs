@@ -199,9 +199,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT01.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT01.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 if (cbRIT02.Checked)
@@ -210,9 +210,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT02.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT02.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 if (cbRIT03.Checked)
@@ -221,9 +221,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT03.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT03.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 if (cbRIT04.Checked)
@@ -232,9 +232,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT04.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT04.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 Clipboard.SetText(reproduzido);
@@ -273,9 +273,9 @@ namespace GeradorTicket_Jira
             else if (tbEscolhas.SelectedTab.Equals(tbOrientacao))
             {
                 string orientacao = "{panel:title=INFORMAÇÕES DIVERSAS|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#2E8B57|bgColor=WHITE|titleColor=#c1c7d0}"
-                + "\nDescrição: "
+                + "\nh3. *Descrição:* \n*"
                 + tbOrientacoes.Text
-                + "{panel}";
+                + "* \n{panel}";
 
                 Clipboard.SetText(orientacao);
             }
@@ -458,9 +458,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT01.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT01.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 if (cbRIT02.Checked)
@@ -469,9 +469,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT02.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT02.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 if (cbRIT03.Checked)
@@ -480,9 +480,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT03.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3. *DESCRIÇÃO:* \n*"
                         + textBoxRIT03.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 if (cbRIT04.Checked)
@@ -491,9 +491,9 @@ namespace GeradorTicket_Jira
                         + "\n{panel:title=*RIT - "
                         + tbRIT04.Text
                         + "*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                        + "*DESCRIÇÃO:* "
+                        + "h3.*DESCRIÇÃO:* \n*"
                         + textBoxRIT04.Text
-                        + "\n{panel}";
+                        + "* \n{panel}";
                 }
 
                 Clipboard.SetText(reproduzido);
@@ -532,9 +532,9 @@ namespace GeradorTicket_Jira
             else if (tbEscolhas.SelectedTab.Equals(tbOrientacao))
             {
                 string orientacao = "{panel:title=INFORMAÇÕES DIVERSAS|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#2E8B57|bgColor=WHITE|titleColor=#c1c7d0}"
-                + "\nh2.*Descrição:* "
+                + "\nh3.*Descrição:* \n*"
                 + tbOrientacoes.Text
-                + "{panel}";
+                + "* \n{panel}";
 
                 Clipboard.SetText(orientacao);
             }
