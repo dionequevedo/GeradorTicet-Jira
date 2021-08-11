@@ -155,24 +155,24 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
-                string reproduzido = "{panel:title=*Registro de Análise de Qualidade - "
+                string reproduzido = "{panel:title=*REGISTRO DE ANÁLISE DE QUALIDADE - "
                                         + cbBateriaTesteRIT.Text
                                         + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
                                         + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "*Testes Realizados na Versão:* *{color:#d04437}[VERSÃO{"
+                                        + "*Testes Realizados na Versão:* *{color:#d04437}[VERSÃO: "
                                         + tbVersao.Text
-                                        + "}]{color}* de *{color:#d04437}[DATA COMPILAÇÃO{"
+                                        + "]{color}* de *{color:#d04437}[DATA COMPILAÇÃO: "
                                         + dataVersaoRIT.Text
-                                        + "}]{color}* as *{color:#d04437}[HORA COMPILAÇÃO{"
+                                        + "]{color}* as *{color:#d04437}[HORA COMPILAÇÃO: "
                                         + horaCompilacaoRIT.Text
-                                        + "}]{color}*"
-                                        + "*Ambiente:* *{color:blue}[SISTEMA OPERACIONAL{"
+                                        + "]{color}*"
+                                        + "*Ambiente:* *{color:blue}[SISTEMA OPERACIONAL:"
                                         + cbSO.Text
                                         + " - "
                                         + cbArquitetura.Text
-                                        + "}]{color}* - *Resolução:* *{color:blue}[Resolucao{"
+                                        + "]{color}* - *Resolução:* *{color:blue}[Resolucao: "
                                         + cbResolucao.Text
-                                        + "}]{color}* { panel}"
+                                        + "]{color}* {panel}"
                                         + "{panel:title=*BASE ONDE O PROBLEMA FOI REPRODUZIDO - DBCONF:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
                                         + "h2.USUÁRIO: *{color:#0747A6}[USUÁRIO:{"
                                         + tbUsuarioRIT.Text
