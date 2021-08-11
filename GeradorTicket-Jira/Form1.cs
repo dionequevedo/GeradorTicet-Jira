@@ -121,11 +121,11 @@ namespace GeradorTicket_Jira
 
                 string reproduzido = "{panel:title=*TESTES REALIZADOS PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#43cd80|titleBGColor=#9AFF9A|bgColor=#43cd80}"
                                         + "\n*SOLICITAÇÃO ATENDIDA*"
-                                        + "\n *Testes Realizados na Versão:* *{color:#d04437}"
+                                        + "\n *Testes Realizados na Versão:* *{color: red}"
                                         + tbVersao.Text
-                                        + "{color} de {color:#d04437}"
+                                        + "{color} de {color: red}"
                                         + dtDataLiberacao.Text
-                                        + "{color} às {color:#d04437}"
+                                        + "{color} às {color: red}"
                                         + dtHoraLiberacao.Text
                                         + "{color}*"
                                         + " \n*Local Testado:* *{color: blue}"
@@ -144,9 +144,10 @@ namespace GeradorTicket_Jira
                                         + cbArquitetura.Text
                                         + "{color}* - *Resolução:* {color:blue} *"
                                         + cbResolucao.Text
-                                        + "*"
-                                        + "\n*Registro de Testes em:*"
-                                        + "\n*Observações:* {color: red}*"
+                                        + "*{color}"
+                                        + "\nh3. *Registro de Testes em:*"
+                                        + "\n*{color: red} ... {color}*"
+                                        + "\nh3. *Observações:* \n{color: red}*"
                                         + tbObsLiberacao.Text
                                         + "*{color}"
                                         + "\n{panel}";
@@ -381,11 +382,11 @@ namespace GeradorTicket_Jira
 
                 string reproduzido = "{panel:title=*TESTES REALIZADOS PELO SETOR DE QUALIDADE*|borderStyle=solid|borderColor=#43cd80|titleBGColor=#9AFF9A|bgColor=#43cd80}"
                                         + "\n*SOLICITAÇÃO ATENDIDA*"
-                                        + "\n *Testes Realizados na Versão:* *{color:#d04437}"
+                                        + "\n *Testes Realizados na Versão:* *{color: red}"
                                         + tbVersao.Text
-                                        + "{color} de {color:#d04437}"
+                                        + "{color} de {color: red}"
                                         + dtDataLiberacao.Text
-                                        + "{color} às {color:#d04437}"
+                                        + "{color} às {color: red}"
                                         + dtHoraLiberacao.Text
                                         + "{color}*"
                                         + " \n*Local Testado:* *{color: blue}"
@@ -404,9 +405,10 @@ namespace GeradorTicket_Jira
                                         + cbArquitetura.Text
                                         + "{color}* - *Resolução:* {color:blue} *"
                                         + cbResolucao.Text
-                                        + "*"
-                                        + "\n*Registro de Testes em:*"
-                                        + "\n*Observações:* {color: red}*"
+                                        + "*{color}"
+                                        + "\nh3. *Registro de Testes em:*"
+                                        + "\n*{color: red} ... {color}*"
+                                        + "\nh3. *Observações:* \n{color: red}*"
                                         + tbObsLiberacao.Text
                                         + "*{color}"
                                         + "\n{panel}";
