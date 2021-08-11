@@ -123,12 +123,12 @@ namespace GeradorTicket_Jira
                                         + "\n*SOLICITAÇÃO ATENDIDA*"
                                         + "\n *Testes Realizados na Versão:* *{color:#d04437}"
                                         + tbVersao.Text
-                                        + "{color}* de *{color:#d04437}"
+                                        + "{color} de {color:#d04437}"
                                         + dtDataLiberacao.Text
-                                        + "{color}* as *{color:#d04437}"
+                                        + "{color} às {color:#d04437}"
                                         + dtHoraLiberacao.Text
                                         + "{color}*"
-                                        + " *Local Testado:* *{color: blue}"
+                                        + " \n*Local Testado:* *{color: blue}"
                                         + tbHostnameLiberacao.Text
                                         + " - "
                                         + tbDatabaseLiberacao.Text
@@ -138,7 +138,7 @@ namespace GeradorTicket_Jira
                                         + tbUsuarioLiberacao.Text
                                         + "{color}* - *Senha:* *{color:blue}"
                                         + tbSenhaLiberacao.Text
-                                        + "{color}* - *Ambiente:* *{color:blue}"
+                                        + "{color}*\n*Ambiente:* *{color:blue}"
                                         + cbSO.Text
                                         + " - "
                                         + cbArquitetura.Text
@@ -388,7 +388,7 @@ namespace GeradorTicket_Jira
                                         + "{color} às {color:#d04437}"
                                         + dtHoraLiberacao.Text
                                         + "{color}*"
-                                        + "\n*Local Testado:* *{color: blue}"
+                                        + " \n*Local Testado:* *{color: blue}"
                                         + tbHostnameLiberacao.Text
                                         + " - "
                                         + tbDatabaseLiberacao.Text
@@ -415,34 +415,44 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbRITQualidade))
             {
-                string reproduzido = "{panel:title=*Registro de Análise de Qualidade - "
+                string reproduzido = "{panel:title=*REGISTRO DE ANÁLISE DE QUALIDADE - "
                                         + cbBateriaTesteRIT.Text
-                                        + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}"
-                                        + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
-                                        + "*Testes Realizados na Versão:* *{color:#d04437}"
+                                        + " BATERIA DE TESTES*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}{panel}\n"
+                                        //  Identificação da versão e Ambiente
+                                        + "{panel:title=*TESTES REALIZADOS EM*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}\n"
+                                        + "h2.*Testes Realizados na Versão:* \nh3.*{color:#d04437}["
                                         + tbVersao.Text
-                                        + "{color}* de *{color:#d04437}"
+                                        + "]{color}* *de* *{color:#d04437} ["
                                         + dataVersaoRIT.Text
-                                        + "{color}* as *{color:#d04437}"
+                                        + "]{color}* *compilada às* *{color:#d04437} ["
                                         + horaCompilacaoRIT.Text
-                                        + "{color}* *Local Testado:* *{color:blue}"
-                                        + tbHostnameRIT.Text
-                                        + " - "
-                                        + tbDatabaseRIT.Text
-                                        + " - "
-                                        + tbPortaRIT.Text
-                                        + "{color}* \n*Usuário:* *{color:blue}"
-                                        + tbUsuarioRIT.Text
-                                        + "{color}* - *Senha:* *{color:blue}"
-                                        + tbSenhaRIT.Text
-                                        + "{color}*"
-                                        + "\n*Ambiente:* *{color:blue}"
+                                        + "]{color}*"
+                                        + "\nh2.*Ambiente:* \nh3.*{color:blue}["
                                         + cbSO.Text
-                                        + "{color}* - *Resolução:* *{color:blue}"
+                                        + " - "
+                                        + cbArquitetura.Text
+                                        + "]{color}* - *Resolução:* *{color:blue}["
                                         + cbResolucao.Text
+                                        + "]{color}*\n {panel}"
+                                        //  Identificação da base
+                                        + "{panel:title=*BASE ONDE O PROBLEMA FOI REPRODUZIDO - DBCONF:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "h2.USUÁRIO: *{color:#0747A6}"
+                                        + tbUsuarioRIT.Text
+                                        + "{color}* - Senha: *{color:#0747A6}"
+                                        + tbSenhaRIT.Text
+                                        + "{color}* \n{code:java}\n*** COLAR O DBCONF ***\n{code}\n{panel}"
+                                        //  Informações do usuário
+                                        + "{panel:title=*CARACTERÍSTICAS DO USUÁRIO SE PRECISAR:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#607B8B|bgColor=#C6E2FF|titleColor=white}"
+                                        + "\nOcorre para todos os usuários ? *{"
+                                        + "color:#0747A6}"
+                                        + cbOcorreSN.Text
+                                        + "{color}*\nTipo de Usuário? *{color:#0747A6}"
+                                        + cbTipoUser.Text
+                                        + "{color}*\nADM no sistema?: *{color:#0747A6}"
+                                        + cbAdmSistema.Text
                                         + "{color}*"
                                         + "{panel}";
-                if(cbRIT01.Checked)
+                if (cbRIT01.Checked)
                 {
                     reproduzido = reproduzido
                         + "\n{panel:title=*RIT - "
