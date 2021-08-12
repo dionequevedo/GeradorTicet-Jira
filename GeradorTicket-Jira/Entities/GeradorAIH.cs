@@ -34,7 +34,9 @@ namespace GeradorTicket_Jira.Entities
             }
 
             Int64 valorOriginal = Convert.ToInt64(numeroDefinitivo);
-            string digitoVerificador = (valorOriginal % 11).ToString().Substring(-1);
+            string digitoVerificador = (valorOriginal % 11).ToString();
+            int tamanho = (digitoVerificador.Length) - 1;
+            digitoVerificador = digitoVerificador.Substring(tamanho);
             numeroDefinitivo += digitoVerificador;
             
             return numeroDefinitivo;
