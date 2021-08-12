@@ -815,5 +815,12 @@ namespace GeradorTicket_Jira
             tbGeraCNS.Text = CNS.GeraCNS();
             Clipboard.SetText(tbGeraCNS.Text);
         }
+
+        private void btnGeraAIH_Click(object sender, EventArgs e)
+        {
+            GeradorAIH AIH = new GeradorAIH();
+            tbGeraAIH.Text = AIH.GeraAIH();
+            Clipboard.SetText(tbGeraAIH.Text);
+        }
     }
 }

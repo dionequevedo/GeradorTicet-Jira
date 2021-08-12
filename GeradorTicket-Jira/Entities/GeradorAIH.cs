@@ -25,7 +25,7 @@ namespace GeradorTicket_Jira.Entities
                 numeroDefinitivo = primParDigAIH[aleatorio.Next(0, 27)].ToString();     /*  Adiciona os primeiros 2 dígitos referente ao estado ou a 99 que é CNRAC
                                                                                          *  (Central Nacional de regulação de Alta Complexidade)                            */
                 numeroDefinitivo += segParDigAIH.ToString();                            /*  Adiciona os dois dígitos referente ao ano atual                                 */
-                numeroDefinitivo += tipoCodigoAIH.Next(1, 5);                           /*  Adiciona o código referente ao tipo de AIH    */
+                numeroDefinitivo += tipoCodigoAIH.Next(1, 5);                           /*  Adiciona o código referente ao tipo de AIH                                      */
 
                 for(int x = 0; x < 7; x++)
                 {
