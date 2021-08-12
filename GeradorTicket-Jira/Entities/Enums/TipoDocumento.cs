@@ -7,5 +7,7 @@
         , CNPJ
         , Telefone
         , Celular
+        , AIH
+        , APAC
     }
 }
