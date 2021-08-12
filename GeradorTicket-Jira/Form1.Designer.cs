@@ -2000,6 +2000,7 @@
             this.btnGeraCelular.TabIndex = 12;
             this.btnGeraCelular.Text = "Gera Celular";
             this.btnGeraCelular.UseVisualStyleBackColor = true;
+            this.btnGeraCelular.Click += new System.EventHandler(this.btnGeraCelular_Click);
             // 
             // btnCopiarTelefone
             // 
@@ -2030,6 +2031,7 @@
             this.btnGeraTelefone.TabIndex = 9;
             this.btnGeraTelefone.Text = "Gera Telefone Fixo";
             this.btnGeraTelefone.UseVisualStyleBackColor = true;
+            this.btnGeraTelefone.Click += new System.EventHandler(this.btnGeraTelefone_Click);
             // 
             // btnCopiaCNPJ
             // 

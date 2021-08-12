@@ -822,5 +822,19 @@ namespace GeradorTicket_Jira
             tbGeraAIH.Text = AIH.GeraAIH();
             Clipboard.SetText(tbGeraAIH.Text);
         }
+
+        private void btnGeraTelefone_Click(object sender, EventArgs e)
+        {
+            GeradorTelefone Fixo = new GeradorTelefone();
+            tbGeraTelefone.Text = Fixo.GeraTelefone(0);
+            Clipboard.SetText(tbGeraTelefone.Text);
+        }
+
+        private void btnGeraCelular_Click(object sender, EventArgs e)
+        {
+            GeradorTelefone Cel = new GeradorTelefone();
+            tbGeraTelefone.Text = Cel.GeraTelefone(1);
+            Clipboard.SetText(tbGeraTelefone.Text);
+        }
     }
 }

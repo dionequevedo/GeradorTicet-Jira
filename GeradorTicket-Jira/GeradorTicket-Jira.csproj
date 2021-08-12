@@ -119,6 +119,7 @@
     <Compile Include="Entities\GeradorCNS.cs" />
     <Compile Include="Entities\GeradorAIH.cs" />
     <Compile Include="Entities\GeradorCPF.cs" />
+    <Compile Include="Entities\GeradorTelefone.cs" />
     <Compile Include="Entities\TextosPadroes.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
