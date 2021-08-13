@@ -833,8 +833,8 @@ namespace GeradorTicket_Jira
         private void btnGeraCelular_Click(object sender, EventArgs e)
         {
             GeradorTelefone Cel = new GeradorTelefone();
-            tbGeraTelefone.Text = Cel.GeraTelefone(1);
-            Clipboard.SetText(tbGeraTelefone.Text);
+            tbGeraCelular.Text = Cel.GeraTelefone(1);
+            Clipboard.SetText(tbGeraCelular.Text);
         }
     }
 }
