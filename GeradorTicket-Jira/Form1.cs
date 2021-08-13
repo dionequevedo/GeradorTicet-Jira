@@ -260,14 +260,6 @@ namespace GeradorTicket_Jira
 
                 Clipboard.SetText(reproduzido);
             }
-            else if (tbEscolhas.SelectedTab.Equals(tbReview))
-            {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else if (tbEscolhas.SelectedTab.Equals(tbWorkshop))
-            {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
             else if (tbEscolhas.SelectedTab.Equals(tbGeraDoc))
             {
                 MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -520,14 +512,6 @@ namespace GeradorTicket_Jira
 
                 Clipboard.SetText(reproduzido);
             }
-            else if (tbEscolhas.SelectedTab.Equals(tbReview))
-            {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else if (tbEscolhas.SelectedTab.Equals(tbWorkshop))
-            {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
             else if (tbEscolhas.SelectedTab.Equals(tbGeraDoc))
             {
                 MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -749,18 +733,6 @@ namespace GeradorTicket_Jira
             tbRAResumido.Focus();
         }
 
-        private void reviewRealizadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            tbEscolhas.SelectedTab = tbReview;
-            tbReview.Focus();
-        }
-
-        private void workShopToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            tbEscolhas.SelectedTab = tbWorkshop;
-            tbWorkshop.Focus();
-        }
-
         private void sprintDevToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tbEscolhas.SelectedTab = tbGeraDoc;
@@ -853,6 +825,7 @@ namespace GeradorTicket_Jira
 
         private void btnCopiarTelefone_Click(object sender, EventArgs e)
         {
+            tbGeraTelefone.Text = "";
             GeradorTelefone Fixo = new GeradorTelefone();
             tbGeraTelefone.Text = Fixo.GeraTelefone(3);
             Clipboard.SetText(tbGeraTelefone.Text);
@@ -860,8 +833,9 @@ namespace GeradorTicket_Jira
 
         private void btnCopiaCelular_Click(object sender, EventArgs e)
         {
+            tbGeraCelular.Text = "";
             GeradorTelefone Cel = new GeradorTelefone();
-            tbGeraCelular.Text = Cel.GeraTelefone(1);
+            tbGeraCelular.Text = Cel.GeraTelefone(2);
             Clipboard.SetText(tbGeraCelular.Text);
         }
     }

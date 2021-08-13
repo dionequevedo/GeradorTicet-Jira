@@ -201,8 +201,6 @@
             this.tbRequisitosImplementacao = new System.Windows.Forms.TextBox();
             this.tbJustificativaCliente = new System.Windows.Forms.TextBox();
             this.tbSolicitacaoCliente = new System.Windows.Forms.TextBox();
-            this.tbReview = new System.Windows.Forms.TabPage();
-            this.tbWorkshop = new System.Windows.Forms.TabPage();
             this.tbRITPreteste = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -316,20 +314,6 @@
             this.modeloRAResumidoToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.modeloRAResumidoToolStripMenuItem.Text = "RA Resumido";
             this.modeloRAResumidoToolStripMenuItem.Click += new System.EventHandler(this.modeloRAResumidoToolStripMenuItem_Click);
-            // 
-            // reviewRealizadoToolStripMenuItem
-            // 
-            this.reviewRealizadoToolStripMenuItem.Name = "reviewRealizadoToolStripMenuItem";
-            this.reviewRealizadoToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.reviewRealizadoToolStripMenuItem.Text = "Review Realizado";
-            this.reviewRealizadoToolStripMenuItem.Click += new System.EventHandler(this.reviewRealizadoToolStripMenuItem_Click);
-            // 
-            // workShopToolStripMenuItem
-            // 
-            this.workShopToolStripMenuItem.Name = "workShopToolStripMenuItem";
-            this.workShopToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.workShopToolStripMenuItem.Text = "WorkShop";
-            this.workShopToolStripMenuItem.Click += new System.EventHandler(this.workShopToolStripMenuItem_Click);
             // 
             // sprintDevToolStripMenuItem
             // 
@@ -701,8 +685,6 @@
             this.tbEscolhas.Controls.Add(this.tbOrientacao);
             this.tbEscolhas.Controls.Add(this.tbGeraDoc);
             this.tbEscolhas.Controls.Add(this.tbRAResumido);
-            this.tbEscolhas.Controls.Add(this.tbReview);
-            this.tbEscolhas.Controls.Add(this.tbWorkshop);
             this.tbEscolhas.Controls.Add(this.tbRITPreteste);
             this.tbEscolhas.Location = new System.Drawing.Point(4, 18);
             this.tbEscolhas.Name = "tbEscolhas";
@@ -2191,26 +2173,6 @@
             this.tbSolicitacaoCliente.Size = new System.Drawing.Size(825, 87);
             this.tbSolicitacaoCliente.TabIndex = 20;
             // 
-            // tbReview
-            // 
-            this.tbReview.BackColor = System.Drawing.Color.Black;
-            this.tbReview.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbReview.Location = new System.Drawing.Point(4, 25);
-            this.tbReview.Name = "tbReview";
-            this.tbReview.Size = new System.Drawing.Size(842, 475);
-            this.tbReview.TabIndex = 7;
-            this.tbReview.Text = "Review";
-            // 
-            // tbWorkshop
-            // 
-            this.tbWorkshop.BackColor = System.Drawing.Color.Black;
-            this.tbWorkshop.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbWorkshop.Location = new System.Drawing.Point(4, 25);
-            this.tbWorkshop.Name = "tbWorkshop";
-            this.tbWorkshop.Size = new System.Drawing.Size(842, 475);
-            this.tbWorkshop.TabIndex = 8;
-            this.tbWorkshop.Text = "WorkShop";
-            // 
             // tbRITPreteste
             // 
             this.tbRITPreteste.BackColor = System.Drawing.Color.Black;
@@ -2438,8 +2400,6 @@
         private System.Windows.Forms.TabPage tbLiberacaoTeste;
         private System.Windows.Forms.TabPage tbRITQualidade;
         private System.Windows.Forms.TabPage tbRAResumido;
-        private System.Windows.Forms.TabPage tbReview;
-        private System.Windows.Forms.TabPage tbWorkshop;
         private System.Windows.Forms.TabPage tbGeraDoc;
         private System.Windows.Forms.TabPage tbOrientacao;
         private System.Windows.Forms.Label label6;

@@ -44,7 +44,7 @@ namespace GeradorTicket_Jira.Entities
             }
             else if (op == 2)
             {
-                numTelefone = dddCel[aleatorio.Next(0, 6)];
+                numTelefone = dddCelSemFormat[aleatorio.Next(0, 6)];
                 for (int i = 0; i < 8; i++)
                 {
                     numTelefone += aleatorio.Next(0, 9);
@@ -52,7 +52,7 @@ namespace GeradorTicket_Jira.Entities
             }
             else
             {
-                numTelefone = dddFix[aleatorio.Next(0, 6)];
+                numTelefone = dddFixSemFormat[aleatorio.Next(0, 6)];
                 for (int i = 0; i < 7; i++)
                 {
                     numTelefone += aleatorio.Next(0, 9);
