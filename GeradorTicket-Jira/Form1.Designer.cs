@@ -375,7 +375,7 @@
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
@@ -393,7 +393,7 @@
             this.blackToolStripMenuItem,
             this.blackToolStripMenuItem1});
             this.alterarLayoutToolStripMenuItem.Name = "alterarLayoutToolStripMenuItem";
-            this.alterarLayoutToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.alterarLayoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alterarLayoutToolStripMenuItem.Text = "Alterar Layout";
             // 
             // blackToolStripMenuItem
@@ -1846,12 +1846,12 @@
             // tbOrientacoes
             // 
             this.tbOrientacoes.AcceptsReturn = true;
-            this.tbOrientacoes.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbOrientacoes.BackColor = System.Drawing.SystemColors.Desktop;
             this.tbOrientacoes.ForeColor = System.Drawing.SystemColors.Window;
             this.tbOrientacoes.Location = new System.Drawing.Point(9, 21);
             this.tbOrientacoes.Multiline = true;
             this.tbOrientacoes.Name = "tbOrientacoes";
-            this.tbOrientacoes.Size = new System.Drawing.Size(825, 65);
+            this.tbOrientacoes.Size = new System.Drawing.Size(825, 441);
             this.tbOrientacoes.TabIndex = 50;
             // 
             // label44
@@ -2323,6 +2323,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(884, 679);
             this.Controls.Add(this.panel2);
