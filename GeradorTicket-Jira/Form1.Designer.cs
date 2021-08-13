@@ -174,10 +174,10 @@
             this.tbOrientacoes = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.tbGeraDoc = new System.Windows.Forms.TabPage();
-            this.btnCopiaNome = new System.Windows.Forms.Button();
+            this.tbGeraAIH = new System.Windows.Forms.TextBox();
+            this.btnGeraAIH = new System.Windows.Forms.Button();
             this.tbGeraNome = new System.Windows.Forms.TextBox();
             this.btnGeraNome = new System.Windows.Forms.Button();
-            this.btnCopiaEmail = new System.Windows.Forms.Button();
             this.tbGeraEmail = new System.Windows.Forms.TextBox();
             this.btnGeraEmail = new System.Windows.Forms.Button();
             this.btnCopiaCelular = new System.Windows.Forms.Button();
@@ -186,13 +186,10 @@
             this.btnCopiarTelefone = new System.Windows.Forms.Button();
             this.tbGeraTelefone = new System.Windows.Forms.TextBox();
             this.btnGeraTelefone = new System.Windows.Forms.Button();
-            this.btnCopiaCNPJ = new System.Windows.Forms.Button();
             this.tbGeraCNPJ = new System.Windows.Forms.TextBox();
             this.btnGeraCNPJ = new System.Windows.Forms.Button();
-            this.btnCopiarCNS = new System.Windows.Forms.Button();
             this.tbGeraCNS = new System.Windows.Forms.TextBox();
             this.btnGeraCNS = new System.Windows.Forms.Button();
-            this.btnCopiaCPF = new System.Windows.Forms.Button();
             this.tbGeraCPF = new System.Windows.Forms.TextBox();
             this.btnGeraCPF = new System.Windows.Forms.Button();
             this.tbRAResumido = new System.Windows.Forms.TabPage();
@@ -219,9 +216,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
-            this.btnCopiaAIH = new System.Windows.Forms.Button();
-            this.tbGeraAIH = new System.Windows.Forms.TextBox();
-            this.btnGeraAIH = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
@@ -1880,13 +1874,10 @@
             // tbGeraDoc
             // 
             this.tbGeraDoc.BackColor = System.Drawing.Color.Black;
-            this.tbGeraDoc.Controls.Add(this.btnCopiaAIH);
             this.tbGeraDoc.Controls.Add(this.tbGeraAIH);
             this.tbGeraDoc.Controls.Add(this.btnGeraAIH);
-            this.tbGeraDoc.Controls.Add(this.btnCopiaNome);
             this.tbGeraDoc.Controls.Add(this.tbGeraNome);
             this.tbGeraDoc.Controls.Add(this.btnGeraNome);
-            this.tbGeraDoc.Controls.Add(this.btnCopiaEmail);
             this.tbGeraDoc.Controls.Add(this.tbGeraEmail);
             this.tbGeraDoc.Controls.Add(this.btnGeraEmail);
             this.tbGeraDoc.Controls.Add(this.btnCopiaCelular);
@@ -1895,13 +1886,10 @@
             this.tbGeraDoc.Controls.Add(this.btnCopiarTelefone);
             this.tbGeraDoc.Controls.Add(this.tbGeraTelefone);
             this.tbGeraDoc.Controls.Add(this.btnGeraTelefone);
-            this.tbGeraDoc.Controls.Add(this.btnCopiaCNPJ);
             this.tbGeraDoc.Controls.Add(this.tbGeraCNPJ);
             this.tbGeraDoc.Controls.Add(this.btnGeraCNPJ);
-            this.tbGeraDoc.Controls.Add(this.btnCopiarCNS);
             this.tbGeraDoc.Controls.Add(this.tbGeraCNS);
             this.tbGeraDoc.Controls.Add(this.btnGeraCNS);
-            this.tbGeraDoc.Controls.Add(this.btnCopiaCPF);
             this.tbGeraDoc.Controls.Add(this.tbGeraCPF);
             this.tbGeraDoc.Controls.Add(this.btnGeraCPF);
             this.tbGeraDoc.ForeColor = System.Drawing.SystemColors.Control;
@@ -1911,30 +1899,41 @@
             this.tbGeraDoc.TabIndex = 9;
             this.tbGeraDoc.Text = "Gerador DOC";
             // 
-            // btnCopiaNome
+            // tbGeraAIH
             // 
-            this.btnCopiaNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaNome.Location = new System.Drawing.Point(323, 293);
-            this.btnCopiaNome.Name = "btnCopiaNome";
-            this.btnCopiaNome.Size = new System.Drawing.Size(97, 23);
-            this.btnCopiaNome.TabIndex = 20;
-            this.btnCopiaNome.Text = "Copiar Nome";
-            this.btnCopiaNome.UseVisualStyleBackColor = true;
+            this.tbGeraAIH.BackColor = System.Drawing.SystemColors.MenuText;
+            this.tbGeraAIH.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbGeraAIH.Location = new System.Drawing.Point(187, 140);
+            this.tbGeraAIH.Name = "tbGeraAIH";
+            this.tbGeraAIH.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraAIH.TabIndex = 22;
+            this.tbGeraAIH.Text = "00.00.0.0000000-0";
+            // 
+            // btnGeraAIH
+            // 
+            this.btnGeraAIH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGeraAIH.Location = new System.Drawing.Point(17, 138);
+            this.btnGeraAIH.Name = "btnGeraAIH";
+            this.btnGeraAIH.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraAIH.TabIndex = 21;
+            this.btnGeraAIH.Text = "Gera AIH";
+            this.btnGeraAIH.UseVisualStyleBackColor = true;
+            this.btnGeraAIH.Click += new System.EventHandler(this.btnGeraAIH_Click);
             // 
             // tbGeraNome
             // 
             this.tbGeraNome.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraNome.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraNome.Location = new System.Drawing.Point(180, 295);
+            this.tbGeraNome.Location = new System.Drawing.Point(559, 143);
             this.tbGeraNome.Name = "tbGeraNome";
-            this.tbGeraNome.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraNome.Size = new System.Drawing.Size(181, 20);
             this.tbGeraNome.TabIndex = 19;
             this.tbGeraNome.Text = "ANA MARIA DA SILVA";
             // 
             // btnGeraNome
             // 
             this.btnGeraNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraNome.Location = new System.Drawing.Point(10, 293);
+            this.btnGeraNome.Location = new System.Drawing.Point(389, 141);
             this.btnGeraNome.Name = "btnGeraNome";
             this.btnGeraNome.Size = new System.Drawing.Size(144, 23);
             this.btnGeraNome.TabIndex = 18;
@@ -1942,30 +1941,20 @@
             this.btnGeraNome.UseVisualStyleBackColor = true;
             this.btnGeraNome.Click += new System.EventHandler(this.btnGeraNome_Click);
             // 
-            // btnCopiaEmail
-            // 
-            this.btnCopiaEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaEmail.Location = new System.Drawing.Point(323, 254);
-            this.btnCopiaEmail.Name = "btnCopiaEmail";
-            this.btnCopiaEmail.Size = new System.Drawing.Size(97, 23);
-            this.btnCopiaEmail.TabIndex = 17;
-            this.btnCopiaEmail.Text = "Copiar E-mail";
-            this.btnCopiaEmail.UseVisualStyleBackColor = true;
-            // 
             // tbGeraEmail
             // 
             this.tbGeraEmail.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraEmail.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraEmail.Location = new System.Drawing.Point(180, 256);
+            this.tbGeraEmail.Location = new System.Drawing.Point(559, 104);
             this.tbGeraEmail.Name = "tbGeraEmail";
-            this.tbGeraEmail.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraEmail.Size = new System.Drawing.Size(181, 20);
             this.tbGeraEmail.TabIndex = 16;
             this.tbGeraEmail.Text = "xxxx@xxx.com.br";
             // 
             // btnGeraEmail
             // 
             this.btnGeraEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraEmail.Location = new System.Drawing.Point(10, 254);
+            this.btnGeraEmail.Location = new System.Drawing.Point(389, 102);
             this.btnGeraEmail.Name = "btnGeraEmail";
             this.btnGeraEmail.Size = new System.Drawing.Size(144, 23);
             this.btnGeraEmail.TabIndex = 15;
@@ -1976,18 +1965,19 @@
             // btnCopiaCelular
             // 
             this.btnCopiaCelular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaCelular.Location = new System.Drawing.Point(323, 214);
+            this.btnCopiaCelular.Location = new System.Drawing.Point(702, 62);
             this.btnCopiaCelular.Name = "btnCopiaCelular";
-            this.btnCopiaCelular.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCelular.Size = new System.Drawing.Size(125, 23);
             this.btnCopiaCelular.TabIndex = 14;
-            this.btnCopiaCelular.Text = "Copiar Cel.";
+            this.btnCopiaCelular.Text = "Sem Formação";
             this.btnCopiaCelular.UseVisualStyleBackColor = true;
+            this.btnCopiaCelular.Click += new System.EventHandler(this.btnCopiaCelular_Click);
             // 
             // tbGeraCelular
             // 
             this.tbGeraCelular.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCelular.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCelular.Location = new System.Drawing.Point(180, 216);
+            this.tbGeraCelular.Location = new System.Drawing.Point(559, 64);
             this.tbGeraCelular.Name = "tbGeraCelular";
             this.tbGeraCelular.Size = new System.Drawing.Size(118, 20);
             this.tbGeraCelular.TabIndex = 13;
@@ -1996,7 +1986,7 @@
             // btnGeraCelular
             // 
             this.btnGeraCelular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCelular.Location = new System.Drawing.Point(10, 214);
+            this.btnGeraCelular.Location = new System.Drawing.Point(389, 62);
             this.btnGeraCelular.Name = "btnGeraCelular";
             this.btnGeraCelular.Size = new System.Drawing.Size(144, 23);
             this.btnGeraCelular.TabIndex = 12;
@@ -2007,18 +1997,19 @@
             // btnCopiarTelefone
             // 
             this.btnCopiarTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiarTelefone.Location = new System.Drawing.Point(323, 174);
+            this.btnCopiarTelefone.Location = new System.Drawing.Point(702, 22);
             this.btnCopiarTelefone.Name = "btnCopiarTelefone";
-            this.btnCopiarTelefone.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiarTelefone.Size = new System.Drawing.Size(125, 23);
             this.btnCopiarTelefone.TabIndex = 11;
-            this.btnCopiarTelefone.Text = "Copiar Tel.";
+            this.btnCopiarTelefone.Text = "Sem Formatação";
             this.btnCopiarTelefone.UseVisualStyleBackColor = true;
+            this.btnCopiarTelefone.Click += new System.EventHandler(this.btnCopiarTelefone_Click);
             // 
             // tbGeraTelefone
             // 
             this.tbGeraTelefone.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraTelefone.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraTelefone.Location = new System.Drawing.Point(180, 176);
+            this.tbGeraTelefone.Location = new System.Drawing.Point(559, 24);
             this.tbGeraTelefone.Name = "tbGeraTelefone";
             this.tbGeraTelefone.Size = new System.Drawing.Size(118, 20);
             this.tbGeraTelefone.TabIndex = 10;
@@ -2027,7 +2018,7 @@
             // btnGeraTelefone
             // 
             this.btnGeraTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraTelefone.Location = new System.Drawing.Point(10, 174);
+            this.btnGeraTelefone.Location = new System.Drawing.Point(389, 22);
             this.btnGeraTelefone.Name = "btnGeraTelefone";
             this.btnGeraTelefone.Size = new System.Drawing.Size(144, 23);
             this.btnGeraTelefone.TabIndex = 9;
@@ -2035,22 +2026,11 @@
             this.btnGeraTelefone.UseVisualStyleBackColor = true;
             this.btnGeraTelefone.Click += new System.EventHandler(this.btnGeraTelefone_Click);
             // 
-            // btnCopiaCNPJ
-            // 
-            this.btnCopiaCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaCNPJ.Location = new System.Drawing.Point(323, 101);
-            this.btnCopiaCNPJ.Name = "btnCopiaCNPJ";
-            this.btnCopiaCNPJ.Size = new System.Drawing.Size(97, 23);
-            this.btnCopiaCNPJ.TabIndex = 8;
-            this.btnCopiaCNPJ.Text = "Copiar CNPJ";
-            this.btnCopiaCNPJ.UseVisualStyleBackColor = true;
-            this.btnCopiaCNPJ.Click += new System.EventHandler(this.btnCopiaCNPJ_Click);
-            // 
             // tbGeraCNPJ
             // 
             this.tbGeraCNPJ.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCNPJ.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCNPJ.Location = new System.Drawing.Point(180, 103);
+            this.tbGeraCNPJ.Location = new System.Drawing.Point(187, 103);
             this.tbGeraCNPJ.Name = "tbGeraCNPJ";
             this.tbGeraCNPJ.Size = new System.Drawing.Size(118, 20);
             this.tbGeraCNPJ.TabIndex = 7;
@@ -2059,7 +2039,7 @@
             // btnGeraCNPJ
             // 
             this.btnGeraCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCNPJ.Location = new System.Drawing.Point(10, 101);
+            this.btnGeraCNPJ.Location = new System.Drawing.Point(17, 101);
             this.btnGeraCNPJ.Name = "btnGeraCNPJ";
             this.btnGeraCNPJ.Size = new System.Drawing.Size(144, 23);
             this.btnGeraCNPJ.TabIndex = 6;
@@ -2067,21 +2047,11 @@
             this.btnGeraCNPJ.UseVisualStyleBackColor = true;
             this.btnGeraCNPJ.Click += new System.EventHandler(this.btnGeraCNPJ_Click);
             // 
-            // btnCopiarCNS
-            // 
-            this.btnCopiarCNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiarCNS.Location = new System.Drawing.Point(323, 61);
-            this.btnCopiarCNS.Name = "btnCopiarCNS";
-            this.btnCopiarCNS.Size = new System.Drawing.Size(97, 23);
-            this.btnCopiarCNS.TabIndex = 5;
-            this.btnCopiarCNS.Text = "Copiar CNS";
-            this.btnCopiarCNS.UseVisualStyleBackColor = true;
-            // 
             // tbGeraCNS
             // 
             this.tbGeraCNS.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCNS.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCNS.Location = new System.Drawing.Point(180, 63);
+            this.tbGeraCNS.Location = new System.Drawing.Point(187, 63);
             this.tbGeraCNS.Name = "tbGeraCNS";
             this.tbGeraCNS.Size = new System.Drawing.Size(118, 20);
             this.tbGeraCNS.TabIndex = 4;
@@ -2090,7 +2060,7 @@
             // btnGeraCNS
             // 
             this.btnGeraCNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCNS.Location = new System.Drawing.Point(10, 61);
+            this.btnGeraCNS.Location = new System.Drawing.Point(17, 61);
             this.btnGeraCNS.Name = "btnGeraCNS";
             this.btnGeraCNS.Size = new System.Drawing.Size(144, 23);
             this.btnGeraCNS.TabIndex = 3;
@@ -2098,22 +2068,11 @@
             this.btnGeraCNS.UseVisualStyleBackColor = true;
             this.btnGeraCNS.Click += new System.EventHandler(this.btnGeraCNS_Click);
             // 
-            // btnCopiaCPF
-            // 
-            this.btnCopiaCPF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaCPF.Location = new System.Drawing.Point(323, 23);
-            this.btnCopiaCPF.Name = "btnCopiaCPF";
-            this.btnCopiaCPF.Size = new System.Drawing.Size(97, 23);
-            this.btnCopiaCPF.TabIndex = 2;
-            this.btnCopiaCPF.Text = "Copiar CPF";
-            this.btnCopiaCPF.UseVisualStyleBackColor = true;
-            this.btnCopiaCPF.Click += new System.EventHandler(this.btnCopiaCPF_Click);
-            // 
             // tbGeraCPF
             // 
             this.tbGeraCPF.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCPF.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCPF.Location = new System.Drawing.Point(180, 25);
+            this.tbGeraCPF.Location = new System.Drawing.Point(187, 25);
             this.tbGeraCPF.Name = "tbGeraCPF";
             this.tbGeraCPF.Size = new System.Drawing.Size(118, 20);
             this.tbGeraCPF.TabIndex = 1;
@@ -2122,7 +2081,7 @@
             // btnGeraCPF
             // 
             this.btnGeraCPF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCPF.Location = new System.Drawing.Point(10, 23);
+            this.btnGeraCPF.Location = new System.Drawing.Point(17, 23);
             this.btnGeraCPF.Name = "btnGeraCPF";
             this.btnGeraCPF.Size = new System.Drawing.Size(144, 23);
             this.btnGeraCPF.TabIndex = 0;
@@ -2388,37 +2347,6 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
-            // btnCopiaAIH
-            // 
-            this.btnCopiaAIH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaAIH.Location = new System.Drawing.Point(323, 138);
-            this.btnCopiaAIH.Name = "btnCopiaAIH";
-            this.btnCopiaAIH.Size = new System.Drawing.Size(97, 23);
-            this.btnCopiaAIH.TabIndex = 23;
-            this.btnCopiaAIH.Text = "Copiar AIH";
-            this.btnCopiaAIH.UseVisualStyleBackColor = true;
-            // 
-            // tbGeraAIH
-            // 
-            this.tbGeraAIH.BackColor = System.Drawing.SystemColors.MenuText;
-            this.tbGeraAIH.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraAIH.Location = new System.Drawing.Point(180, 140);
-            this.tbGeraAIH.Name = "tbGeraAIH";
-            this.tbGeraAIH.Size = new System.Drawing.Size(118, 20);
-            this.tbGeraAIH.TabIndex = 22;
-            this.tbGeraAIH.Text = "00.00.0.0000000-0";
-            // 
-            // btnGeraAIH
-            // 
-            this.btnGeraAIH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraAIH.Location = new System.Drawing.Point(10, 138);
-            this.btnGeraAIH.Name = "btnGeraAIH";
-            this.btnGeraAIH.Size = new System.Drawing.Size(144, 23);
-            this.btnGeraAIH.TabIndex = 21;
-            this.btnGeraAIH.Text = "Gera AIH";
-            this.btnGeraAIH.UseVisualStyleBackColor = true;
-            this.btnGeraAIH.Click += new System.EventHandler(this.btnGeraAIH_Click);
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2630,10 +2558,8 @@
         private System.Windows.Forms.ToolStripMenuItem alterarLayoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem1;
-        private System.Windows.Forms.Button btnCopiaNome;
         private System.Windows.Forms.TextBox tbGeraNome;
         private System.Windows.Forms.Button btnGeraNome;
-        private System.Windows.Forms.Button btnCopiaEmail;
         private System.Windows.Forms.TextBox tbGeraEmail;
         private System.Windows.Forms.Button btnGeraEmail;
         private System.Windows.Forms.Button btnCopiaCelular;
@@ -2642,13 +2568,10 @@
         private System.Windows.Forms.Button btnCopiarTelefone;
         private System.Windows.Forms.TextBox tbGeraTelefone;
         private System.Windows.Forms.Button btnGeraTelefone;
-        private System.Windows.Forms.Button btnCopiaCNPJ;
         private System.Windows.Forms.TextBox tbGeraCNPJ;
         private System.Windows.Forms.Button btnGeraCNPJ;
-        private System.Windows.Forms.Button btnCopiarCNS;
         private System.Windows.Forms.TextBox tbGeraCNS;
         private System.Windows.Forms.Button btnGeraCNS;
-        private System.Windows.Forms.Button btnCopiaCPF;
         private System.Windows.Forms.TextBox tbGeraCPF;
         private System.Windows.Forms.Button btnGeraCPF;
         private System.Windows.Forms.ComboBox cbArquitetura;
@@ -2659,7 +2582,6 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.ComboBox cbOcorreSN;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Button btnCopiaAIH;
         private System.Windows.Forms.TextBox tbGeraAIH;
         private System.Windows.Forms.Button btnGeraAIH;
     }

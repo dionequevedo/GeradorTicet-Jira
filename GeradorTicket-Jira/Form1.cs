@@ -850,5 +850,19 @@ namespace GeradorTicket_Jira
             tbGeraNome.Text = pessoa.GeraNomeFake();
             Clipboard.SetText(tbGeraNome.Text);
         }
+
+        private void btnCopiarTelefone_Click(object sender, EventArgs e)
+        {
+            GeradorTelefone Fixo = new GeradorTelefone();
+            tbGeraTelefone.Text = Fixo.GeraTelefone(3);
+            Clipboard.SetText(tbGeraTelefone.Text);
+        }
+
+        private void btnCopiaCelular_Click(object sender, EventArgs e)
+        {
+            GeradorTelefone Cel = new GeradorTelefone();
+            tbGeraCelular.Text = Cel.GeraTelefone(1);
+            Clipboard.SetText(tbGeraCelular.Text);
+        }
     }
 }
