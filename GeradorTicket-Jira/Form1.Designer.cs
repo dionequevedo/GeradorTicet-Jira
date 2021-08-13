@@ -315,6 +315,16 @@
             this.modeloRAResumidoToolStripMenuItem.Text = "RA Resumido";
             this.modeloRAResumidoToolStripMenuItem.Click += new System.EventHandler(this.modeloRAResumidoToolStripMenuItem_Click);
             // 
+            // reviewRealizadoToolStripMenuItem
+            // 
+            this.reviewRealizadoToolStripMenuItem.Name = "reviewRealizadoToolStripMenuItem";
+            this.reviewRealizadoToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            // 
+            // workShopToolStripMenuItem
+            // 
+            this.workShopToolStripMenuItem.Name = "workShopToolStripMenuItem";
+            this.workShopToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            // 
             // sprintDevToolStripMenuItem
             // 
             this.sprintDevToolStripMenuItem.Name = "sprintDevToolStripMenuItem";
@@ -678,13 +688,13 @@
             // 
             this.tbEscolhas.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tbEscolhas.Controls.Add(this.tbProblemas);
+            this.tbEscolhas.Controls.Add(this.tbRITQualidade);
+            this.tbEscolhas.Controls.Add(this.tbGeraDoc);
+            this.tbEscolhas.Controls.Add(this.tbOrientacao);
+            this.tbEscolhas.Controls.Add(this.tbLiberacaoTeste);
+            this.tbEscolhas.Controls.Add(this.tbRAResumido);
             this.tbEscolhas.Controls.Add(this.rbTesteUnit);
             this.tbEscolhas.Controls.Add(this.tbTesteIntegrado);
-            this.tbEscolhas.Controls.Add(this.tbLiberacaoTeste);
-            this.tbEscolhas.Controls.Add(this.tbRITQualidade);
-            this.tbEscolhas.Controls.Add(this.tbOrientacao);
-            this.tbEscolhas.Controls.Add(this.tbGeraDoc);
-            this.tbEscolhas.Controls.Add(this.tbRAResumido);
             this.tbEscolhas.Controls.Add(this.tbRITPreteste);
             this.tbEscolhas.Location = new System.Drawing.Point(4, 18);
             this.tbEscolhas.Name = "tbEscolhas";
