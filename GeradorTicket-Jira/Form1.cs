@@ -846,7 +846,8 @@ namespace GeradorTicket_Jira
 
         private void btnGeraNome_Click(object sender, EventArgs e)
         {
-            tbGeraNome.Text = Faker.Name.FullName(NameFormats.Standard);
+            PessoaFake pessoa = new PessoaFake();
+            tbGeraNome.Text = pessoa.GeraNomeFake();
             Clipboard.SetText(tbGeraNome.Text);
         }
     }
