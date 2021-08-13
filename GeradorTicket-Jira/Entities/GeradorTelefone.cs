@@ -23,19 +23,23 @@ namespace GeradorTicket_Jira.Entities
             if (op == 1)
             {
                 numTelefone = dddCel[aleatorio.Next(0, 6)];
-
-                for (int i = 0; i < 8; i++)
+                numTelefone += " ";
+                for (int i = 0; i < 9; i++)
                 {
                     numTelefone += aleatorio.Next(0, 9);
+                    if (i == 4)
+                        numTelefone += "-";
                 }
             }
             else
             {
                 numTelefone = dddFix[aleatorio.Next(0, 6)];
-
-                for (int i = 0; i < 7; i++)
+                numTelefone += " ";
+                for (int i = 0; i < 8; i++)
                 {
                     numTelefone += aleatorio.Next(0, 9);
+                    if (i == 3)
+                        numTelefone += "-";
                 }
             }
 
