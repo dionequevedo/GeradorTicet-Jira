@@ -1940,6 +1940,7 @@
             this.btnGeraNome.TabIndex = 18;
             this.btnGeraNome.Text = "Gera Nome";
             this.btnGeraNome.UseVisualStyleBackColor = true;
+            this.btnGeraNome.Click += new System.EventHandler(this.btnGeraNome_Click);
             // 
             // btnCopiaEmail
             // 

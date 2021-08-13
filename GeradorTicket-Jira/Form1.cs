@@ -841,6 +841,13 @@ namespace GeradorTicket_Jira
         private void btnGeraEmail_Click(object sender, EventArgs e)
         {            
             tbGeraEmail.Text = Internet.Email();
+            Clipboard.SetText(tbGeraEmail.Text);
+        }
+
+        private void btnGeraNome_Click(object sender, EventArgs e)
+        {
+            tbGeraNome.Text = Faker.Name.FullName();
+            Clipboard.SetText(tbGeraNome.Text);
         }
     }
 }
