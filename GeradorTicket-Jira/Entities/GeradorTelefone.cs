@@ -17,28 +17,26 @@ namespace GeradorTicket_Jira.Entities
         {
             string numTelefone = "";
             Random aleatorio = new Random();
-            List<string> dddCel = new List<string> { "519", "319", "119", "219", "419", "539", "919" };
-            List<string> dddFix = new List<string> { "513", "313", "113", "213", "413", "533", "913" };
+            List<string> dddCel = new List<string> { "51 9", "31 9", "11 9", "21 9", "41 9", "53 9", "91 9" };
+            List<string> dddFix = new List<string> { "51 3", "31 3", "11 3", "21 3", "41 3", "53 3", "91 3" };
 
             if (op == 1)
             {
                 numTelefone = dddCel[aleatorio.Next(0, 6)];
-                numTelefone += " ";
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 8; i++)
                 {
                     numTelefone += aleatorio.Next(0, 9);
-                    if (i == 4)
+                    if (i == 3)
                         numTelefone += "-";
                 }
             }
             else
             {
                 numTelefone = dddFix[aleatorio.Next(0, 6)];
-                numTelefone += " ";
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     numTelefone += aleatorio.Next(0, 9);
-                    if (i == 3)
+                    if (i == 2)
                         numTelefone += "-";
                 }
             }
