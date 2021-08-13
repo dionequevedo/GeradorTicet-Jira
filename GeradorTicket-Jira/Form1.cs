@@ -281,7 +281,7 @@ namespace GeradorTicket_Jira
                 " rotina de registrar tickets no Jira, seja na abertura de tickets de" +
                 " DEFEITO ou BUG, ou mesmo no registro de tickets de Implementações, " +
                 " Testes ou Orientação ao desenvolvedor." +
-                "\nCaso identifique problemas, tenha dúvidas ou deseje sugerir melhorias, favor contactar-me no e-mail dione.quevedo@mv.com.br", "Sobre!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                "\nCaso identifique problemas, tenha dúvidas ou deseje sugerir melhorias, favor contactar-me no e-mail dione@quevedo.adm.br", "Sobre!                     (versão: 2.1.1)", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void copiarF11ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -514,7 +514,7 @@ namespace GeradorTicket_Jira
             }
             else if (tbEscolhas.SelectedTab.Equals(tbGeraDoc))
             {
-                MessageBox.Show("desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Desculpe os transtornos, porém esta funcionalidade ainda não foi implementada, aguarde novas liberações!", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else if (tbEscolhas.SelectedTab.Equals(tbOrientacao))
             {
