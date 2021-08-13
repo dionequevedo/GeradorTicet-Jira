@@ -1970,6 +1970,7 @@
             this.btnGeraEmail.TabIndex = 15;
             this.btnGeraEmail.Text = "Gera E-mail";
             this.btnGeraEmail.UseVisualStyleBackColor = true;
+            this.btnGeraEmail.Click += new System.EventHandler(this.btnGeraEmail_Click);
             // 
             // btnCopiaCelular
             // 

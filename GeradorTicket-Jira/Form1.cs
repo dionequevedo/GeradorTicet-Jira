@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using GeradorTicket_Jira.Entities;
 using GeradorTicket_Jira.Entities.Enums;
+using Faker;
 
 namespace GeradorTicket_Jira
 {
@@ -42,7 +43,7 @@ namespace GeradorTicket_Jira
 
                 string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
 
-                Boolean ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
+                bool ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
 
                 string reproduzido = " {panel:title=*REPRODUZIDO EM:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#ADD8E6|bgColor=#F0FFFF|titleColor=BLACK}" +
                     "\n*HOSTNAME:* "
@@ -303,7 +304,7 @@ namespace GeradorTicket_Jira
 
                 string anexos = rbAnexoSim.Checked == true ? "\n*Há PSR, vídeo ou outros anexos!* " : "\n*Não há PSR, vídeo ou outros anexos!* ";
 
-                Boolean ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
+                bool ambienteProducao = rbProducao.Checked ? true : false;   // Verifica se é um ambiente de produção (true) ou homologação (false)
 
                 string reproduzido = " {panel:title=*REPRODUZIDO EM:*|borderStyle=solid|borderColor=#1c1c1c|titleBGColor=#ADD8E6|bgColor=#F0FFFF|titleColor=BLACK}" +
                     "\n*HOSTNAME:* "
@@ -835,6 +836,11 @@ namespace GeradorTicket_Jira
             GeradorTelefone Cel = new GeradorTelefone();
             tbGeraCelular.Text = Cel.GeraTelefone(1);
             Clipboard.SetText(tbGeraCelular.Text);
+        }
+
+        private void btnGeraEmail_Click(object sender, EventArgs e)
+        {            
+            tbGeraEmail.Text = Internet.Email();
         }
     }
 }
