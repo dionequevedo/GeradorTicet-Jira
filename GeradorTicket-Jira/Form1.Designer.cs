@@ -96,45 +96,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rbTesteUnit = new System.Windows.Forms.TabPage();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tbSenhaUnitario = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tbUsuarioUnitario = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tbDatabaseUnitario = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.tbPortaUnitario = new System.Windows.Forms.TextBox();
-            this.tbHostnameUnitario = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.tbTesteIntegrado = new System.Windows.Forms.TabPage();
-            this.label21 = new System.Windows.Forms.Label();
-            this.tbSenhaIntegrado = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tbUsuarioIntegrado = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.tbDatabaseIntegrado = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.tbPortaIntegrado = new System.Windows.Forms.TextBox();
-            this.tbHostnameIntegrado = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tbLiberacaoTeste = new System.Windows.Forms.TabPage();
-            this.dtHoraLiberacao = new System.Windows.Forms.DateTimePicker();
-            this.label37 = new System.Windows.Forms.Label();
-            this.dtDataLiberacao = new System.Windows.Forms.DateTimePicker();
-            this.label38 = new System.Windows.Forms.Label();
-            this.tbObsLiberacao = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.tbSenhaLiberacao = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tbUsuarioLiberacao = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.tbDatabaseLiberacao = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.tbPortaLiberacao = new System.Windows.Forms.TextBox();
-            this.tbHostnameLiberacao = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
             this.tbRITQualidade = new System.Windows.Forms.TabPage();
             this.cbAdmSistema = new System.Windows.Forms.ComboBox();
             this.label48 = new System.Windows.Forms.Label();
@@ -170,9 +131,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dataVersaoRIT = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.tbOrientacao = new System.Windows.Forms.TabPage();
-            this.tbOrientacoes = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
             this.tbGeraDoc = new System.Windows.Forms.TabPage();
             this.tbGeraAIH = new System.Windows.Forms.TextBox();
             this.btnGeraAIH = new System.Windows.Forms.Button();
@@ -192,6 +150,26 @@
             this.btnGeraCNS = new System.Windows.Forms.Button();
             this.tbGeraCPF = new System.Windows.Forms.TextBox();
             this.btnGeraCPF = new System.Windows.Forms.Button();
+            this.tbOrientacao = new System.Windows.Forms.TabPage();
+            this.tbOrientacoes = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.tbLiberacaoTeste = new System.Windows.Forms.TabPage();
+            this.dtHoraLiberacao = new System.Windows.Forms.DateTimePicker();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dtDataLiberacao = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
+            this.tbObsLiberacao = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.tbSenhaLiberacao = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tbUsuarioLiberacao = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.tbDatabaseLiberacao = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.tbPortaLiberacao = new System.Windows.Forms.TextBox();
+            this.tbHostnameLiberacao = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
             this.tbRAResumido = new System.Windows.Forms.TabPage();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -201,6 +179,28 @@
             this.tbRequisitosImplementacao = new System.Windows.Forms.TextBox();
             this.tbJustificativaCliente = new System.Windows.Forms.TextBox();
             this.tbSolicitacaoCliente = new System.Windows.Forms.TextBox();
+            this.rbTesteUnit = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbSenhaUnitario = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tbUsuarioUnitario = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.tbDatabaseUnitario = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tbPortaUnitario = new System.Windows.Forms.TextBox();
+            this.tbHostnameUnitario = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tbTesteIntegrado = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbSenhaIntegrado = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbUsuarioIntegrado = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.tbDatabaseIntegrado = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.tbPortaIntegrado = new System.Windows.Forms.TextBox();
+            this.tbHostnameIntegrado = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.tbRITPreteste = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -214,19 +214,21 @@
             this.label30 = new System.Windows.Forms.Label();
             this.btNovo = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
+            this.configuraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.servidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbIdentificacao.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tbEscolhas.SuspendLayout();
             this.tbProblemas.SuspendLayout();
+            this.tbRITQualidade.SuspendLayout();
+            this.tbGeraDoc.SuspendLayout();
+            this.tbOrientacao.SuspendLayout();
+            this.tbLiberacaoTeste.SuspendLayout();
+            this.tbRAResumido.SuspendLayout();
             this.rbTesteUnit.SuspendLayout();
             this.tbTesteIntegrado.SuspendLayout();
-            this.tbLiberacaoTeste.SuspendLayout();
-            this.tbRITQualidade.SuspendLayout();
-            this.tbOrientacao.SuspendLayout();
-            this.tbGeraDoc.SuspendLayout();
-            this.tbRAResumido.SuspendLayout();
             this.tbRITPreteste.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -375,14 +377,15 @@
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // opçõesToolStripMenuItem
             // 
             this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alterarLayoutToolStripMenuItem});
+            this.alterarLayoutToolStripMenuItem,
+            this.configuraçãoToolStripMenuItem});
             this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.opçõesToolStripMenuItem.Text = "Opções";
@@ -969,424 +972,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CAMINHOS DE ACESSO:";
             // 
-            // rbTesteUnit
-            // 
-            this.rbTesteUnit.BackColor = System.Drawing.Color.Black;
-            this.rbTesteUnit.Controls.Add(this.label16);
-            this.rbTesteUnit.Controls.Add(this.tbSenhaUnitario);
-            this.rbTesteUnit.Controls.Add(this.label17);
-            this.rbTesteUnit.Controls.Add(this.tbUsuarioUnitario);
-            this.rbTesteUnit.Controls.Add(this.label18);
-            this.rbTesteUnit.Controls.Add(this.tbDatabaseUnitario);
-            this.rbTesteUnit.Controls.Add(this.label19);
-            this.rbTesteUnit.Controls.Add(this.tbPortaUnitario);
-            this.rbTesteUnit.Controls.Add(this.tbHostnameUnitario);
-            this.rbTesteUnit.Controls.Add(this.label20);
-            this.rbTesteUnit.ForeColor = System.Drawing.SystemColors.Control;
-            this.rbTesteUnit.Location = new System.Drawing.Point(4, 25);
-            this.rbTesteUnit.Name = "rbTesteUnit";
-            this.rbTesteUnit.Size = new System.Drawing.Size(842, 475);
-            this.rbTesteUnit.TabIndex = 2;
-            this.rbTesteUnit.Text = "Teste Unitário";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(710, 10);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 13);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "SENHA";
-            // 
-            // tbSenhaUnitario
-            // 
-            this.tbSenhaUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbSenhaUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaUnitario.Location = new System.Drawing.Point(760, 9);
-            this.tbSenhaUnitario.Name = "tbSenhaUnitario";
-            this.tbSenhaUnitario.Size = new System.Drawing.Size(75, 20);
-            this.tbSenhaUnitario.TabIndex = 23;
-            this.tbSenhaUnitario.Text = "1";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(542, 11);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 13);
-            this.label17.TabIndex = 26;
-            this.label17.Text = "USUÁRIO";
-            // 
-            // tbUsuarioUnitario
-            // 
-            this.tbUsuarioUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbUsuarioUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioUnitario.Location = new System.Drawing.Point(604, 9);
-            this.tbUsuarioUnitario.Name = "tbUsuarioUnitario";
-            this.tbUsuarioUnitario.Size = new System.Drawing.Size(100, 20);
-            this.tbUsuarioUnitario.TabIndex = 22;
-            this.tbUsuarioUnitario.Text = "QA.FUNCIONARIO";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(393, 10);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 13);
-            this.label18.TabIndex = 25;
-            this.label18.Text = "DATABASE";
-            // 
-            // tbDatabaseUnitario
-            // 
-            this.tbDatabaseUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbDatabaseUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseUnitario.Location = new System.Drawing.Point(463, 8);
-            this.tbDatabaseUnitario.Name = "tbDatabaseUnitario";
-            this.tbDatabaseUnitario.Size = new System.Drawing.Size(75, 20);
-            this.tbDatabaseUnitario.TabIndex = 21;
-            this.tbDatabaseUnitario.Text = "bd0000";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(299, 11);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(44, 13);
-            this.label19.TabIndex = 24;
-            this.label19.Text = "PORTA";
-            // 
-            // tbPortaUnitario
-            // 
-            this.tbPortaUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbPortaUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaUnitario.Location = new System.Drawing.Point(349, 9);
-            this.tbPortaUnitario.Name = "tbPortaUnitario";
-            this.tbPortaUnitario.Size = new System.Drawing.Size(38, 20);
-            this.tbPortaUnitario.TabIndex = 20;
-            this.tbPortaUnitario.Text = "6000";
-            // 
-            // tbHostnameUnitario
-            // 
-            this.tbHostnameUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbHostnameUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameUnitario.Location = new System.Drawing.Point(193, 8);
-            this.tbHostnameUnitario.Name = "tbHostnameUnitario";
-            this.tbHostnameUnitario.Size = new System.Drawing.Size(100, 20);
-            this.tbHostnameUnitario.TabIndex = 18;
-            this.tbHostnameUnitario.Text = "192.168.232.252";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(8, 11);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(179, 13);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "REPRODUZIDO EM:   HOSTNAME";
-            // 
-            // tbTesteIntegrado
-            // 
-            this.tbTesteIntegrado.BackColor = System.Drawing.SystemColors.WindowText;
-            this.tbTesteIntegrado.Controls.Add(this.label21);
-            this.tbTesteIntegrado.Controls.Add(this.tbSenhaIntegrado);
-            this.tbTesteIntegrado.Controls.Add(this.label22);
-            this.tbTesteIntegrado.Controls.Add(this.tbUsuarioIntegrado);
-            this.tbTesteIntegrado.Controls.Add(this.label23);
-            this.tbTesteIntegrado.Controls.Add(this.tbDatabaseIntegrado);
-            this.tbTesteIntegrado.Controls.Add(this.label24);
-            this.tbTesteIntegrado.Controls.Add(this.tbPortaIntegrado);
-            this.tbTesteIntegrado.Controls.Add(this.tbHostnameIntegrado);
-            this.tbTesteIntegrado.Controls.Add(this.label25);
-            this.tbTesteIntegrado.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbTesteIntegrado.Location = new System.Drawing.Point(4, 25);
-            this.tbTesteIntegrado.Name = "tbTesteIntegrado";
-            this.tbTesteIntegrado.Size = new System.Drawing.Size(842, 475);
-            this.tbTesteIntegrado.TabIndex = 3;
-            this.tbTesteIntegrado.Text = "Teste Integrado";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(710, 10);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 13);
-            this.label21.TabIndex = 37;
-            this.label21.Text = "SENHA";
-            // 
-            // tbSenhaIntegrado
-            // 
-            this.tbSenhaIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbSenhaIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaIntegrado.Location = new System.Drawing.Point(760, 9);
-            this.tbSenhaIntegrado.Name = "tbSenhaIntegrado";
-            this.tbSenhaIntegrado.Size = new System.Drawing.Size(75, 20);
-            this.tbSenhaIntegrado.TabIndex = 33;
-            this.tbSenhaIntegrado.Text = "1";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(542, 11);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(56, 13);
-            this.label22.TabIndex = 36;
-            this.label22.Text = "USUÁRIO";
-            // 
-            // tbUsuarioIntegrado
-            // 
-            this.tbUsuarioIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbUsuarioIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioIntegrado.Location = new System.Drawing.Point(604, 9);
-            this.tbUsuarioIntegrado.Name = "tbUsuarioIntegrado";
-            this.tbUsuarioIntegrado.Size = new System.Drawing.Size(100, 20);
-            this.tbUsuarioIntegrado.TabIndex = 32;
-            this.tbUsuarioIntegrado.Text = "QA.FUNCIONARIO";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(393, 10);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(64, 13);
-            this.label23.TabIndex = 35;
-            this.label23.Text = "DATABASE";
-            // 
-            // tbDatabaseIntegrado
-            // 
-            this.tbDatabaseIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbDatabaseIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseIntegrado.Location = new System.Drawing.Point(463, 8);
-            this.tbDatabaseIntegrado.Name = "tbDatabaseIntegrado";
-            this.tbDatabaseIntegrado.Size = new System.Drawing.Size(75, 20);
-            this.tbDatabaseIntegrado.TabIndex = 31;
-            this.tbDatabaseIntegrado.Text = "bd0000";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(299, 11);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 13);
-            this.label24.TabIndex = 34;
-            this.label24.Text = "PORTA";
-            // 
-            // tbPortaIntegrado
-            // 
-            this.tbPortaIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbPortaIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaIntegrado.Location = new System.Drawing.Point(349, 9);
-            this.tbPortaIntegrado.Name = "tbPortaIntegrado";
-            this.tbPortaIntegrado.Size = new System.Drawing.Size(38, 20);
-            this.tbPortaIntegrado.TabIndex = 30;
-            this.tbPortaIntegrado.Text = "6000";
-            // 
-            // tbHostnameIntegrado
-            // 
-            this.tbHostnameIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbHostnameIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameIntegrado.Location = new System.Drawing.Point(193, 8);
-            this.tbHostnameIntegrado.Name = "tbHostnameIntegrado";
-            this.tbHostnameIntegrado.Size = new System.Drawing.Size(100, 20);
-            this.tbHostnameIntegrado.TabIndex = 28;
-            this.tbHostnameIntegrado.Text = "192.168.232.252";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(8, 11);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(179, 13);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "REPRODUZIDO EM:   HOSTNAME";
-            // 
-            // tbLiberacaoTeste
-            // 
-            this.tbLiberacaoTeste.BackColor = System.Drawing.Color.Black;
-            this.tbLiberacaoTeste.Controls.Add(this.dtHoraLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label37);
-            this.tbLiberacaoTeste.Controls.Add(this.dtDataLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label38);
-            this.tbLiberacaoTeste.Controls.Add(this.tbObsLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label36);
-            this.tbLiberacaoTeste.Controls.Add(this.label31);
-            this.tbLiberacaoTeste.Controls.Add(this.tbSenhaLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label32);
-            this.tbLiberacaoTeste.Controls.Add(this.tbUsuarioLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label33);
-            this.tbLiberacaoTeste.Controls.Add(this.tbDatabaseLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label34);
-            this.tbLiberacaoTeste.Controls.Add(this.tbPortaLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.tbHostnameLiberacao);
-            this.tbLiberacaoTeste.Controls.Add(this.label35);
-            this.tbLiberacaoTeste.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbLiberacaoTeste.Location = new System.Drawing.Point(4, 25);
-            this.tbLiberacaoTeste.Name = "tbLiberacaoTeste";
-            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 475);
-            this.tbLiberacaoTeste.TabIndex = 4;
-            this.tbLiberacaoTeste.Text = "Liberação";
-            // 
-            // dtHoraLiberacao
-            // 
-            this.dtHoraLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
-            this.dtHoraLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
-            this.dtHoraLiberacao.CustomFormat = "HH:mm:ss";
-            this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtHoraLiberacao.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.dtHoraLiberacao.Location = new System.Drawing.Point(309, 44);
-            this.dtHoraLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
-            this.dtHoraLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
-            this.dtHoraLiberacao.Name = "dtHoraLiberacao";
-            this.dtHoraLiberacao.Size = new System.Drawing.Size(89, 20);
-            this.dtHoraLiberacao.TabIndex = 53;
-            this.dtHoraLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(212, 50);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(91, 13);
-            this.label37.TabIndex = 52;
-            this.label37.Text = "Hora Compilação:";
-            // 
-            // dtDataLiberacao
-            // 
-            this.dtDataLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
-            this.dtDataLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
-            this.dtDataLiberacao.CustomFormat = "dd/MM/yyyy";
-            this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataLiberacao.Location = new System.Drawing.Point(103, 44);
-            this.dtDataLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
-            this.dtDataLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
-            this.dtDataLiberacao.Name = "dtDataLiberacao";
-            this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
-            this.dtDataLiberacao.TabIndex = 51;
-            this.dtDataLiberacao.Value = new System.DateTime(2021, 8, 11, 0, 0, 0, 0);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 50);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(91, 13);
-            this.label38.TabIndex = 50;
-            this.label38.Text = "Data Compilação:";
-            // 
-            // tbObsLiberacao
-            // 
-            this.tbObsLiberacao.AcceptsReturn = true;
-            this.tbObsLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbObsLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbObsLiberacao.Location = new System.Drawing.Point(9, 91);
-            this.tbObsLiberacao.Multiline = true;
-            this.tbObsLiberacao.Name = "tbObsLiberacao";
-            this.tbObsLiberacao.Size = new System.Drawing.Size(825, 65);
-            this.tbObsLiberacao.TabIndex = 48;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 75);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 13);
-            this.label36.TabIndex = 49;
-            this.label36.Text = "OBSERVAÇÃO:";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(600, 10);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 13);
-            this.label31.TabIndex = 47;
-            this.label31.Text = "SENHA";
-            // 
-            // tbSenhaLiberacao
-            // 
-            this.tbSenhaLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbSenhaLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaLiberacao.Location = new System.Drawing.Point(650, 9);
-            this.tbSenhaLiberacao.Name = "tbSenhaLiberacao";
-            this.tbSenhaLiberacao.Size = new System.Drawing.Size(75, 20);
-            this.tbSenhaLiberacao.TabIndex = 43;
-            this.tbSenhaLiberacao.Text = "1";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(432, 11);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(56, 13);
-            this.label32.TabIndex = 46;
-            this.label32.Text = "USUÁRIO";
-            // 
-            // tbUsuarioLiberacao
-            // 
-            this.tbUsuarioLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbUsuarioLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioLiberacao.Location = new System.Drawing.Point(494, 9);
-            this.tbUsuarioLiberacao.Name = "tbUsuarioLiberacao";
-            this.tbUsuarioLiberacao.Size = new System.Drawing.Size(100, 20);
-            this.tbUsuarioLiberacao.TabIndex = 42;
-            this.tbUsuarioLiberacao.Text = "QA.FUNCIONARIO";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(283, 10);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(64, 13);
-            this.label33.TabIndex = 45;
-            this.label33.Text = "DATABASE";
-            // 
-            // tbDatabaseLiberacao
-            // 
-            this.tbDatabaseLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbDatabaseLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseLiberacao.Location = new System.Drawing.Point(353, 8);
-            this.tbDatabaseLiberacao.Name = "tbDatabaseLiberacao";
-            this.tbDatabaseLiberacao.Size = new System.Drawing.Size(75, 20);
-            this.tbDatabaseLiberacao.TabIndex = 41;
-            this.tbDatabaseLiberacao.Text = "bd0000";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(189, 11);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(44, 13);
-            this.label34.TabIndex = 44;
-            this.label34.Text = "PORTA";
-            // 
-            // tbPortaLiberacao
-            // 
-            this.tbPortaLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbPortaLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaLiberacao.Location = new System.Drawing.Point(239, 9);
-            this.tbPortaLiberacao.Name = "tbPortaLiberacao";
-            this.tbPortaLiberacao.Size = new System.Drawing.Size(38, 20);
-            this.tbPortaLiberacao.TabIndex = 40;
-            this.tbPortaLiberacao.Text = "6000";
-            // 
-            // tbHostnameLiberacao
-            // 
-            this.tbHostnameLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbHostnameLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameLiberacao.Location = new System.Drawing.Point(83, 8);
-            this.tbHostnameLiberacao.Name = "tbHostnameLiberacao";
-            this.tbHostnameLiberacao.Size = new System.Drawing.Size(100, 20);
-            this.tbHostnameLiberacao.TabIndex = 38;
-            this.tbHostnameLiberacao.Text = "192.168.232.252";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(8, 11);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(68, 13);
-            this.label35.TabIndex = 39;
-            this.label35.Text = "HOSTNAME";
-            // 
             // tbRITQualidade
             // 
             this.tbRITQualidade.BackColor = System.Drawing.Color.Black;
@@ -1829,40 +1414,6 @@
             this.label13.TabIndex = 3;
             this.label13.Text = "Data Compilação:";
             // 
-            // tbOrientacao
-            // 
-            this.tbOrientacao.BackColor = System.Drawing.Color.Black;
-            this.tbOrientacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbOrientacao.Controls.Add(this.tbOrientacoes);
-            this.tbOrientacao.Controls.Add(this.label44);
-            this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbOrientacao.Location = new System.Drawing.Point(4, 25);
-            this.tbOrientacao.Name = "tbOrientacao";
-            this.tbOrientacao.Size = new System.Drawing.Size(842, 475);
-            this.tbOrientacao.TabIndex = 10;
-            this.tbOrientacao.Text = "Orientação";
-            this.tbOrientacao.UseVisualStyleBackColor = true;
-            // 
-            // tbOrientacoes
-            // 
-            this.tbOrientacoes.AcceptsReturn = true;
-            this.tbOrientacoes.BackColor = System.Drawing.SystemColors.Desktop;
-            this.tbOrientacoes.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbOrientacoes.Location = new System.Drawing.Point(9, 21);
-            this.tbOrientacoes.Multiline = true;
-            this.tbOrientacoes.Name = "tbOrientacoes";
-            this.tbOrientacoes.Size = new System.Drawing.Size(825, 441);
-            this.tbOrientacoes.TabIndex = 50;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(6, 5);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(109, 13);
-            this.label44.TabIndex = 51;
-            this.label44.Text = "Orientações diversas:";
-            // 
             // tbGeraDoc
             // 
             this.tbGeraDoc.BackColor = System.Drawing.Color.Black;
@@ -2081,6 +1632,228 @@
             this.btnGeraCPF.UseVisualStyleBackColor = true;
             this.btnGeraCPF.Click += new System.EventHandler(this.btnGeraCPF_Click);
             // 
+            // tbOrientacao
+            // 
+            this.tbOrientacao.BackColor = System.Drawing.Color.Black;
+            this.tbOrientacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbOrientacao.Controls.Add(this.tbOrientacoes);
+            this.tbOrientacao.Controls.Add(this.label44);
+            this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbOrientacao.Location = new System.Drawing.Point(4, 25);
+            this.tbOrientacao.Name = "tbOrientacao";
+            this.tbOrientacao.Size = new System.Drawing.Size(842, 475);
+            this.tbOrientacao.TabIndex = 10;
+            this.tbOrientacao.Text = "Orientação";
+            this.tbOrientacao.UseVisualStyleBackColor = true;
+            // 
+            // tbOrientacoes
+            // 
+            this.tbOrientacoes.AcceptsReturn = true;
+            this.tbOrientacoes.BackColor = System.Drawing.SystemColors.Desktop;
+            this.tbOrientacoes.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbOrientacoes.Location = new System.Drawing.Point(9, 21);
+            this.tbOrientacoes.Multiline = true;
+            this.tbOrientacoes.Name = "tbOrientacoes";
+            this.tbOrientacoes.Size = new System.Drawing.Size(825, 441);
+            this.tbOrientacoes.TabIndex = 50;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(6, 5);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(109, 13);
+            this.label44.TabIndex = 51;
+            this.label44.Text = "Orientações diversas:";
+            // 
+            // tbLiberacaoTeste
+            // 
+            this.tbLiberacaoTeste.BackColor = System.Drawing.Color.Black;
+            this.tbLiberacaoTeste.Controls.Add(this.dtHoraLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label37);
+            this.tbLiberacaoTeste.Controls.Add(this.dtDataLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label38);
+            this.tbLiberacaoTeste.Controls.Add(this.tbObsLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label36);
+            this.tbLiberacaoTeste.Controls.Add(this.label31);
+            this.tbLiberacaoTeste.Controls.Add(this.tbSenhaLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label32);
+            this.tbLiberacaoTeste.Controls.Add(this.tbUsuarioLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label33);
+            this.tbLiberacaoTeste.Controls.Add(this.tbDatabaseLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label34);
+            this.tbLiberacaoTeste.Controls.Add(this.tbPortaLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.tbHostnameLiberacao);
+            this.tbLiberacaoTeste.Controls.Add(this.label35);
+            this.tbLiberacaoTeste.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbLiberacaoTeste.Location = new System.Drawing.Point(4, 25);
+            this.tbLiberacaoTeste.Name = "tbLiberacaoTeste";
+            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 475);
+            this.tbLiberacaoTeste.TabIndex = 4;
+            this.tbLiberacaoTeste.Text = "Liberação";
+            // 
+            // dtHoraLiberacao
+            // 
+            this.dtHoraLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
+            this.dtHoraLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
+            this.dtHoraLiberacao.CustomFormat = "HH:mm:ss";
+            this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtHoraLiberacao.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.dtHoraLiberacao.Location = new System.Drawing.Point(309, 44);
+            this.dtHoraLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.dtHoraLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dtHoraLiberacao.Name = "dtHoraLiberacao";
+            this.dtHoraLiberacao.Size = new System.Drawing.Size(89, 20);
+            this.dtHoraLiberacao.TabIndex = 53;
+            this.dtHoraLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(212, 50);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(91, 13);
+            this.label37.TabIndex = 52;
+            this.label37.Text = "Hora Compilação:";
+            // 
+            // dtDataLiberacao
+            // 
+            this.dtDataLiberacao.CalendarMonthBackground = System.Drawing.SystemColors.MenuText;
+            this.dtDataLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
+            this.dtDataLiberacao.CustomFormat = "dd/MM/yyyy";
+            this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtDataLiberacao.Location = new System.Drawing.Point(103, 44);
+            this.dtDataLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
+            this.dtDataLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dtDataLiberacao.Name = "dtDataLiberacao";
+            this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
+            this.dtDataLiberacao.TabIndex = 51;
+            this.dtDataLiberacao.Value = new System.DateTime(2021, 8, 11, 0, 0, 0, 0);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(6, 50);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(91, 13);
+            this.label38.TabIndex = 50;
+            this.label38.Text = "Data Compilação:";
+            // 
+            // tbObsLiberacao
+            // 
+            this.tbObsLiberacao.AcceptsReturn = true;
+            this.tbObsLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbObsLiberacao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbObsLiberacao.Location = new System.Drawing.Point(9, 91);
+            this.tbObsLiberacao.Multiline = true;
+            this.tbObsLiberacao.Name = "tbObsLiberacao";
+            this.tbObsLiberacao.Size = new System.Drawing.Size(825, 65);
+            this.tbObsLiberacao.TabIndex = 48;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(6, 75);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(83, 13);
+            this.label36.TabIndex = 49;
+            this.label36.Text = "OBSERVAÇÃO:";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(600, 10);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(44, 13);
+            this.label31.TabIndex = 47;
+            this.label31.Text = "SENHA";
+            // 
+            // tbSenhaLiberacao
+            // 
+            this.tbSenhaLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbSenhaLiberacao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbSenhaLiberacao.Location = new System.Drawing.Point(650, 9);
+            this.tbSenhaLiberacao.Name = "tbSenhaLiberacao";
+            this.tbSenhaLiberacao.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaLiberacao.TabIndex = 43;
+            this.tbSenhaLiberacao.Text = "1";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(432, 11);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(56, 13);
+            this.label32.TabIndex = 46;
+            this.label32.Text = "USUÁRIO";
+            // 
+            // tbUsuarioLiberacao
+            // 
+            this.tbUsuarioLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbUsuarioLiberacao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbUsuarioLiberacao.Location = new System.Drawing.Point(494, 9);
+            this.tbUsuarioLiberacao.Name = "tbUsuarioLiberacao";
+            this.tbUsuarioLiberacao.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioLiberacao.TabIndex = 42;
+            this.tbUsuarioLiberacao.Text = "QA.FUNCIONARIO";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(283, 10);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(64, 13);
+            this.label33.TabIndex = 45;
+            this.label33.Text = "DATABASE";
+            // 
+            // tbDatabaseLiberacao
+            // 
+            this.tbDatabaseLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbDatabaseLiberacao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbDatabaseLiberacao.Location = new System.Drawing.Point(353, 8);
+            this.tbDatabaseLiberacao.Name = "tbDatabaseLiberacao";
+            this.tbDatabaseLiberacao.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseLiberacao.TabIndex = 41;
+            this.tbDatabaseLiberacao.Text = "bd0000";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(189, 11);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(44, 13);
+            this.label34.TabIndex = 44;
+            this.label34.Text = "PORTA";
+            // 
+            // tbPortaLiberacao
+            // 
+            this.tbPortaLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbPortaLiberacao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbPortaLiberacao.Location = new System.Drawing.Point(239, 9);
+            this.tbPortaLiberacao.Name = "tbPortaLiberacao";
+            this.tbPortaLiberacao.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaLiberacao.TabIndex = 40;
+            this.tbPortaLiberacao.Text = "6000";
+            // 
+            // tbHostnameLiberacao
+            // 
+            this.tbHostnameLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbHostnameLiberacao.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbHostnameLiberacao.Location = new System.Drawing.Point(83, 8);
+            this.tbHostnameLiberacao.Name = "tbHostnameLiberacao";
+            this.tbHostnameLiberacao.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameLiberacao.TabIndex = 38;
+            this.tbHostnameLiberacao.Text = "192.168.232.252";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(8, 11);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(68, 13);
+            this.label35.TabIndex = 39;
+            this.label35.Text = "HOSTNAME";
+            // 
             // tbRAResumido
             // 
             this.tbRAResumido.BackColor = System.Drawing.Color.Black;
@@ -2182,6 +1955,236 @@
             this.tbSolicitacaoCliente.Name = "tbSolicitacaoCliente";
             this.tbSolicitacaoCliente.Size = new System.Drawing.Size(825, 87);
             this.tbSolicitacaoCliente.TabIndex = 20;
+            // 
+            // rbTesteUnit
+            // 
+            this.rbTesteUnit.BackColor = System.Drawing.Color.Black;
+            this.rbTesteUnit.Controls.Add(this.label16);
+            this.rbTesteUnit.Controls.Add(this.tbSenhaUnitario);
+            this.rbTesteUnit.Controls.Add(this.label17);
+            this.rbTesteUnit.Controls.Add(this.tbUsuarioUnitario);
+            this.rbTesteUnit.Controls.Add(this.label18);
+            this.rbTesteUnit.Controls.Add(this.tbDatabaseUnitario);
+            this.rbTesteUnit.Controls.Add(this.label19);
+            this.rbTesteUnit.Controls.Add(this.tbPortaUnitario);
+            this.rbTesteUnit.Controls.Add(this.tbHostnameUnitario);
+            this.rbTesteUnit.Controls.Add(this.label20);
+            this.rbTesteUnit.ForeColor = System.Drawing.SystemColors.Control;
+            this.rbTesteUnit.Location = new System.Drawing.Point(4, 25);
+            this.rbTesteUnit.Name = "rbTesteUnit";
+            this.rbTesteUnit.Size = new System.Drawing.Size(842, 475);
+            this.rbTesteUnit.TabIndex = 2;
+            this.rbTesteUnit.Text = "Teste Unitário";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(710, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(44, 13);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "SENHA";
+            // 
+            // tbSenhaUnitario
+            // 
+            this.tbSenhaUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbSenhaUnitario.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbSenhaUnitario.Location = new System.Drawing.Point(760, 9);
+            this.tbSenhaUnitario.Name = "tbSenhaUnitario";
+            this.tbSenhaUnitario.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaUnitario.TabIndex = 23;
+            this.tbSenhaUnitario.Text = "1";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(542, 11);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 13);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "USUÁRIO";
+            // 
+            // tbUsuarioUnitario
+            // 
+            this.tbUsuarioUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbUsuarioUnitario.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbUsuarioUnitario.Location = new System.Drawing.Point(604, 9);
+            this.tbUsuarioUnitario.Name = "tbUsuarioUnitario";
+            this.tbUsuarioUnitario.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioUnitario.TabIndex = 22;
+            this.tbUsuarioUnitario.Text = "QA.FUNCIONARIO";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(393, 10);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(64, 13);
+            this.label18.TabIndex = 25;
+            this.label18.Text = "DATABASE";
+            // 
+            // tbDatabaseUnitario
+            // 
+            this.tbDatabaseUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbDatabaseUnitario.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbDatabaseUnitario.Location = new System.Drawing.Point(463, 8);
+            this.tbDatabaseUnitario.Name = "tbDatabaseUnitario";
+            this.tbDatabaseUnitario.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseUnitario.TabIndex = 21;
+            this.tbDatabaseUnitario.Text = "bd0000";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(299, 11);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(44, 13);
+            this.label19.TabIndex = 24;
+            this.label19.Text = "PORTA";
+            // 
+            // tbPortaUnitario
+            // 
+            this.tbPortaUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbPortaUnitario.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbPortaUnitario.Location = new System.Drawing.Point(349, 9);
+            this.tbPortaUnitario.Name = "tbPortaUnitario";
+            this.tbPortaUnitario.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaUnitario.TabIndex = 20;
+            this.tbPortaUnitario.Text = "6000";
+            // 
+            // tbHostnameUnitario
+            // 
+            this.tbHostnameUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbHostnameUnitario.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbHostnameUnitario.Location = new System.Drawing.Point(193, 8);
+            this.tbHostnameUnitario.Name = "tbHostnameUnitario";
+            this.tbHostnameUnitario.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameUnitario.TabIndex = 18;
+            this.tbHostnameUnitario.Text = "192.168.232.252";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(8, 11);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(179, 13);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "REPRODUZIDO EM:   HOSTNAME";
+            // 
+            // tbTesteIntegrado
+            // 
+            this.tbTesteIntegrado.BackColor = System.Drawing.SystemColors.WindowText;
+            this.tbTesteIntegrado.Controls.Add(this.label21);
+            this.tbTesteIntegrado.Controls.Add(this.tbSenhaIntegrado);
+            this.tbTesteIntegrado.Controls.Add(this.label22);
+            this.tbTesteIntegrado.Controls.Add(this.tbUsuarioIntegrado);
+            this.tbTesteIntegrado.Controls.Add(this.label23);
+            this.tbTesteIntegrado.Controls.Add(this.tbDatabaseIntegrado);
+            this.tbTesteIntegrado.Controls.Add(this.label24);
+            this.tbTesteIntegrado.Controls.Add(this.tbPortaIntegrado);
+            this.tbTesteIntegrado.Controls.Add(this.tbHostnameIntegrado);
+            this.tbTesteIntegrado.Controls.Add(this.label25);
+            this.tbTesteIntegrado.ForeColor = System.Drawing.SystemColors.Control;
+            this.tbTesteIntegrado.Location = new System.Drawing.Point(4, 25);
+            this.tbTesteIntegrado.Name = "tbTesteIntegrado";
+            this.tbTesteIntegrado.Size = new System.Drawing.Size(842, 475);
+            this.tbTesteIntegrado.TabIndex = 3;
+            this.tbTesteIntegrado.Text = "Teste Integrado";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(710, 10);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(44, 13);
+            this.label21.TabIndex = 37;
+            this.label21.Text = "SENHA";
+            // 
+            // tbSenhaIntegrado
+            // 
+            this.tbSenhaIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbSenhaIntegrado.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbSenhaIntegrado.Location = new System.Drawing.Point(760, 9);
+            this.tbSenhaIntegrado.Name = "tbSenhaIntegrado";
+            this.tbSenhaIntegrado.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaIntegrado.TabIndex = 33;
+            this.tbSenhaIntegrado.Text = "1";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(542, 11);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(56, 13);
+            this.label22.TabIndex = 36;
+            this.label22.Text = "USUÁRIO";
+            // 
+            // tbUsuarioIntegrado
+            // 
+            this.tbUsuarioIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbUsuarioIntegrado.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbUsuarioIntegrado.Location = new System.Drawing.Point(604, 9);
+            this.tbUsuarioIntegrado.Name = "tbUsuarioIntegrado";
+            this.tbUsuarioIntegrado.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioIntegrado.TabIndex = 32;
+            this.tbUsuarioIntegrado.Text = "QA.FUNCIONARIO";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(393, 10);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(64, 13);
+            this.label23.TabIndex = 35;
+            this.label23.Text = "DATABASE";
+            // 
+            // tbDatabaseIntegrado
+            // 
+            this.tbDatabaseIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbDatabaseIntegrado.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbDatabaseIntegrado.Location = new System.Drawing.Point(463, 8);
+            this.tbDatabaseIntegrado.Name = "tbDatabaseIntegrado";
+            this.tbDatabaseIntegrado.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseIntegrado.TabIndex = 31;
+            this.tbDatabaseIntegrado.Text = "bd0000";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(299, 11);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(44, 13);
+            this.label24.TabIndex = 34;
+            this.label24.Text = "PORTA";
+            // 
+            // tbPortaIntegrado
+            // 
+            this.tbPortaIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbPortaIntegrado.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbPortaIntegrado.Location = new System.Drawing.Point(349, 9);
+            this.tbPortaIntegrado.Name = "tbPortaIntegrado";
+            this.tbPortaIntegrado.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaIntegrado.TabIndex = 30;
+            this.tbPortaIntegrado.Text = "6000";
+            // 
+            // tbHostnameIntegrado
+            // 
+            this.tbHostnameIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.tbHostnameIntegrado.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbHostnameIntegrado.Location = new System.Drawing.Point(193, 8);
+            this.tbHostnameIntegrado.Name = "tbHostnameIntegrado";
+            this.tbHostnameIntegrado.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameIntegrado.TabIndex = 28;
+            this.tbHostnameIntegrado.Text = "192.168.232.252";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(8, 11);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(179, 13);
+            this.label25.TabIndex = 29;
+            this.label25.Text = "REPRODUZIDO EM:   HOSTNAME";
             // 
             // tbRITPreteste
             // 
@@ -2319,6 +2322,21 @@
             this.btCopiar.UseVisualStyleBackColor = true;
             this.btCopiar.Click += new System.EventHandler(this.btCopiar_Click);
             // 
+            // configuraçãoToolStripMenuItem
+            // 
+            this.configuraçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.servidorToolStripMenuItem});
+            this.configuraçãoToolStripMenuItem.Name = "configuraçãoToolStripMenuItem";
+            this.configuraçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configuraçãoToolStripMenuItem.Text = "Configuração";
+            // 
+            // servidorToolStripMenuItem
+            // 
+            this.servidorToolStripMenuItem.Name = "servidorToolStripMenuItem";
+            this.servidorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.servidorToolStripMenuItem.Text = "Servidor";
+            this.servidorToolStripMenuItem.Click += new System.EventHandler(this.servidorToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2347,20 +2365,20 @@
             this.tbEscolhas.ResumeLayout(false);
             this.tbProblemas.ResumeLayout(false);
             this.tbProblemas.PerformLayout();
+            this.tbRITQualidade.ResumeLayout(false);
+            this.tbRITQualidade.PerformLayout();
+            this.tbGeraDoc.ResumeLayout(false);
+            this.tbGeraDoc.PerformLayout();
+            this.tbOrientacao.ResumeLayout(false);
+            this.tbOrientacao.PerformLayout();
+            this.tbLiberacaoTeste.ResumeLayout(false);
+            this.tbLiberacaoTeste.PerformLayout();
+            this.tbRAResumido.ResumeLayout(false);
+            this.tbRAResumido.PerformLayout();
             this.rbTesteUnit.ResumeLayout(false);
             this.rbTesteUnit.PerformLayout();
             this.tbTesteIntegrado.ResumeLayout(false);
             this.tbTesteIntegrado.PerformLayout();
-            this.tbLiberacaoTeste.ResumeLayout(false);
-            this.tbLiberacaoTeste.PerformLayout();
-            this.tbRITQualidade.ResumeLayout(false);
-            this.tbRITQualidade.PerformLayout();
-            this.tbOrientacao.ResumeLayout(false);
-            this.tbOrientacao.PerformLayout();
-            this.tbGeraDoc.ResumeLayout(false);
-            this.tbGeraDoc.PerformLayout();
-            this.tbRAResumido.ResumeLayout(false);
-            this.tbRAResumido.PerformLayout();
             this.tbRITPreteste.ResumeLayout(false);
             this.tbRITPreteste.PerformLayout();
             this.ResumeLayout(false);
@@ -2555,6 +2573,8 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.TextBox tbGeraAIH;
         private System.Windows.Forms.Button btnGeraAIH;
+        private System.Windows.Forms.ToolStripMenuItem configuraçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem servidorToolStripMenuItem;
     }
 }
 

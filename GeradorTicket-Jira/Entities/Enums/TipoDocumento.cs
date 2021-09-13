@@ -9,5 +9,7 @@
         , Celular
         , AIH
         , APAC
+        , EMAIL
+        , NOME
     }
 }
