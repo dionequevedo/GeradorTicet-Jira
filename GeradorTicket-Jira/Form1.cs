@@ -733,7 +733,7 @@ namespace GeradorTicket_Jira
             tbWorkshop.Focus();
         }
 
-        private void sprintDevToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GeraDocToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tbEscolhas.SelectedTab = tbGeraDoc;
             tbGeraDoc.Focus();

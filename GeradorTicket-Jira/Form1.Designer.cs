@@ -40,7 +40,7 @@
             this.modeloRAResumidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reviewRealizadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workShopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sprintDevToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geraDocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orientaçãoDoDesenvolvedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.limparF10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copiarF11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -229,6 +229,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tipoDeTextoToolStripMenuItem,
@@ -239,8 +240,8 @@
             this.opçõesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(884, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1317, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -256,87 +257,87 @@
             this.modeloRAResumidoToolStripMenuItem,
             this.reviewRealizadoToolStripMenuItem,
             this.workShopToolStripMenuItem,
-            this.sprintDevToolStripMenuItem,
+            this.geraDocToolStripMenuItem,
             this.orientaçãoDoDesenvolvedorToolStripMenuItem});
             this.tipoDeTextoToolStripMenuItem.Name = "tipoDeTextoToolStripMenuItem";
             this.tipoDeTextoToolStripMenuItem.ShortcutKeyDisplayString = "T";
-            this.tipoDeTextoToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.tipoDeTextoToolStripMenuItem.Size = new System.Drawing.Size(138, 29);
             this.tipoDeTextoToolStripMenuItem.Text = "Tipo de Ticket";
             // 
             // descriçãoDeProblemasToolStripMenuItem
             // 
             this.descriçãoDeProblemasToolStripMenuItem.Name = "descriçãoDeProblemasToolStripMenuItem";
-            this.descriçãoDeProblemasToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.descriçãoDeProblemasToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.descriçãoDeProblemasToolStripMenuItem.Text = "Descrição de Problemas";
             this.descriçãoDeProblemasToolStripMenuItem.Click += new System.EventHandler(this.descriçãoDeProblemasToolStripMenuItem_Click);
             // 
             // préTesteSemRITToolStripMenuItem
             // 
             this.préTesteSemRITToolStripMenuItem.Name = "préTesteSemRITToolStripMenuItem";
-            this.préTesteSemRITToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.préTesteSemRITToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.préTesteSemRITToolStripMenuItem.Text = "Pré-Teste sem RIT";
             this.préTesteSemRITToolStripMenuItem.Click += new System.EventHandler(this.préTesteSemRITToolStripMenuItem_Click);
             // 
             // liberaçãoTesteUnitárioToolStripMenuItem
             // 
             this.liberaçãoTesteUnitárioToolStripMenuItem.Name = "liberaçãoTesteUnitárioToolStripMenuItem";
-            this.liberaçãoTesteUnitárioToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.liberaçãoTesteUnitárioToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.liberaçãoTesteUnitárioToolStripMenuItem.Text = "Liberação Teste Unitário";
             this.liberaçãoTesteUnitárioToolStripMenuItem.Click += new System.EventHandler(this.liberaçãoTesteUnitárioToolStripMenuItem_Click);
             // 
             // liberaçãoTesteIngradoToolStripMenuItem
             // 
             this.liberaçãoTesteIngradoToolStripMenuItem.Name = "liberaçãoTesteIngradoToolStripMenuItem";
-            this.liberaçãoTesteIngradoToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.liberaçãoTesteIngradoToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.liberaçãoTesteIngradoToolStripMenuItem.Text = "Liberação Teste Integrado";
             this.liberaçãoTesteIngradoToolStripMenuItem.Click += new System.EventHandler(this.liberaçãoTesteIngradoToolStripMenuItem_Click);
             // 
             // liberaçãoDeTicketToolStripMenuItem
             // 
             this.liberaçãoDeTicketToolStripMenuItem.Name = "liberaçãoDeTicketToolStripMenuItem";
-            this.liberaçãoDeTicketToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.liberaçãoDeTicketToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.liberaçãoDeTicketToolStripMenuItem.Text = "Liberação de Ticket";
             this.liberaçãoDeTicketToolStripMenuItem.Click += new System.EventHandler(this.liberaçãoDeTicketToolStripMenuItem_Click);
             // 
             // rITDeQualidadeToolStripMenuItem
             // 
             this.rITDeQualidadeToolStripMenuItem.Name = "rITDeQualidadeToolStripMenuItem";
-            this.rITDeQualidadeToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.rITDeQualidadeToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.rITDeQualidadeToolStripMenuItem.Text = "RIT de Qualidade";
             this.rITDeQualidadeToolStripMenuItem.Click += new System.EventHandler(this.rITDeQualidadeToolStripMenuItem_Click);
             // 
             // modeloRAResumidoToolStripMenuItem
             // 
             this.modeloRAResumidoToolStripMenuItem.Name = "modeloRAResumidoToolStripMenuItem";
-            this.modeloRAResumidoToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.modeloRAResumidoToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.modeloRAResumidoToolStripMenuItem.Text = "RA Resumido";
             this.modeloRAResumidoToolStripMenuItem.Click += new System.EventHandler(this.modeloRAResumidoToolStripMenuItem_Click);
             // 
             // reviewRealizadoToolStripMenuItem
             // 
             this.reviewRealizadoToolStripMenuItem.Name = "reviewRealizadoToolStripMenuItem";
-            this.reviewRealizadoToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.reviewRealizadoToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.reviewRealizadoToolStripMenuItem.Text = "Review Realizado";
             this.reviewRealizadoToolStripMenuItem.Click += new System.EventHandler(this.reviewRealizadoToolStripMenuItem_Click);
             // 
             // workShopToolStripMenuItem
             // 
             this.workShopToolStripMenuItem.Name = "workShopToolStripMenuItem";
-            this.workShopToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.workShopToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.workShopToolStripMenuItem.Text = "WorkShop";
             this.workShopToolStripMenuItem.Click += new System.EventHandler(this.workShopToolStripMenuItem_Click);
             // 
-            // sprintDevToolStripMenuItem
+            // geraDocToolStripMenuItem
             // 
-            this.sprintDevToolStripMenuItem.Name = "sprintDevToolStripMenuItem";
-            this.sprintDevToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.sprintDevToolStripMenuItem.Text = "Sprint Dev";
-            this.sprintDevToolStripMenuItem.Click += new System.EventHandler(this.sprintDevToolStripMenuItem_Click);
+            this.geraDocToolStripMenuItem.Name = "geraDocToolStripMenuItem";
+            this.geraDocToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
+            this.geraDocToolStripMenuItem.Text = "Gera Documentos";
+            this.geraDocToolStripMenuItem.Click += new System.EventHandler(this.GeraDocToolStripMenuItem_Click);
             // 
             // orientaçãoDoDesenvolvedorToolStripMenuItem
             // 
             this.orientaçãoDoDesenvolvedorToolStripMenuItem.Name = "orientaçãoDoDesenvolvedorToolStripMenuItem";
-            this.orientaçãoDoDesenvolvedorToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.orientaçãoDoDesenvolvedorToolStripMenuItem.Size = new System.Drawing.Size(351, 34);
             this.orientaçãoDoDesenvolvedorToolStripMenuItem.Text = "Orientação do Desenvolvedor";
             this.orientaçãoDoDesenvolvedorToolStripMenuItem.Click += new System.EventHandler(this.orientaçãoDoDesenvolvedorToolStripMenuItem_Click);
             // 
@@ -344,7 +345,7 @@
             // 
             this.limparF10ToolStripMenuItem.Name = "limparF10ToolStripMenuItem";
             this.limparF10ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F10;
-            this.limparF10ToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.limparF10ToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
             this.limparF10ToolStripMenuItem.Text = "Limpar (F10)";
             this.limparF10ToolStripMenuItem.Click += new System.EventHandler(this.limparF10ToolStripMenuItem_Click);
             // 
@@ -352,7 +353,7 @@
             // 
             this.copiarF11ToolStripMenuItem.Name = "copiarF11ToolStripMenuItem";
             this.copiarF11ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11;
-            this.copiarF11ToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.copiarF11ToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
             this.copiarF11ToolStripMenuItem.Text = "Copiar (F11)";
             this.copiarF11ToolStripMenuItem.Click += new System.EventHandler(this.copiarF11ToolStripMenuItem_Click);
             // 
@@ -360,7 +361,7 @@
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(101, 29);
             this.sairToolStripMenuItem.Text = "Sair (F12)";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.SairToolStripMenuItem_Click);
             // 
@@ -369,14 +370,14 @@
             this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
@@ -385,7 +386,7 @@
             this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alterarLayoutToolStripMenuItem});
             this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
             this.opçõesToolStripMenuItem.Text = "Opções";
             // 
             // alterarLayoutToolStripMenuItem
@@ -394,27 +395,28 @@
             this.blackToolStripMenuItem,
             this.blackToolStripMenuItem1});
             this.alterarLayoutToolStripMenuItem.Name = "alterarLayoutToolStripMenuItem";
-            this.alterarLayoutToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.alterarLayoutToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
             this.alterarLayoutToolStripMenuItem.Text = "Alterar Layout";
             // 
             // blackToolStripMenuItem
             // 
             this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-            this.blackToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.blackToolStripMenuItem.Size = new System.Drawing.Size(169, 34);
             this.blackToolStripMenuItem.Text = "Padrão";
             // 
             // blackToolStripMenuItem1
             // 
             this.blackToolStripMenuItem1.Name = "blackToolStripMenuItem1";
-            this.blackToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
+            this.blackToolStripMenuItem1.Size = new System.Drawing.Size(169, 34);
             this.blackToolStripMenuItem1.Text = "Black";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.gbIdentificacao);
-            this.panel1.Location = new System.Drawing.Point(12, 26);
+            this.panel1.Location = new System.Drawing.Point(18, 40);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 89);
+            this.panel1.Size = new System.Drawing.Size(1290, 137);
             this.panel1.TabIndex = 1;
             // 
             // gbIdentificacao
@@ -435,9 +437,11 @@
             this.gbIdentificacao.Controls.Add(this.lblArea);
             this.gbIdentificacao.Controls.Add(this.lblCliente);
             this.gbIdentificacao.ForeColor = System.Drawing.SystemColors.Control;
-            this.gbIdentificacao.Location = new System.Drawing.Point(9, 4);
+            this.gbIdentificacao.Location = new System.Drawing.Point(14, 6);
+            this.gbIdentificacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbIdentificacao.Name = "gbIdentificacao";
-            this.gbIdentificacao.Size = new System.Drawing.Size(845, 82);
+            this.gbIdentificacao.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbIdentificacao.Size = new System.Drawing.Size(1268, 126);
             this.gbIdentificacao.TabIndex = 0;
             this.gbIdentificacao.TabStop = false;
             this.gbIdentificacao.Text = "Identificação";
@@ -459,18 +463,20 @@
             "1920 x 1080",
             "2560 x 1080",
             "2560 x 1440"});
-            this.cbResolucao.Location = new System.Drawing.Point(724, 20);
+            this.cbResolucao.Location = new System.Drawing.Point(1086, 31);
+            this.cbResolucao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbResolucao.Name = "cbResolucao";
-            this.cbResolucao.Size = new System.Drawing.Size(109, 21);
+            this.cbResolucao.Size = new System.Drawing.Size(162, 28);
             this.cbResolucao.TabIndex = 7;
             this.cbResolucao.Text = "1366 x 768";
             // 
             // lblResolucao
             // 
             this.lblResolucao.AutoSize = true;
-            this.lblResolucao.Location = new System.Drawing.Point(656, 25);
+            this.lblResolucao.Location = new System.Drawing.Point(984, 38);
+            this.lblResolucao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResolucao.Name = "lblResolucao";
-            this.lblResolucao.Size = new System.Drawing.Size(58, 13);
+            this.lblResolucao.Size = new System.Drawing.Size(85, 20);
             this.lblResolucao.TabIndex = 8;
             this.lblResolucao.Text = "Resolução";
             // 
@@ -497,9 +503,10 @@
             "SIGH",
             "SIGHPLUS",
             "UTIL"});
-            this.cbAplicacao.Location = new System.Drawing.Point(461, 21);
+            this.cbAplicacao.Location = new System.Drawing.Point(692, 32);
+            this.cbAplicacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbAplicacao.Name = "cbAplicacao";
-            this.cbAplicacao.Size = new System.Drawing.Size(109, 21);
+            this.cbAplicacao.Size = new System.Drawing.Size(162, 28);
             this.cbAplicacao.TabIndex = 4;
             this.cbAplicacao.Text = "SIGH";
             // 
@@ -509,20 +516,24 @@
             this.cbSO.ForeColor = System.Drawing.SystemColors.Window;
             this.cbSO.FormattingEnabled = true;
             this.cbSO.Items.AddRange(new object[] {
-            "WINDOWS XP",
+            "WINDOWS 10",
+            "WINDOWS 11",
             "WINDOWS 7",
+            "WINDOWS XP",
+            "ANDROID",
+            "IOS",
+            "MAC OS X",
+            "LINUX",
             "WINDOWS VISTA",
             "WINDOWS 8",
             "WINDOWS 8.1",
-            "WINDOWS 10",
-            "MAC OS X",
-            "LINUX",
             "SOLARIS"});
-            this.cbSO.Location = new System.Drawing.Point(247, 48);
+            this.cbSO.Location = new System.Drawing.Point(370, 74);
+            this.cbSO.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbSO.Name = "cbSO";
-            this.cbSO.Size = new System.Drawing.Size(121, 21);
+            this.cbSO.Size = new System.Drawing.Size(180, 28);
             this.cbSO.TabIndex = 3;
-            this.cbSO.Text = "WINDOWS 7";
+            this.cbSO.Text = "WINDOWS 10";
             // 
             // cbArea
             // 
@@ -548,9 +559,10 @@
             "INTERNAÇÃO",
             "NUTRIÇÃO",
             "SAME"});
-            this.cbArea.Location = new System.Drawing.Point(55, 48);
+            this.cbArea.Location = new System.Drawing.Point(82, 74);
+            this.cbArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbArea.Name = "cbArea";
-            this.cbArea.Size = new System.Drawing.Size(121, 21);
+            this.cbArea.Size = new System.Drawing.Size(180, 28);
             this.cbArea.TabIndex = 1;
             this.cbArea.Text = "NÃO INFORMADO";
             // 
@@ -558,9 +570,10 @@
             // 
             this.tbVersao.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbVersao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbVersao.Location = new System.Drawing.Point(247, 21);
+            this.tbVersao.Location = new System.Drawing.Point(370, 32);
+            this.tbVersao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbVersao.Name = "tbVersao";
-            this.tbVersao.Size = new System.Drawing.Size(52, 20);
+            this.tbVersao.Size = new System.Drawing.Size(76, 26);
             this.tbVersao.TabIndex = 2;
             this.tbVersao.Text = "5.77.00";
             // 
@@ -568,18 +581,20 @@
             // 
             this.tbCliente.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbCliente.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbCliente.Location = new System.Drawing.Point(55, 21);
+            this.tbCliente.Location = new System.Drawing.Point(82, 32);
+            this.tbCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbCliente.Name = "tbCliente";
-            this.tbCliente.Size = new System.Drawing.Size(46, 20);
+            this.tbCliente.Size = new System.Drawing.Size(67, 26);
             this.tbCliente.TabIndex = 0;
             this.tbCliente.Text = "0000";
             // 
             // rbHomologacao
             // 
             this.rbHomologacao.AutoSize = true;
-            this.rbHomologacao.Location = new System.Drawing.Point(538, 51);
+            this.rbHomologacao.Location = new System.Drawing.Point(807, 78);
+            this.rbHomologacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbHomologacao.Name = "rbHomologacao";
-            this.rbHomologacao.Size = new System.Drawing.Size(91, 17);
+            this.rbHomologacao.Size = new System.Drawing.Size(133, 24);
             this.rbHomologacao.TabIndex = 6;
             this.rbHomologacao.TabStop = true;
             this.rbHomologacao.Text = "Homologação";
@@ -589,9 +604,10 @@
             // 
             this.rbProducao.AutoSize = true;
             this.rbProducao.Checked = true;
-            this.rbProducao.Location = new System.Drawing.Point(461, 50);
+            this.rbProducao.Location = new System.Drawing.Point(692, 77);
+            this.rbProducao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbProducao.Name = "rbProducao";
-            this.rbProducao.Size = new System.Drawing.Size(71, 17);
+            this.rbProducao.Size = new System.Drawing.Size(102, 24);
             this.rbProducao.TabIndex = 5;
             this.rbProducao.TabStop = true;
             this.rbProducao.Text = "Produção";
@@ -600,54 +616,60 @@
             // lblAmbiente
             // 
             this.lblAmbiente.AutoSize = true;
-            this.lblAmbiente.Location = new System.Drawing.Point(393, 51);
+            this.lblAmbiente.Location = new System.Drawing.Point(590, 78);
+            this.lblAmbiente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAmbiente.Name = "lblAmbiente";
-            this.lblAmbiente.Size = new System.Drawing.Size(54, 13);
+            this.lblAmbiente.Size = new System.Drawing.Size(81, 20);
             this.lblAmbiente.TabIndex = 5;
             this.lblAmbiente.Text = "Ambiente:";
             // 
             // lblAplicacao
             // 
             this.lblAplicacao.AutoSize = true;
-            this.lblAplicacao.Location = new System.Drawing.Point(393, 26);
+            this.lblAplicacao.Location = new System.Drawing.Point(590, 40);
+            this.lblAplicacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAplicacao.Name = "lblAplicacao";
-            this.lblAplicacao.Size = new System.Drawing.Size(54, 13);
+            this.lblAplicacao.Size = new System.Drawing.Size(78, 20);
             this.lblAplicacao.TabIndex = 4;
             this.lblAplicacao.Text = "Aplicação";
             // 
             // lblSO
             // 
             this.lblSO.AutoSize = true;
-            this.lblSO.Location = new System.Drawing.Point(201, 51);
+            this.lblSO.Location = new System.Drawing.Point(302, 78);
+            this.lblSO.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSO.Name = "lblSO";
-            this.lblSO.Size = new System.Drawing.Size(31, 13);
+            this.lblSO.Size = new System.Drawing.Size(44, 20);
             this.lblSO.TabIndex = 3;
             this.lblSO.Text = "S. O.";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(192, 26);
+            this.label2.Location = new System.Drawing.Point(288, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Versão";
             // 
             // lblArea
             // 
             this.lblArea.AutoSize = true;
-            this.lblArea.Location = new System.Drawing.Point(6, 51);
+            this.lblArea.Location = new System.Drawing.Point(9, 78);
+            this.lblArea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(29, 13);
+            this.lblArea.Size = new System.Drawing.Size(43, 20);
             this.lblArea.TabIndex = 1;
             this.lblArea.Text = "Área";
             // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(6, 26);
+            this.lblCliente.Location = new System.Drawing.Point(9, 40);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(39, 13);
+            this.lblCliente.Size = new System.Drawing.Size(58, 20);
             this.lblCliente.TabIndex = 0;
             this.lblCliente.Text = "Cliente";
             // 
@@ -656,9 +678,10 @@
             this.panel2.Controls.Add(this.tbEscolhas);
             this.panel2.Controls.Add(this.btNovo);
             this.panel2.Controls.Add(this.btCopiar);
-            this.panel2.Location = new System.Drawing.Point(12, 118);
+            this.panel2.Location = new System.Drawing.Point(18, 182);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(860, 560);
+            this.panel2.Size = new System.Drawing.Size(1290, 862);
             this.panel2.TabIndex = 2;
             // 
             // tbEscolhas
@@ -675,10 +698,11 @@
             this.tbEscolhas.Controls.Add(this.tbReview);
             this.tbEscolhas.Controls.Add(this.tbWorkshop);
             this.tbEscolhas.Controls.Add(this.tbRITPreteste);
-            this.tbEscolhas.Location = new System.Drawing.Point(4, 18);
+            this.tbEscolhas.Location = new System.Drawing.Point(6, 28);
+            this.tbEscolhas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbEscolhas.Name = "tbEscolhas";
             this.tbEscolhas.SelectedIndex = 0;
-            this.tbEscolhas.Size = new System.Drawing.Size(850, 504);
+            this.tbEscolhas.Size = new System.Drawing.Size(1275, 775);
             this.tbEscolhas.TabIndex = 4;
             this.tbEscolhas.TabStop = false;
             this.tbEscolhas.Enter += new System.EventHandler(this.tbEscolhas_Enter);
@@ -711,10 +735,11 @@
             this.tbProblemas.Controls.Add(this.label3);
             this.tbProblemas.Controls.Add(this.label1);
             this.tbProblemas.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbProblemas.Location = new System.Drawing.Point(4, 25);
+            this.tbProblemas.Location = new System.Drawing.Point(4, 32);
+            this.tbProblemas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbProblemas.Name = "tbProblemas";
-            this.tbProblemas.Padding = new System.Windows.Forms.Padding(3);
-            this.tbProblemas.Size = new System.Drawing.Size(842, 475);
+            this.tbProblemas.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbProblemas.Size = new System.Drawing.Size(1267, 739);
             this.tbProblemas.TabIndex = 0;
             this.tbProblemas.Text = "Descrição do problema";
             this.tbProblemas.UseVisualStyleBackColor = true;
@@ -723,9 +748,10 @@
             // rbAnexoNao
             // 
             this.rbAnexoNao.AutoSize = true;
-            this.rbAnexoNao.Location = new System.Drawing.Point(391, 86);
+            this.rbAnexoNao.Location = new System.Drawing.Point(586, 132);
+            this.rbAnexoNao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbAnexoNao.Name = "rbAnexoNao";
-            this.rbAnexoNao.Size = new System.Drawing.Size(51, 17);
+            this.rbAnexoNao.Size = new System.Drawing.Size(72, 24);
             this.rbAnexoNao.TabIndex = 21;
             this.rbAnexoNao.TabStop = true;
             this.rbAnexoNao.Text = "Não )";
@@ -735,9 +761,10 @@
             // 
             this.rbAnexoSim.AutoSize = true;
             this.rbAnexoSim.Checked = true;
-            this.rbAnexoSim.Location = new System.Drawing.Point(343, 86);
+            this.rbAnexoSim.Location = new System.Drawing.Point(514, 132);
+            this.rbAnexoSim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbAnexoSim.Name = "rbAnexoSim";
-            this.rbAnexoSim.Size = new System.Drawing.Size(42, 17);
+            this.rbAnexoSim.Size = new System.Drawing.Size(61, 24);
             this.rbAnexoSim.TabIndex = 19;
             this.rbAnexoSim.TabStop = true;
             this.rbAnexoSim.Text = "Sim";
@@ -746,9 +773,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(175, 88);
+            this.label12.Location = new System.Drawing.Point(262, 135);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(167, 13);
+            this.label12.Size = new System.Drawing.Size(244, 20);
             this.label12.TabIndex = 20;
             this.label12.Text = "( Há PSR, Vídeo ou outro anexo?";
             // 
@@ -757,27 +785,30 @@
             this.tbParecer.AcceptsReturn = true;
             this.tbParecer.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbParecer.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbParecer.Location = new System.Drawing.Point(9, 394);
+            this.tbParecer.Location = new System.Drawing.Point(14, 606);
+            this.tbParecer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbParecer.Multiline = true;
             this.tbParecer.Name = "tbParecer";
-            this.tbParecer.Size = new System.Drawing.Size(825, 72);
+            this.tbParecer.Size = new System.Drawing.Size(1236, 109);
             this.tbParecer.TabIndex = 9;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 376);
+            this.label11.Location = new System.Drawing.Point(10, 578);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(208, 13);
+            this.label11.Size = new System.Drawing.Size(309, 20);
             this.label11.TabIndex = 18;
             this.label11.Text = "PARECER DO ANALISTA DE SUPORTE:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(708, 267);
+            this.label10.Location = new System.Drawing.Point(1062, 411);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.Size = new System.Drawing.Size(65, 20);
             this.label10.TabIndex = 17;
             this.label10.Text = "SENHA";
             // 
@@ -785,18 +816,20 @@
             // 
             this.tbPassword.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPassword.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPassword.Location = new System.Drawing.Point(758, 266);
+            this.tbPassword.Location = new System.Drawing.Point(1137, 409);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(75, 20);
+            this.tbPassword.Size = new System.Drawing.Size(110, 26);
             this.tbPassword.TabIndex = 7;
             this.tbPassword.Text = "1";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(540, 268);
+            this.label9.Location = new System.Drawing.Point(810, 412);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 13);
+            this.label9.Size = new System.Drawing.Size(84, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "USUÁRIO";
             // 
@@ -804,18 +837,20 @@
             // 
             this.tbUsuario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbUsuario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuario.Location = new System.Drawing.Point(602, 266);
+            this.tbUsuario.Location = new System.Drawing.Point(903, 409);
+            this.tbUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuario.Size = new System.Drawing.Size(148, 26);
             this.tbUsuario.TabIndex = 6;
             this.tbUsuario.Text = "QA.FUNCIONARIO";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(391, 267);
+            this.label8.Location = new System.Drawing.Point(586, 411);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 13);
+            this.label8.Size = new System.Drawing.Size(96, 20);
             this.label8.TabIndex = 13;
             this.label8.Text = "DATABASE";
             // 
@@ -823,18 +858,20 @@
             // 
             this.tbDatabase.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbDatabase.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabase.Location = new System.Drawing.Point(461, 265);
+            this.tbDatabase.Location = new System.Drawing.Point(692, 408);
+            this.tbDatabase.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDatabase.Name = "tbDatabase";
-            this.tbDatabase.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabase.Size = new System.Drawing.Size(110, 26);
             this.tbDatabase.TabIndex = 5;
             this.tbDatabase.Text = "bd0000";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(297, 268);
+            this.label7.Location = new System.Drawing.Point(446, 412);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.Size = new System.Drawing.Size(63, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "PORTA";
             // 
@@ -842,9 +879,10 @@
             // 
             this.tbPorta.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPorta.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPorta.Location = new System.Drawing.Point(347, 266);
+            this.tbPorta.Location = new System.Drawing.Point(520, 409);
+            this.tbPorta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPorta.Name = "tbPorta";
-            this.tbPorta.Size = new System.Drawing.Size(38, 20);
+            this.tbPorta.Size = new System.Drawing.Size(55, 26);
             this.tbPorta.TabIndex = 4;
             this.tbPorta.Text = "5432";
             // 
@@ -852,9 +890,10 @@
             // 
             this.tbHostname.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbHostname.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostname.Location = new System.Drawing.Point(191, 265);
+            this.tbHostname.Location = new System.Drawing.Point(286, 408);
+            this.tbHostname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHostname.Name = "tbHostname";
-            this.tbHostname.Size = new System.Drawing.Size(100, 20);
+            this.tbHostname.Size = new System.Drawing.Size(148, 26);
             this.tbHostname.TabIndex = 3;
             this.tbHostname.Text = "192.168.232.0";
             // 
@@ -863,18 +902,20 @@
             this.tbPassoAPasso.AcceptsReturn = true;
             this.tbPassoAPasso.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPassoAPasso.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPassoAPasso.Location = new System.Drawing.Point(8, 305);
+            this.tbPassoAPasso.Location = new System.Drawing.Point(12, 469);
+            this.tbPassoAPasso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPassoAPasso.Multiline = true;
             this.tbPassoAPasso.Name = "tbPassoAPasso";
-            this.tbPassoAPasso.Size = new System.Drawing.Size(825, 62);
+            this.tbPassoAPasso.Size = new System.Drawing.Size(1236, 93);
             this.tbPassoAPasso.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 287);
+            this.label6.Location = new System.Drawing.Point(9, 442);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 13);
+            this.label6.Size = new System.Drawing.Size(142, 20);
             this.label6.TabIndex = 7;
             this.label6.Text = "PASSO A PASSO:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -884,10 +925,11 @@
             this.tbFuncionamento.AcceptsReturn = true;
             this.tbFuncionamento.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbFuncionamento.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbFuncionamento.Location = new System.Drawing.Point(8, 195);
+            this.tbFuncionamento.Location = new System.Drawing.Point(12, 300);
+            this.tbFuncionamento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbFuncionamento.Multiline = true;
             this.tbFuncionamento.Name = "tbFuncionamento";
-            this.tbFuncionamento.Size = new System.Drawing.Size(825, 65);
+            this.tbFuncionamento.Size = new System.Drawing.Size(1236, 98);
             this.tbFuncionamento.TabIndex = 2;
             // 
             // tbResumo
@@ -895,10 +937,11 @@
             this.tbResumo.AcceptsReturn = true;
             this.tbResumo.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbResumo.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbResumo.Location = new System.Drawing.Point(8, 103);
+            this.tbResumo.Location = new System.Drawing.Point(12, 158);
+            this.tbResumo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbResumo.Multiline = true;
             this.tbResumo.Name = "tbResumo";
-            this.tbResumo.Size = new System.Drawing.Size(825, 65);
+            this.tbResumo.Size = new System.Drawing.Size(1236, 98);
             this.tbResumo.TabIndex = 1;
             // 
             // tbCaminhos
@@ -906,45 +949,50 @@
             this.tbCaminhos.AcceptsReturn = true;
             this.tbCaminhos.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbCaminhos.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbCaminhos.Location = new System.Drawing.Point(9, 19);
+            this.tbCaminhos.Location = new System.Drawing.Point(14, 29);
+            this.tbCaminhos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbCaminhos.Multiline = true;
             this.tbCaminhos.Name = "tbCaminhos";
-            this.tbCaminhos.Size = new System.Drawing.Size(825, 65);
+            this.tbCaminhos.Size = new System.Drawing.Size(1236, 98);
             this.tbCaminhos.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 268);
+            this.label5.Location = new System.Drawing.Point(9, 412);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 13);
+            this.label5.Size = new System.Drawing.Size(263, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "REPRODUZIDO EM:   HOSTNAME";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 177);
+            this.label4.Location = new System.Drawing.Point(9, 272);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 13);
+            this.label4.Size = new System.Drawing.Size(235, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "FUNCIONAMENTO CORRETO:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 87);
+            this.label3.Location = new System.Drawing.Point(9, 134);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 13);
+            this.label3.Size = new System.Drawing.Size(205, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "RESUMO DO PROBLEMA:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 3);
+            this.label1.Location = new System.Drawing.Point(9, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.Size = new System.Drawing.Size(197, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "CAMINHOS DE ACESSO:";
             // 
@@ -962,18 +1010,20 @@
             this.rbTesteUnit.Controls.Add(this.tbHostnameUnitario);
             this.rbTesteUnit.Controls.Add(this.label20);
             this.rbTesteUnit.ForeColor = System.Drawing.SystemColors.Control;
-            this.rbTesteUnit.Location = new System.Drawing.Point(4, 25);
+            this.rbTesteUnit.Location = new System.Drawing.Point(4, 32);
+            this.rbTesteUnit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rbTesteUnit.Name = "rbTesteUnit";
-            this.rbTesteUnit.Size = new System.Drawing.Size(842, 475);
+            this.rbTesteUnit.Size = new System.Drawing.Size(1267, 739);
             this.rbTesteUnit.TabIndex = 2;
             this.rbTesteUnit.Text = "Teste Unitário";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(710, 10);
+            this.label16.Location = new System.Drawing.Point(1065, 15);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 13);
+            this.label16.Size = new System.Drawing.Size(65, 20);
             this.label16.TabIndex = 27;
             this.label16.Text = "SENHA";
             // 
@@ -981,18 +1031,20 @@
             // 
             this.tbSenhaUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbSenhaUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaUnitario.Location = new System.Drawing.Point(760, 9);
+            this.tbSenhaUnitario.Location = new System.Drawing.Point(1140, 14);
+            this.tbSenhaUnitario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbSenhaUnitario.Name = "tbSenhaUnitario";
-            this.tbSenhaUnitario.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaUnitario.Size = new System.Drawing.Size(110, 26);
             this.tbSenhaUnitario.TabIndex = 23;
             this.tbSenhaUnitario.Text = "1";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(542, 11);
+            this.label17.Location = new System.Drawing.Point(813, 17);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 13);
+            this.label17.Size = new System.Drawing.Size(84, 20);
             this.label17.TabIndex = 26;
             this.label17.Text = "USUÁRIO";
             // 
@@ -1000,18 +1052,20 @@
             // 
             this.tbUsuarioUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbUsuarioUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioUnitario.Location = new System.Drawing.Point(604, 9);
+            this.tbUsuarioUnitario.Location = new System.Drawing.Point(906, 14);
+            this.tbUsuarioUnitario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbUsuarioUnitario.Name = "tbUsuarioUnitario";
-            this.tbUsuarioUnitario.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioUnitario.Size = new System.Drawing.Size(148, 26);
             this.tbUsuarioUnitario.TabIndex = 22;
             this.tbUsuarioUnitario.Text = "QA.FUNCIONARIO";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(393, 10);
+            this.label18.Location = new System.Drawing.Point(590, 15);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 13);
+            this.label18.Size = new System.Drawing.Size(96, 20);
             this.label18.TabIndex = 25;
             this.label18.Text = "DATABASE";
             // 
@@ -1019,18 +1073,20 @@
             // 
             this.tbDatabaseUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbDatabaseUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseUnitario.Location = new System.Drawing.Point(463, 8);
+            this.tbDatabaseUnitario.Location = new System.Drawing.Point(694, 12);
+            this.tbDatabaseUnitario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDatabaseUnitario.Name = "tbDatabaseUnitario";
-            this.tbDatabaseUnitario.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseUnitario.Size = new System.Drawing.Size(110, 26);
             this.tbDatabaseUnitario.TabIndex = 21;
             this.tbDatabaseUnitario.Text = "bd0000";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(299, 11);
+            this.label19.Location = new System.Drawing.Point(448, 17);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(44, 13);
+            this.label19.Size = new System.Drawing.Size(63, 20);
             this.label19.TabIndex = 24;
             this.label19.Text = "PORTA";
             // 
@@ -1038,9 +1094,10 @@
             // 
             this.tbPortaUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPortaUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaUnitario.Location = new System.Drawing.Point(349, 9);
+            this.tbPortaUnitario.Location = new System.Drawing.Point(524, 14);
+            this.tbPortaUnitario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPortaUnitario.Name = "tbPortaUnitario";
-            this.tbPortaUnitario.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaUnitario.Size = new System.Drawing.Size(55, 26);
             this.tbPortaUnitario.TabIndex = 20;
             this.tbPortaUnitario.Text = "5432";
             // 
@@ -1048,18 +1105,20 @@
             // 
             this.tbHostnameUnitario.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbHostnameUnitario.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameUnitario.Location = new System.Drawing.Point(193, 8);
+            this.tbHostnameUnitario.Location = new System.Drawing.Point(290, 12);
+            this.tbHostnameUnitario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHostnameUnitario.Name = "tbHostnameUnitario";
-            this.tbHostnameUnitario.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameUnitario.Size = new System.Drawing.Size(148, 26);
             this.tbHostnameUnitario.TabIndex = 18;
             this.tbHostnameUnitario.Text = "192.168.232.0";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(8, 11);
+            this.label20.Location = new System.Drawing.Point(12, 17);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(179, 13);
+            this.label20.Size = new System.Drawing.Size(263, 20);
             this.label20.TabIndex = 19;
             this.label20.Text = "REPRODUZIDO EM:   HOSTNAME";
             // 
@@ -1077,18 +1136,20 @@
             this.tbTesteIntegrado.Controls.Add(this.tbHostnameIntegrado);
             this.tbTesteIntegrado.Controls.Add(this.label25);
             this.tbTesteIntegrado.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbTesteIntegrado.Location = new System.Drawing.Point(4, 25);
+            this.tbTesteIntegrado.Location = new System.Drawing.Point(4, 32);
+            this.tbTesteIntegrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbTesteIntegrado.Name = "tbTesteIntegrado";
-            this.tbTesteIntegrado.Size = new System.Drawing.Size(842, 475);
+            this.tbTesteIntegrado.Size = new System.Drawing.Size(1267, 739);
             this.tbTesteIntegrado.TabIndex = 3;
             this.tbTesteIntegrado.Text = "Teste Integrado";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(710, 10);
+            this.label21.Location = new System.Drawing.Point(1065, 15);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 13);
+            this.label21.Size = new System.Drawing.Size(65, 20);
             this.label21.TabIndex = 37;
             this.label21.Text = "SENHA";
             // 
@@ -1096,18 +1157,20 @@
             // 
             this.tbSenhaIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbSenhaIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaIntegrado.Location = new System.Drawing.Point(760, 9);
+            this.tbSenhaIntegrado.Location = new System.Drawing.Point(1140, 14);
+            this.tbSenhaIntegrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbSenhaIntegrado.Name = "tbSenhaIntegrado";
-            this.tbSenhaIntegrado.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaIntegrado.Size = new System.Drawing.Size(110, 26);
             this.tbSenhaIntegrado.TabIndex = 33;
             this.tbSenhaIntegrado.Text = "1";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(542, 11);
+            this.label22.Location = new System.Drawing.Point(813, 17);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(56, 13);
+            this.label22.Size = new System.Drawing.Size(84, 20);
             this.label22.TabIndex = 36;
             this.label22.Text = "USUÁRIO";
             // 
@@ -1115,18 +1178,20 @@
             // 
             this.tbUsuarioIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbUsuarioIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioIntegrado.Location = new System.Drawing.Point(604, 9);
+            this.tbUsuarioIntegrado.Location = new System.Drawing.Point(906, 14);
+            this.tbUsuarioIntegrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbUsuarioIntegrado.Name = "tbUsuarioIntegrado";
-            this.tbUsuarioIntegrado.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioIntegrado.Size = new System.Drawing.Size(148, 26);
             this.tbUsuarioIntegrado.TabIndex = 32;
             this.tbUsuarioIntegrado.Text = "QA.FUNCIONARIO";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(393, 10);
+            this.label23.Location = new System.Drawing.Point(590, 15);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(64, 13);
+            this.label23.Size = new System.Drawing.Size(96, 20);
             this.label23.TabIndex = 35;
             this.label23.Text = "DATABASE";
             // 
@@ -1134,18 +1199,20 @@
             // 
             this.tbDatabaseIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbDatabaseIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseIntegrado.Location = new System.Drawing.Point(463, 8);
+            this.tbDatabaseIntegrado.Location = new System.Drawing.Point(694, 12);
+            this.tbDatabaseIntegrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDatabaseIntegrado.Name = "tbDatabaseIntegrado";
-            this.tbDatabaseIntegrado.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseIntegrado.Size = new System.Drawing.Size(110, 26);
             this.tbDatabaseIntegrado.TabIndex = 31;
             this.tbDatabaseIntegrado.Text = "bd0000";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(299, 11);
+            this.label24.Location = new System.Drawing.Point(448, 17);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 13);
+            this.label24.Size = new System.Drawing.Size(63, 20);
             this.label24.TabIndex = 34;
             this.label24.Text = "PORTA";
             // 
@@ -1153,9 +1220,10 @@
             // 
             this.tbPortaIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPortaIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaIntegrado.Location = new System.Drawing.Point(349, 9);
+            this.tbPortaIntegrado.Location = new System.Drawing.Point(524, 14);
+            this.tbPortaIntegrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPortaIntegrado.Name = "tbPortaIntegrado";
-            this.tbPortaIntegrado.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaIntegrado.Size = new System.Drawing.Size(55, 26);
             this.tbPortaIntegrado.TabIndex = 30;
             this.tbPortaIntegrado.Text = "5432";
             // 
@@ -1163,18 +1231,20 @@
             // 
             this.tbHostnameIntegrado.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbHostnameIntegrado.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameIntegrado.Location = new System.Drawing.Point(193, 8);
+            this.tbHostnameIntegrado.Location = new System.Drawing.Point(290, 12);
+            this.tbHostnameIntegrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHostnameIntegrado.Name = "tbHostnameIntegrado";
-            this.tbHostnameIntegrado.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameIntegrado.Size = new System.Drawing.Size(148, 26);
             this.tbHostnameIntegrado.TabIndex = 28;
             this.tbHostnameIntegrado.Text = "192.168.232.0";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(8, 11);
+            this.label25.Location = new System.Drawing.Point(12, 17);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(179, 13);
+            this.label25.Size = new System.Drawing.Size(263, 20);
             this.label25.TabIndex = 29;
             this.label25.Text = "REPRODUZIDO EM:   HOSTNAME";
             // 
@@ -1198,9 +1268,10 @@
             this.tbLiberacaoTeste.Controls.Add(this.tbHostnameLiberacao);
             this.tbLiberacaoTeste.Controls.Add(this.label35);
             this.tbLiberacaoTeste.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbLiberacaoTeste.Location = new System.Drawing.Point(4, 25);
+            this.tbLiberacaoTeste.Location = new System.Drawing.Point(4, 32);
+            this.tbLiberacaoTeste.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbLiberacaoTeste.Name = "tbLiberacaoTeste";
-            this.tbLiberacaoTeste.Size = new System.Drawing.Size(842, 475);
+            this.tbLiberacaoTeste.Size = new System.Drawing.Size(1267, 739);
             this.tbLiberacaoTeste.TabIndex = 4;
             this.tbLiberacaoTeste.Text = "Liberação";
             // 
@@ -1211,20 +1282,22 @@
             this.dtHoraLiberacao.CustomFormat = "HH:mm:ss";
             this.dtHoraLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtHoraLiberacao.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.dtHoraLiberacao.Location = new System.Drawing.Point(309, 44);
+            this.dtHoraLiberacao.Location = new System.Drawing.Point(464, 68);
+            this.dtHoraLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtHoraLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.dtHoraLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dtHoraLiberacao.Name = "dtHoraLiberacao";
-            this.dtHoraLiberacao.Size = new System.Drawing.Size(89, 20);
+            this.dtHoraLiberacao.Size = new System.Drawing.Size(132, 26);
             this.dtHoraLiberacao.TabIndex = 53;
             this.dtHoraLiberacao.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(212, 50);
+            this.label37.Location = new System.Drawing.Point(318, 77);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(91, 13);
+            this.label37.Size = new System.Drawing.Size(135, 20);
             this.label37.TabIndex = 52;
             this.label37.Text = "Hora Compilação:";
             // 
@@ -1234,20 +1307,22 @@
             this.dtDataLiberacao.CalendarTitleForeColor = System.Drawing.SystemColors.Control;
             this.dtDataLiberacao.CustomFormat = "dd/MM/yyyy";
             this.dtDataLiberacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDataLiberacao.Location = new System.Drawing.Point(103, 44);
+            this.dtDataLiberacao.Location = new System.Drawing.Point(154, 68);
+            this.dtDataLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtDataLiberacao.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.dtDataLiberacao.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dtDataLiberacao.Name = "dtDataLiberacao";
-            this.dtDataLiberacao.Size = new System.Drawing.Size(89, 20);
+            this.dtDataLiberacao.Size = new System.Drawing.Size(132, 26);
             this.dtDataLiberacao.TabIndex = 51;
             this.dtDataLiberacao.Value = new System.DateTime(2020, 6, 8, 0, 0, 0, 0);
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 50);
+            this.label38.Location = new System.Drawing.Point(9, 77);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(91, 13);
+            this.label38.Size = new System.Drawing.Size(135, 20);
             this.label38.TabIndex = 50;
             this.label38.Text = "Data Compilação:";
             // 
@@ -1256,27 +1331,30 @@
             this.tbObsLiberacao.AcceptsReturn = true;
             this.tbObsLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbObsLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbObsLiberacao.Location = new System.Drawing.Point(9, 91);
+            this.tbObsLiberacao.Location = new System.Drawing.Point(14, 140);
+            this.tbObsLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbObsLiberacao.Multiline = true;
             this.tbObsLiberacao.Name = "tbObsLiberacao";
-            this.tbObsLiberacao.Size = new System.Drawing.Size(825, 65);
+            this.tbObsLiberacao.Size = new System.Drawing.Size(1236, 98);
             this.tbObsLiberacao.TabIndex = 48;
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 75);
+            this.label36.Location = new System.Drawing.Point(9, 115);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 13);
+            this.label36.Size = new System.Drawing.Size(126, 20);
             this.label36.TabIndex = 49;
             this.label36.Text = "OBSERVAÇÃO:";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(600, 10);
+            this.label31.Location = new System.Drawing.Point(900, 15);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 13);
+            this.label31.Size = new System.Drawing.Size(65, 20);
             this.label31.TabIndex = 47;
             this.label31.Text = "SENHA";
             // 
@@ -1284,18 +1362,20 @@
             // 
             this.tbSenhaLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbSenhaLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaLiberacao.Location = new System.Drawing.Point(650, 9);
+            this.tbSenhaLiberacao.Location = new System.Drawing.Point(975, 14);
+            this.tbSenhaLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbSenhaLiberacao.Name = "tbSenhaLiberacao";
-            this.tbSenhaLiberacao.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaLiberacao.Size = new System.Drawing.Size(110, 26);
             this.tbSenhaLiberacao.TabIndex = 43;
             this.tbSenhaLiberacao.Text = "1";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(432, 11);
+            this.label32.Location = new System.Drawing.Point(648, 17);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(56, 13);
+            this.label32.Size = new System.Drawing.Size(84, 20);
             this.label32.TabIndex = 46;
             this.label32.Text = "USUÁRIO";
             // 
@@ -1303,18 +1383,20 @@
             // 
             this.tbUsuarioLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbUsuarioLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioLiberacao.Location = new System.Drawing.Point(494, 9);
+            this.tbUsuarioLiberacao.Location = new System.Drawing.Point(741, 14);
+            this.tbUsuarioLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbUsuarioLiberacao.Name = "tbUsuarioLiberacao";
-            this.tbUsuarioLiberacao.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioLiberacao.Size = new System.Drawing.Size(148, 26);
             this.tbUsuarioLiberacao.TabIndex = 42;
             this.tbUsuarioLiberacao.Text = "QA.FUNCIONARIO";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(283, 10);
+            this.label33.Location = new System.Drawing.Point(424, 15);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(64, 13);
+            this.label33.Size = new System.Drawing.Size(96, 20);
             this.label33.TabIndex = 45;
             this.label33.Text = "DATABASE";
             // 
@@ -1322,18 +1404,20 @@
             // 
             this.tbDatabaseLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbDatabaseLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseLiberacao.Location = new System.Drawing.Point(353, 8);
+            this.tbDatabaseLiberacao.Location = new System.Drawing.Point(530, 12);
+            this.tbDatabaseLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDatabaseLiberacao.Name = "tbDatabaseLiberacao";
-            this.tbDatabaseLiberacao.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseLiberacao.Size = new System.Drawing.Size(110, 26);
             this.tbDatabaseLiberacao.TabIndex = 41;
             this.tbDatabaseLiberacao.Text = "bd0000";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(189, 11);
+            this.label34.Location = new System.Drawing.Point(284, 17);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(44, 13);
+            this.label34.Size = new System.Drawing.Size(63, 20);
             this.label34.TabIndex = 44;
             this.label34.Text = "PORTA";
             // 
@@ -1341,9 +1425,10 @@
             // 
             this.tbPortaLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPortaLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaLiberacao.Location = new System.Drawing.Point(239, 9);
+            this.tbPortaLiberacao.Location = new System.Drawing.Point(358, 14);
+            this.tbPortaLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPortaLiberacao.Name = "tbPortaLiberacao";
-            this.tbPortaLiberacao.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaLiberacao.Size = new System.Drawing.Size(55, 26);
             this.tbPortaLiberacao.TabIndex = 40;
             this.tbPortaLiberacao.Text = "5432";
             // 
@@ -1351,18 +1436,20 @@
             // 
             this.tbHostnameLiberacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbHostnameLiberacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameLiberacao.Location = new System.Drawing.Point(83, 8);
+            this.tbHostnameLiberacao.Location = new System.Drawing.Point(124, 12);
+            this.tbHostnameLiberacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHostnameLiberacao.Name = "tbHostnameLiberacao";
-            this.tbHostnameLiberacao.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameLiberacao.Size = new System.Drawing.Size(148, 26);
             this.tbHostnameLiberacao.TabIndex = 38;
             this.tbHostnameLiberacao.Text = "192.168.232.0";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(8, 11);
+            this.label35.Location = new System.Drawing.Point(12, 17);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(68, 13);
+            this.label35.Size = new System.Drawing.Size(99, 20);
             this.label35.TabIndex = 39;
             this.label35.Text = "HOSTNAME";
             // 
@@ -1398,9 +1485,10 @@
             this.tbRITQualidade.Controls.Add(this.dataVersaoRIT);
             this.tbRITQualidade.Controls.Add(this.label13);
             this.tbRITQualidade.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbRITQualidade.Location = new System.Drawing.Point(4, 25);
+            this.tbRITQualidade.Location = new System.Drawing.Point(4, 32);
+            this.tbRITQualidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRITQualidade.Name = "tbRITQualidade";
-            this.tbRITQualidade.Size = new System.Drawing.Size(842, 475);
+            this.tbRITQualidade.Size = new System.Drawing.Size(1267, 739);
             this.tbRITQualidade.TabIndex = 5;
             this.tbRITQualidade.Text = "RIT Qualidade";
             this.tbRITQualidade.Enter += new System.EventHandler(this.tbRITQualidade_Enter);
@@ -1408,9 +1496,10 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(601, 10);
+            this.label39.Location = new System.Drawing.Point(902, 15);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(44, 13);
+            this.label39.Size = new System.Drawing.Size(65, 20);
             this.label39.TabIndex = 57;
             this.label39.Text = "SENHA";
             // 
@@ -1418,18 +1507,20 @@
             // 
             this.tbSenhaRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbSenhaRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSenhaRIT.Location = new System.Drawing.Point(650, 9);
+            this.tbSenhaRIT.Location = new System.Drawing.Point(975, 14);
+            this.tbSenhaRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbSenhaRIT.Name = "tbSenhaRIT";
-            this.tbSenhaRIT.Size = new System.Drawing.Size(75, 20);
+            this.tbSenhaRIT.Size = new System.Drawing.Size(110, 26);
             this.tbSenhaRIT.TabIndex = 53;
             this.tbSenhaRIT.Text = "1";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(433, 11);
+            this.label40.Location = new System.Drawing.Point(650, 17);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(56, 13);
+            this.label40.Size = new System.Drawing.Size(84, 20);
             this.label40.TabIndex = 56;
             this.label40.Text = "USUÁRIO";
             // 
@@ -1437,18 +1528,20 @@
             // 
             this.tbUsuarioRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbUsuarioRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbUsuarioRIT.Location = new System.Drawing.Point(494, 9);
+            this.tbUsuarioRIT.Location = new System.Drawing.Point(741, 14);
+            this.tbUsuarioRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbUsuarioRIT.Name = "tbUsuarioRIT";
-            this.tbUsuarioRIT.Size = new System.Drawing.Size(100, 20);
+            this.tbUsuarioRIT.Size = new System.Drawing.Size(148, 26);
             this.tbUsuarioRIT.TabIndex = 52;
             this.tbUsuarioRIT.Text = "QA.FUNCIONARIO";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(284, 10);
+            this.label41.Location = new System.Drawing.Point(426, 15);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(64, 13);
+            this.label41.Size = new System.Drawing.Size(96, 20);
             this.label41.TabIndex = 55;
             this.label41.Text = "DATABASE";
             // 
@@ -1456,18 +1549,20 @@
             // 
             this.tbDatabaseRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbDatabaseRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDatabaseRIT.Location = new System.Drawing.Point(353, 8);
+            this.tbDatabaseRIT.Location = new System.Drawing.Point(530, 12);
+            this.tbDatabaseRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbDatabaseRIT.Name = "tbDatabaseRIT";
-            this.tbDatabaseRIT.Size = new System.Drawing.Size(75, 20);
+            this.tbDatabaseRIT.Size = new System.Drawing.Size(110, 26);
             this.tbDatabaseRIT.TabIndex = 51;
             this.tbDatabaseRIT.Text = "bd0000";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(190, 11);
+            this.label42.Location = new System.Drawing.Point(285, 17);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(44, 13);
+            this.label42.Size = new System.Drawing.Size(63, 20);
             this.label42.TabIndex = 54;
             this.label42.Text = "PORTA";
             // 
@@ -1475,9 +1570,10 @@
             // 
             this.tbPortaRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbPortaRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbPortaRIT.Location = new System.Drawing.Point(239, 9);
+            this.tbPortaRIT.Location = new System.Drawing.Point(358, 14);
+            this.tbPortaRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPortaRIT.Name = "tbPortaRIT";
-            this.tbPortaRIT.Size = new System.Drawing.Size(38, 20);
+            this.tbPortaRIT.Size = new System.Drawing.Size(55, 26);
             this.tbPortaRIT.TabIndex = 50;
             this.tbPortaRIT.Text = "5432";
             // 
@@ -1485,27 +1581,30 @@
             // 
             this.tbHostnameRIT.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbHostnameRIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbHostnameRIT.Location = new System.Drawing.Point(83, 8);
+            this.tbHostnameRIT.Location = new System.Drawing.Point(124, 12);
+            this.tbHostnameRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbHostnameRIT.Name = "tbHostnameRIT";
-            this.tbHostnameRIT.Size = new System.Drawing.Size(100, 20);
+            this.tbHostnameRIT.Size = new System.Drawing.Size(148, 26);
             this.tbHostnameRIT.TabIndex = 48;
             this.tbHostnameRIT.Text = "192.168.232.0";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(8, 11);
+            this.label43.Location = new System.Drawing.Point(12, 17);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(68, 13);
+            this.label43.Size = new System.Drawing.Size(99, 20);
             this.label43.TabIndex = 49;
             this.label43.Text = "HOSTNAME";
             // 
             // cbRIT04
             // 
             this.cbRIT04.AutoSize = true;
-            this.cbRIT04.Location = new System.Drawing.Point(9, 381);
+            this.cbRIT04.Location = new System.Drawing.Point(14, 586);
+            this.cbRIT04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRIT04.Name = "cbRIT04";
-            this.cbRIT04.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT04.Size = new System.Drawing.Size(80, 24);
             this.cbRIT04.TabIndex = 20;
             this.cbRIT04.Text = "RIT nº";
             this.cbRIT04.UseVisualStyleBackColor = true;
@@ -1517,19 +1616,21 @@
             this.textBoxRIT04.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT04.Enabled = false;
             this.textBoxRIT04.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT04.Location = new System.Drawing.Point(9, 405);
+            this.textBoxRIT04.Location = new System.Drawing.Point(14, 623);
+            this.textBoxRIT04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxRIT04.Multiline = true;
             this.textBoxRIT04.Name = "textBoxRIT04";
-            this.textBoxRIT04.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT04.Size = new System.Drawing.Size(1236, 98);
             this.textBoxRIT04.TabIndex = 19;
             // 
             // tbRIT04
             // 
             this.tbRIT04.Enabled = false;
-            this.tbRIT04.Location = new System.Drawing.Point(72, 378);
+            this.tbRIT04.Location = new System.Drawing.Point(108, 582);
+            this.tbRIT04.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRIT04.MaxLength = 250;
             this.tbRIT04.Name = "tbRIT04";
-            this.tbRIT04.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT04.Size = new System.Drawing.Size(37, 26);
             this.tbRIT04.TabIndex = 18;
             this.tbRIT04.Text = "4";
             this.tbRIT04.DoubleClick += new System.EventHandler(this.tbRIT04_DoubleClick);
@@ -1537,9 +1638,10 @@
             // cbRIT03
             // 
             this.cbRIT03.AutoSize = true;
-            this.cbRIT03.Location = new System.Drawing.Point(9, 281);
+            this.cbRIT03.Location = new System.Drawing.Point(14, 432);
+            this.cbRIT03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRIT03.Name = "cbRIT03";
-            this.cbRIT03.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT03.Size = new System.Drawing.Size(80, 24);
             this.cbRIT03.TabIndex = 17;
             this.cbRIT03.Text = "RIT nº";
             this.cbRIT03.UseVisualStyleBackColor = true;
@@ -1551,19 +1653,21 @@
             this.textBoxRIT03.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT03.Enabled = false;
             this.textBoxRIT03.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT03.Location = new System.Drawing.Point(9, 305);
+            this.textBoxRIT03.Location = new System.Drawing.Point(14, 469);
+            this.textBoxRIT03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxRIT03.Multiline = true;
             this.textBoxRIT03.Name = "textBoxRIT03";
-            this.textBoxRIT03.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT03.Size = new System.Drawing.Size(1236, 98);
             this.textBoxRIT03.TabIndex = 16;
             // 
             // tbRIT03
             // 
             this.tbRIT03.Enabled = false;
-            this.tbRIT03.Location = new System.Drawing.Point(72, 278);
+            this.tbRIT03.Location = new System.Drawing.Point(108, 428);
+            this.tbRIT03.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRIT03.MaxLength = 250;
             this.tbRIT03.Name = "tbRIT03";
-            this.tbRIT03.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT03.Size = new System.Drawing.Size(37, 26);
             this.tbRIT03.TabIndex = 15;
             this.tbRIT03.Text = "3";
             this.tbRIT03.DoubleClick += new System.EventHandler(this.tbRIT03_DoubleClick);
@@ -1571,9 +1675,10 @@
             // cbRIT02
             // 
             this.cbRIT02.AutoSize = true;
-            this.cbRIT02.Location = new System.Drawing.Point(9, 180);
+            this.cbRIT02.Location = new System.Drawing.Point(14, 277);
+            this.cbRIT02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRIT02.Name = "cbRIT02";
-            this.cbRIT02.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT02.Size = new System.Drawing.Size(80, 24);
             this.cbRIT02.TabIndex = 14;
             this.cbRIT02.Text = "RIT nº";
             this.cbRIT02.UseVisualStyleBackColor = true;
@@ -1585,19 +1690,21 @@
             this.textBoxRIT02.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT02.Enabled = false;
             this.textBoxRIT02.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT02.Location = new System.Drawing.Point(9, 204);
+            this.textBoxRIT02.Location = new System.Drawing.Point(14, 314);
+            this.textBoxRIT02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxRIT02.Multiline = true;
             this.textBoxRIT02.Name = "textBoxRIT02";
-            this.textBoxRIT02.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT02.Size = new System.Drawing.Size(1236, 98);
             this.textBoxRIT02.TabIndex = 13;
             // 
             // tbRIT02
             // 
             this.tbRIT02.Enabled = false;
-            this.tbRIT02.Location = new System.Drawing.Point(72, 177);
+            this.tbRIT02.Location = new System.Drawing.Point(108, 272);
+            this.tbRIT02.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRIT02.MaxLength = 250;
             this.tbRIT02.Name = "tbRIT02";
-            this.tbRIT02.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT02.Size = new System.Drawing.Size(37, 26);
             this.tbRIT02.TabIndex = 12;
             this.tbRIT02.Text = "2";
             this.tbRIT02.DoubleClick += new System.EventHandler(this.tbRIT02_DoubleClick);
@@ -1607,9 +1714,10 @@
             this.cbRIT01.AutoSize = true;
             this.cbRIT01.Checked = true;
             this.cbRIT01.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRIT01.Location = new System.Drawing.Point(9, 79);
+            this.cbRIT01.Location = new System.Drawing.Point(14, 122);
+            this.cbRIT01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbRIT01.Name = "cbRIT01";
-            this.cbRIT01.Size = new System.Drawing.Size(57, 17);
+            this.cbRIT01.Size = new System.Drawing.Size(80, 24);
             this.cbRIT01.TabIndex = 11;
             this.cbRIT01.Text = "RIT nº";
             this.cbRIT01.UseVisualStyleBackColor = true;
@@ -1620,19 +1728,21 @@
             this.textBoxRIT01.AcceptsReturn = true;
             this.textBoxRIT01.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBoxRIT01.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxRIT01.Location = new System.Drawing.Point(9, 103);
+            this.textBoxRIT01.Location = new System.Drawing.Point(14, 158);
+            this.textBoxRIT01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxRIT01.Multiline = true;
             this.textBoxRIT01.Name = "textBoxRIT01";
-            this.textBoxRIT01.Size = new System.Drawing.Size(825, 65);
+            this.textBoxRIT01.Size = new System.Drawing.Size(1236, 98);
             this.textBoxRIT01.TabIndex = 10;
             // 
             // tbRIT01
             // 
             this.tbRIT01.AcceptsReturn = true;
-            this.tbRIT01.Location = new System.Drawing.Point(72, 76);
+            this.tbRIT01.Location = new System.Drawing.Point(108, 117);
+            this.tbRIT01.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRIT01.MaxLength = 250;
             this.tbRIT01.Name = "tbRIT01";
-            this.tbRIT01.Size = new System.Drawing.Size(26, 20);
+            this.tbRIT01.Size = new System.Drawing.Size(37, 26);
             this.tbRIT01.TabIndex = 7;
             this.tbRIT01.Text = "1";
             this.tbRIT01.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1676,18 +1786,20 @@
             "28ª",
             "29ª",
             "30ª"});
-            this.cbBateriaTesteRIT.Location = new System.Drawing.Point(523, 42);
+            this.cbBateriaTesteRIT.Location = new System.Drawing.Point(784, 65);
+            this.cbBateriaTesteRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbBateriaTesteRIT.Name = "cbBateriaTesteRIT";
-            this.cbBateriaTesteRIT.Size = new System.Drawing.Size(48, 21);
+            this.cbBateriaTesteRIT.Size = new System.Drawing.Size(70, 28);
             this.cbBateriaTesteRIT.TabIndex = 8;
             this.cbBateriaTesteRIT.Text = "1ª";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(432, 50);
+            this.label15.Location = new System.Drawing.Point(648, 77);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(88, 13);
+            this.label15.Size = new System.Drawing.Size(130, 20);
             this.label15.TabIndex = 7;
             this.label15.Text = "Bateria de Teste:";
             // 
@@ -1695,20 +1807,22 @@
             // 
             this.horaCompilacaoRIT.CustomFormat = "HH:mm:ss";
             this.horaCompilacaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.horaCompilacaoRIT.Location = new System.Drawing.Point(316, 44);
+            this.horaCompilacaoRIT.Location = new System.Drawing.Point(474, 68);
+            this.horaCompilacaoRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.horaCompilacaoRIT.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.horaCompilacaoRIT.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.horaCompilacaoRIT.Name = "horaCompilacaoRIT";
-            this.horaCompilacaoRIT.Size = new System.Drawing.Size(89, 20);
+            this.horaCompilacaoRIT.Size = new System.Drawing.Size(132, 26);
             this.horaCompilacaoRIT.TabIndex = 6;
             this.horaCompilacaoRIT.Value = new System.DateTime(2020, 4, 13, 0, 0, 0, 0);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(219, 50);
+            this.label14.Location = new System.Drawing.Point(328, 77);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 13);
+            this.label14.Size = new System.Drawing.Size(135, 20);
             this.label14.TabIndex = 5;
             this.label14.Text = "Hora Compilação:";
             // 
@@ -1716,20 +1830,22 @@
             // 
             this.dataVersaoRIT.CustomFormat = "dd/MM/yyyy";
             this.dataVersaoRIT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dataVersaoRIT.Location = new System.Drawing.Point(110, 45);
+            this.dataVersaoRIT.Location = new System.Drawing.Point(165, 69);
+            this.dataVersaoRIT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataVersaoRIT.MaxDate = new System.DateTime(2050, 1, 1, 0, 0, 0, 0);
             this.dataVersaoRIT.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dataVersaoRIT.Name = "dataVersaoRIT";
-            this.dataVersaoRIT.Size = new System.Drawing.Size(89, 20);
+            this.dataVersaoRIT.Size = new System.Drawing.Size(132, 26);
             this.dataVersaoRIT.TabIndex = 4;
             this.dataVersaoRIT.Value = new System.DateTime(2020, 6, 8, 0, 0, 0, 0);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 50);
+            this.label13.Location = new System.Drawing.Point(20, 77);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 13);
+            this.label13.Size = new System.Drawing.Size(135, 20);
             this.label13.TabIndex = 3;
             this.label13.Text = "Data Compilação:";
             // 
@@ -1740,9 +1856,10 @@
             this.tbOrientacao.Controls.Add(this.tbOrientacoes);
             this.tbOrientacao.Controls.Add(this.label44);
             this.tbOrientacao.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbOrientacao.Location = new System.Drawing.Point(4, 25);
+            this.tbOrientacao.Location = new System.Drawing.Point(4, 32);
+            this.tbOrientacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbOrientacao.Name = "tbOrientacao";
-            this.tbOrientacao.Size = new System.Drawing.Size(842, 475);
+            this.tbOrientacao.Size = new System.Drawing.Size(1267, 739);
             this.tbOrientacao.TabIndex = 10;
             this.tbOrientacao.Text = "Orientação";
             this.tbOrientacao.UseVisualStyleBackColor = true;
@@ -1752,18 +1869,20 @@
             this.tbOrientacoes.AcceptsReturn = true;
             this.tbOrientacoes.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbOrientacoes.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbOrientacoes.Location = new System.Drawing.Point(9, 21);
+            this.tbOrientacoes.Location = new System.Drawing.Point(14, 32);
+            this.tbOrientacoes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbOrientacoes.Multiline = true;
             this.tbOrientacoes.Name = "tbOrientacoes";
-            this.tbOrientacoes.Size = new System.Drawing.Size(825, 65);
+            this.tbOrientacoes.Size = new System.Drawing.Size(1236, 98);
             this.tbOrientacoes.TabIndex = 50;
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(6, 5);
+            this.label44.Location = new System.Drawing.Point(9, 8);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(109, 13);
+            this.label44.Size = new System.Drawing.Size(161, 20);
             this.label44.TabIndex = 51;
             this.label44.Text = "Orientações diversas:";
             // 
@@ -1792,18 +1911,20 @@
             this.tbGeraDoc.Controls.Add(this.tbGeraCPF);
             this.tbGeraDoc.Controls.Add(this.btnGeraCPF);
             this.tbGeraDoc.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbGeraDoc.Location = new System.Drawing.Point(4, 25);
+            this.tbGeraDoc.Location = new System.Drawing.Point(4, 32);
+            this.tbGeraDoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraDoc.Name = "tbGeraDoc";
-            this.tbGeraDoc.Size = new System.Drawing.Size(842, 475);
+            this.tbGeraDoc.Size = new System.Drawing.Size(1267, 739);
             this.tbGeraDoc.TabIndex = 9;
             this.tbGeraDoc.Text = "Gerador DOC";
             // 
             // btnCopiaNome
             // 
             this.btnCopiaNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaNome.Location = new System.Drawing.Point(323, 258);
+            this.btnCopiaNome.Location = new System.Drawing.Point(484, 397);
+            this.btnCopiaNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiaNome.Name = "btnCopiaNome";
-            this.btnCopiaNome.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaNome.Size = new System.Drawing.Size(146, 35);
             this.btnCopiaNome.TabIndex = 20;
             this.btnCopiaNome.Text = "Copiar Nome";
             this.btnCopiaNome.UseVisualStyleBackColor = true;
@@ -1812,18 +1933,20 @@
             // 
             this.tbGeraNome.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraNome.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraNome.Location = new System.Drawing.Point(180, 260);
+            this.tbGeraNome.Location = new System.Drawing.Point(270, 400);
+            this.tbGeraNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraNome.Name = "tbGeraNome";
-            this.tbGeraNome.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraNome.Size = new System.Drawing.Size(175, 26);
             this.tbGeraNome.TabIndex = 19;
             this.tbGeraNome.Text = "ANA MARIA DA SILVA";
             // 
             // btnGeraNome
             // 
             this.btnGeraNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraNome.Location = new System.Drawing.Point(10, 258);
+            this.btnGeraNome.Location = new System.Drawing.Point(15, 397);
+            this.btnGeraNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraNome.Name = "btnGeraNome";
-            this.btnGeraNome.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraNome.Size = new System.Drawing.Size(216, 35);
             this.btnGeraNome.TabIndex = 18;
             this.btnGeraNome.Text = "Gera Nome";
             this.btnGeraNome.UseVisualStyleBackColor = true;
@@ -1831,9 +1954,10 @@
             // btnCopiaEmail
             // 
             this.btnCopiaEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaEmail.Location = new System.Drawing.Point(323, 219);
+            this.btnCopiaEmail.Location = new System.Drawing.Point(484, 337);
+            this.btnCopiaEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiaEmail.Name = "btnCopiaEmail";
-            this.btnCopiaEmail.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaEmail.Size = new System.Drawing.Size(146, 35);
             this.btnCopiaEmail.TabIndex = 17;
             this.btnCopiaEmail.Text = "Copiar E-mail";
             this.btnCopiaEmail.UseVisualStyleBackColor = true;
@@ -1842,18 +1966,20 @@
             // 
             this.tbGeraEmail.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraEmail.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraEmail.Location = new System.Drawing.Point(180, 221);
+            this.tbGeraEmail.Location = new System.Drawing.Point(270, 340);
+            this.tbGeraEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraEmail.Name = "tbGeraEmail";
-            this.tbGeraEmail.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraEmail.Size = new System.Drawing.Size(175, 26);
             this.tbGeraEmail.TabIndex = 16;
             this.tbGeraEmail.Text = "xxxx@xxx.com.br";
             // 
             // btnGeraEmail
             // 
             this.btnGeraEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraEmail.Location = new System.Drawing.Point(10, 219);
+            this.btnGeraEmail.Location = new System.Drawing.Point(15, 337);
+            this.btnGeraEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraEmail.Name = "btnGeraEmail";
-            this.btnGeraEmail.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraEmail.Size = new System.Drawing.Size(216, 35);
             this.btnGeraEmail.TabIndex = 15;
             this.btnGeraEmail.Text = "Gera E-mail";
             this.btnGeraEmail.UseVisualStyleBackColor = true;
@@ -1861,9 +1987,10 @@
             // btnCopiaCelular
             // 
             this.btnCopiaCelular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaCelular.Location = new System.Drawing.Point(323, 179);
+            this.btnCopiaCelular.Location = new System.Drawing.Point(484, 275);
+            this.btnCopiaCelular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiaCelular.Name = "btnCopiaCelular";
-            this.btnCopiaCelular.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCelular.Size = new System.Drawing.Size(146, 35);
             this.btnCopiaCelular.TabIndex = 14;
             this.btnCopiaCelular.Text = "Copiar Cel.";
             this.btnCopiaCelular.UseVisualStyleBackColor = true;
@@ -1872,18 +1999,20 @@
             // 
             this.tbGeraCelular.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCelular.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCelular.Location = new System.Drawing.Point(180, 181);
+            this.tbGeraCelular.Location = new System.Drawing.Point(270, 278);
+            this.tbGeraCelular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraCelular.Name = "tbGeraCelular";
-            this.tbGeraCelular.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCelular.Size = new System.Drawing.Size(175, 26);
             this.tbGeraCelular.TabIndex = 13;
             this.tbGeraCelular.Text = "(00)00000-0000";
             // 
             // btnGeraCelular
             // 
             this.btnGeraCelular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCelular.Location = new System.Drawing.Point(10, 179);
+            this.btnGeraCelular.Location = new System.Drawing.Point(15, 275);
+            this.btnGeraCelular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraCelular.Name = "btnGeraCelular";
-            this.btnGeraCelular.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCelular.Size = new System.Drawing.Size(216, 35);
             this.btnGeraCelular.TabIndex = 12;
             this.btnGeraCelular.Text = "Gera Celular";
             this.btnGeraCelular.UseVisualStyleBackColor = true;
@@ -1891,9 +2020,10 @@
             // btnCopiarTelefone
             // 
             this.btnCopiarTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiarTelefone.Location = new System.Drawing.Point(323, 139);
+            this.btnCopiarTelefone.Location = new System.Drawing.Point(484, 214);
+            this.btnCopiarTelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiarTelefone.Name = "btnCopiarTelefone";
-            this.btnCopiarTelefone.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiarTelefone.Size = new System.Drawing.Size(146, 35);
             this.btnCopiarTelefone.TabIndex = 11;
             this.btnCopiarTelefone.Text = "Copiar Tel.";
             this.btnCopiarTelefone.UseVisualStyleBackColor = true;
@@ -1902,18 +2032,20 @@
             // 
             this.tbGeraTelefone.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraTelefone.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraTelefone.Location = new System.Drawing.Point(180, 141);
+            this.tbGeraTelefone.Location = new System.Drawing.Point(270, 217);
+            this.tbGeraTelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraTelefone.Name = "tbGeraTelefone";
-            this.tbGeraTelefone.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraTelefone.Size = new System.Drawing.Size(175, 26);
             this.tbGeraTelefone.TabIndex = 10;
             this.tbGeraTelefone.Text = "(00)0000-0000";
             // 
             // btnGeraTelefone
             // 
             this.btnGeraTelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraTelefone.Location = new System.Drawing.Point(10, 139);
+            this.btnGeraTelefone.Location = new System.Drawing.Point(15, 214);
+            this.btnGeraTelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraTelefone.Name = "btnGeraTelefone";
-            this.btnGeraTelefone.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraTelefone.Size = new System.Drawing.Size(216, 35);
             this.btnGeraTelefone.TabIndex = 9;
             this.btnGeraTelefone.Text = "Gera Telefone Fixo";
             this.btnGeraTelefone.UseVisualStyleBackColor = true;
@@ -1921,9 +2053,10 @@
             // btnCopiaCNPJ
             // 
             this.btnCopiaCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaCNPJ.Location = new System.Drawing.Point(323, 101);
+            this.btnCopiaCNPJ.Location = new System.Drawing.Point(484, 155);
+            this.btnCopiaCNPJ.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiaCNPJ.Name = "btnCopiaCNPJ";
-            this.btnCopiaCNPJ.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCNPJ.Size = new System.Drawing.Size(146, 35);
             this.btnCopiaCNPJ.TabIndex = 8;
             this.btnCopiaCNPJ.Text = "Copiar CNPJ";
             this.btnCopiaCNPJ.UseVisualStyleBackColor = true;
@@ -1933,18 +2066,20 @@
             // 
             this.tbGeraCNPJ.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCNPJ.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCNPJ.Location = new System.Drawing.Point(180, 103);
+            this.tbGeraCNPJ.Location = new System.Drawing.Point(270, 158);
+            this.tbGeraCNPJ.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraCNPJ.Name = "tbGeraCNPJ";
-            this.tbGeraCNPJ.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCNPJ.Size = new System.Drawing.Size(175, 26);
             this.tbGeraCNPJ.TabIndex = 7;
             this.tbGeraCNPJ.Text = "00.000.000/0000-00";
             // 
             // btnGeraCNPJ
             // 
             this.btnGeraCNPJ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCNPJ.Location = new System.Drawing.Point(10, 101);
+            this.btnGeraCNPJ.Location = new System.Drawing.Point(15, 155);
+            this.btnGeraCNPJ.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraCNPJ.Name = "btnGeraCNPJ";
-            this.btnGeraCNPJ.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCNPJ.Size = new System.Drawing.Size(216, 35);
             this.btnGeraCNPJ.TabIndex = 6;
             this.btnGeraCNPJ.Text = "Gera CNPJ";
             this.btnGeraCNPJ.UseVisualStyleBackColor = true;
@@ -1953,9 +2088,10 @@
             // btnCopiarCNS
             // 
             this.btnCopiarCNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiarCNS.Location = new System.Drawing.Point(323, 61);
+            this.btnCopiarCNS.Location = new System.Drawing.Point(484, 94);
+            this.btnCopiarCNS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiarCNS.Name = "btnCopiarCNS";
-            this.btnCopiarCNS.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiarCNS.Size = new System.Drawing.Size(146, 35);
             this.btnCopiarCNS.TabIndex = 5;
             this.btnCopiarCNS.Text = "Copiar CNS";
             this.btnCopiarCNS.UseVisualStyleBackColor = true;
@@ -1964,18 +2100,20 @@
             // 
             this.tbGeraCNS.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCNS.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCNS.Location = new System.Drawing.Point(180, 63);
+            this.tbGeraCNS.Location = new System.Drawing.Point(270, 97);
+            this.tbGeraCNS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraCNS.Name = "tbGeraCNS";
-            this.tbGeraCNS.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCNS.Size = new System.Drawing.Size(175, 26);
             this.tbGeraCNS.TabIndex = 4;
             this.tbGeraCNS.Text = "000 0000 0000 0000";
             // 
             // btnGeraCNS
             // 
             this.btnGeraCNS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCNS.Location = new System.Drawing.Point(10, 61);
+            this.btnGeraCNS.Location = new System.Drawing.Point(15, 94);
+            this.btnGeraCNS.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraCNS.Name = "btnGeraCNS";
-            this.btnGeraCNS.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCNS.Size = new System.Drawing.Size(216, 35);
             this.btnGeraCNS.TabIndex = 3;
             this.btnGeraCNS.Text = "Gera CNS";
             this.btnGeraCNS.UseVisualStyleBackColor = true;
@@ -1984,9 +2122,10 @@
             // btnCopiaCPF
             // 
             this.btnCopiaCPF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCopiaCPF.Location = new System.Drawing.Point(323, 23);
+            this.btnCopiaCPF.Location = new System.Drawing.Point(484, 35);
+            this.btnCopiaCPF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCopiaCPF.Name = "btnCopiaCPF";
-            this.btnCopiaCPF.Size = new System.Drawing.Size(97, 23);
+            this.btnCopiaCPF.Size = new System.Drawing.Size(146, 35);
             this.btnCopiaCPF.TabIndex = 2;
             this.btnCopiaCPF.Text = "Copiar CPF";
             this.btnCopiaCPF.UseVisualStyleBackColor = true;
@@ -1996,18 +2135,20 @@
             // 
             this.tbGeraCPF.BackColor = System.Drawing.SystemColors.MenuText;
             this.tbGeraCPF.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbGeraCPF.Location = new System.Drawing.Point(180, 25);
+            this.tbGeraCPF.Location = new System.Drawing.Point(270, 38);
+            this.tbGeraCPF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbGeraCPF.Name = "tbGeraCPF";
-            this.tbGeraCPF.Size = new System.Drawing.Size(118, 20);
+            this.tbGeraCPF.Size = new System.Drawing.Size(175, 26);
             this.tbGeraCPF.TabIndex = 1;
             this.tbGeraCPF.Text = "000.000.000-00";
             // 
             // btnGeraCPF
             // 
             this.btnGeraCPF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGeraCPF.Location = new System.Drawing.Point(10, 23);
+            this.btnGeraCPF.Location = new System.Drawing.Point(15, 35);
+            this.btnGeraCPF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGeraCPF.Name = "btnGeraCPF";
-            this.btnGeraCPF.Size = new System.Drawing.Size(144, 23);
+            this.btnGeraCPF.Size = new System.Drawing.Size(216, 35);
             this.btnGeraCPF.TabIndex = 0;
             this.btnGeraCPF.Text = "Gera CPF";
             this.btnGeraCPF.UseVisualStyleBackColor = true;
@@ -2025,9 +2166,10 @@
             this.tbRAResumido.Controls.Add(this.tbJustificativaCliente);
             this.tbRAResumido.Controls.Add(this.tbSolicitacaoCliente);
             this.tbRAResumido.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbRAResumido.Location = new System.Drawing.Point(4, 25);
+            this.tbRAResumido.Location = new System.Drawing.Point(4, 32);
+            this.tbRAResumido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRAResumido.Name = "tbRAResumido";
-            this.tbRAResumido.Size = new System.Drawing.Size(842, 475);
+            this.tbRAResumido.Size = new System.Drawing.Size(1267, 739);
             this.tbRAResumido.TabIndex = 6;
             this.tbRAResumido.Text = "RA Resumido";
             // 
@@ -2035,9 +2177,10 @@
             // 
             this.textBox7.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBox7.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox7.Location = new System.Drawing.Point(9, 359);
+            this.textBox7.Location = new System.Drawing.Point(14, 552);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 20);
+            this.textBox7.Size = new System.Drawing.Size(248, 26);
             this.textBox7.TabIndex = 27;
             this.textBox7.Text = "Resultados Esperados:";
             // 
@@ -2045,9 +2188,10 @@
             // 
             this.textBox6.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBox6.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(10, 241);
+            this.textBox6.Location = new System.Drawing.Point(15, 371);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 20);
+            this.textBox6.Size = new System.Drawing.Size(248, 26);
             this.textBox6.TabIndex = 26;
             this.textBox6.Text = "Requisitos para Implementação:";
             // 
@@ -2055,9 +2199,10 @@
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(9, 120);
+            this.textBox5.Location = new System.Drawing.Point(14, 185);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 20);
+            this.textBox5.Size = new System.Drawing.Size(248, 26);
             this.textBox5.TabIndex = 25;
             this.textBox5.Text = "Justificativa da Solicitação:";
             // 
@@ -2065,9 +2210,10 @@
             // 
             this.lblSolicitacaoCliente.BackColor = System.Drawing.SystemColors.MenuText;
             this.lblSolicitacaoCliente.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblSolicitacaoCliente.Location = new System.Drawing.Point(9, 5);
+            this.lblSolicitacaoCliente.Location = new System.Drawing.Point(14, 8);
+            this.lblSolicitacaoCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblSolicitacaoCliente.Name = "lblSolicitacaoCliente";
-            this.lblSolicitacaoCliente.Size = new System.Drawing.Size(167, 20);
+            this.lblSolicitacaoCliente.Size = new System.Drawing.Size(248, 26);
             this.lblSolicitacaoCliente.TabIndex = 24;
             this.lblSolicitacaoCliente.Text = "Solicitação do Cliente:";
             // 
@@ -2076,10 +2222,11 @@
             this.tbResultadosEsperados.AcceptsReturn = true;
             this.tbResultadosEsperados.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbResultadosEsperados.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbResultadosEsperados.Location = new System.Drawing.Point(9, 382);
+            this.tbResultadosEsperados.Location = new System.Drawing.Point(14, 588);
+            this.tbResultadosEsperados.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbResultadosEsperados.Multiline = true;
             this.tbResultadosEsperados.Name = "tbResultadosEsperados";
-            this.tbResultadosEsperados.Size = new System.Drawing.Size(825, 87);
+            this.tbResultadosEsperados.Size = new System.Drawing.Size(1236, 132);
             this.tbResultadosEsperados.TabIndex = 23;
             // 
             // tbRequisitosImplementacao
@@ -2087,10 +2234,11 @@
             this.tbRequisitosImplementacao.AcceptsReturn = true;
             this.tbRequisitosImplementacao.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbRequisitosImplementacao.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbRequisitosImplementacao.Location = new System.Drawing.Point(9, 264);
+            this.tbRequisitosImplementacao.Location = new System.Drawing.Point(14, 406);
+            this.tbRequisitosImplementacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRequisitosImplementacao.Multiline = true;
             this.tbRequisitosImplementacao.Name = "tbRequisitosImplementacao";
-            this.tbRequisitosImplementacao.Size = new System.Drawing.Size(825, 87);
+            this.tbRequisitosImplementacao.Size = new System.Drawing.Size(1236, 132);
             this.tbRequisitosImplementacao.TabIndex = 22;
             // 
             // tbJustificativaCliente
@@ -2098,10 +2246,11 @@
             this.tbJustificativaCliente.AcceptsReturn = true;
             this.tbJustificativaCliente.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbJustificativaCliente.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbJustificativaCliente.Location = new System.Drawing.Point(9, 142);
+            this.tbJustificativaCliente.Location = new System.Drawing.Point(14, 218);
+            this.tbJustificativaCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbJustificativaCliente.Multiline = true;
             this.tbJustificativaCliente.Name = "tbJustificativaCliente";
-            this.tbJustificativaCliente.Size = new System.Drawing.Size(825, 87);
+            this.tbJustificativaCliente.Size = new System.Drawing.Size(1236, 132);
             this.tbJustificativaCliente.TabIndex = 21;
             // 
             // tbSolicitacaoCliente
@@ -2109,19 +2258,21 @@
             this.tbSolicitacaoCliente.AcceptsReturn = true;
             this.tbSolicitacaoCliente.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbSolicitacaoCliente.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbSolicitacaoCliente.Location = new System.Drawing.Point(9, 27);
+            this.tbSolicitacaoCliente.Location = new System.Drawing.Point(14, 42);
+            this.tbSolicitacaoCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbSolicitacaoCliente.Multiline = true;
             this.tbSolicitacaoCliente.Name = "tbSolicitacaoCliente";
-            this.tbSolicitacaoCliente.Size = new System.Drawing.Size(825, 87);
+            this.tbSolicitacaoCliente.Size = new System.Drawing.Size(1236, 132);
             this.tbSolicitacaoCliente.TabIndex = 20;
             // 
             // tbReview
             // 
             this.tbReview.BackColor = System.Drawing.Color.Black;
             this.tbReview.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbReview.Location = new System.Drawing.Point(4, 25);
+            this.tbReview.Location = new System.Drawing.Point(4, 32);
+            this.tbReview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbReview.Name = "tbReview";
-            this.tbReview.Size = new System.Drawing.Size(842, 475);
+            this.tbReview.Size = new System.Drawing.Size(1267, 739);
             this.tbReview.TabIndex = 7;
             this.tbReview.Text = "Review";
             // 
@@ -2129,9 +2280,10 @@
             // 
             this.tbWorkshop.BackColor = System.Drawing.Color.Black;
             this.tbWorkshop.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbWorkshop.Location = new System.Drawing.Point(4, 25);
+            this.tbWorkshop.Location = new System.Drawing.Point(4, 32);
+            this.tbWorkshop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbWorkshop.Name = "tbWorkshop";
-            this.tbWorkshop.Size = new System.Drawing.Size(842, 475);
+            this.tbWorkshop.Size = new System.Drawing.Size(1267, 739);
             this.tbWorkshop.TabIndex = 8;
             this.tbWorkshop.Text = "WorkShop";
             // 
@@ -2149,19 +2301,21 @@
             this.tbRITPreteste.Controls.Add(this.textBox15);
             this.tbRITPreteste.Controls.Add(this.label30);
             this.tbRITPreteste.ForeColor = System.Drawing.SystemColors.Control;
-            this.tbRITPreteste.Location = new System.Drawing.Point(4, 25);
+            this.tbRITPreteste.Location = new System.Drawing.Point(4, 32);
+            this.tbRITPreteste.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbRITPreteste.Name = "tbRITPreteste";
-            this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(3);
-            this.tbRITPreteste.Size = new System.Drawing.Size(842, 475);
+            this.tbRITPreteste.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbRITPreteste.Size = new System.Drawing.Size(1267, 739);
             this.tbRITPreteste.TabIndex = 1;
             this.tbRITPreteste.Text = "RIT Pré Teste";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(710, 10);
+            this.label26.Location = new System.Drawing.Point(1065, 15);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(44, 13);
+            this.label26.Size = new System.Drawing.Size(65, 20);
             this.label26.TabIndex = 47;
             this.label26.Text = "SENHA";
             // 
@@ -2169,18 +2323,20 @@
             // 
             this.textBox11.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox11.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox11.Location = new System.Drawing.Point(760, 9);
+            this.textBox11.Location = new System.Drawing.Point(1140, 14);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(75, 20);
+            this.textBox11.Size = new System.Drawing.Size(110, 26);
             this.textBox11.TabIndex = 43;
             this.textBox11.Text = "1";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(542, 11);
+            this.label27.Location = new System.Drawing.Point(813, 17);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(56, 13);
+            this.label27.Size = new System.Drawing.Size(84, 20);
             this.label27.TabIndex = 46;
             this.label27.Text = "USUÁRIO";
             // 
@@ -2188,18 +2344,20 @@
             // 
             this.textBox12.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox12.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox12.Location = new System.Drawing.Point(604, 9);
+            this.textBox12.Location = new System.Drawing.Point(906, 14);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.Size = new System.Drawing.Size(148, 26);
             this.textBox12.TabIndex = 42;
             this.textBox12.Text = "QA.FUNCIONARIO";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(393, 10);
+            this.label28.Location = new System.Drawing.Point(590, 15);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(64, 13);
+            this.label28.Size = new System.Drawing.Size(96, 20);
             this.label28.TabIndex = 45;
             this.label28.Text = "DATABASE";
             // 
@@ -2207,18 +2365,20 @@
             // 
             this.textBox13.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox13.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox13.Location = new System.Drawing.Point(463, 8);
+            this.textBox13.Location = new System.Drawing.Point(694, 12);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(75, 20);
+            this.textBox13.Size = new System.Drawing.Size(110, 26);
             this.textBox13.TabIndex = 41;
             this.textBox13.Text = "bd0000";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(299, 11);
+            this.label29.Location = new System.Drawing.Point(448, 17);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(44, 13);
+            this.label29.Size = new System.Drawing.Size(63, 20);
             this.label29.TabIndex = 44;
             this.label29.Text = "PORTA";
             // 
@@ -2226,9 +2386,10 @@
             // 
             this.textBox14.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox14.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox14.Location = new System.Drawing.Point(349, 9);
+            this.textBox14.Location = new System.Drawing.Point(524, 14);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(38, 20);
+            this.textBox14.Size = new System.Drawing.Size(55, 26);
             this.textBox14.TabIndex = 40;
             this.textBox14.Text = "5432";
             // 
@@ -2236,26 +2397,29 @@
             // 
             this.textBox15.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox15.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox15.Location = new System.Drawing.Point(193, 8);
+            this.textBox15.Location = new System.Drawing.Point(290, 12);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
+            this.textBox15.Size = new System.Drawing.Size(148, 26);
             this.textBox15.TabIndex = 38;
             this.textBox15.Text = "192.168.232.0";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(8, 11);
+            this.label30.Location = new System.Drawing.Point(12, 17);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(179, 13);
+            this.label30.Size = new System.Drawing.Size(263, 20);
             this.label30.TabIndex = 39;
             this.label30.Text = "REPRODUZIDO EM:   HOSTNAME";
             // 
             // btNovo
             // 
-            this.btNovo.Location = new System.Drawing.Point(754, 528);
+            this.btNovo.Location = new System.Drawing.Point(1131, 812);
+            this.btNovo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btNovo.Name = "btNovo";
-            this.btNovo.Size = new System.Drawing.Size(100, 30);
+            this.btNovo.Size = new System.Drawing.Size(150, 46);
             this.btNovo.TabIndex = 1;
             this.btNovo.Text = "Limpar (F10)";
             this.btNovo.UseVisualStyleBackColor = true;
@@ -2263,9 +2427,10 @@
             // 
             // btCopiar
             // 
-            this.btCopiar.Location = new System.Drawing.Point(648, 528);
+            this.btCopiar.Location = new System.Drawing.Point(972, 812);
+            this.btCopiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btCopiar.Name = "btCopiar";
-            this.btCopiar.Size = new System.Drawing.Size(100, 30);
+            this.btCopiar.Size = new System.Drawing.Size(150, 46);
             this.btCopiar.TabIndex = 0;
             this.btCopiar.Text = "Copiar Memo";
             this.btCopiar.UseVisualStyleBackColor = true;
@@ -2273,10 +2438,10 @@
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(884, 677);
+            this.ClientSize = new System.Drawing.Size(1317, 1018);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -2284,9 +2449,10 @@
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(900, 718);
-            this.MinimumSize = new System.Drawing.Size(900, 630);
+            this.MaximumSize = new System.Drawing.Size(1339, 1074);
+            this.MinimumSize = new System.Drawing.Size(1339, 939);
             this.Name = "FormPrincipal";
             this.Text = "Gerador de Textos Padrões para o Jira";
             this.menuStrip1.ResumeLayout(false);
@@ -2334,7 +2500,7 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem workShopToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sprintDevToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem geraDocToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orientaçãoDoDesenvolvedorToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox gbIdentificacao;
